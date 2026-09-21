@@ -1,0 +1,264 @@
+[
+  {
+    "id": "tagliatelles-asperges-parmesan",
+    "name": "Tagliatelles aux asperges et parmesan",
+    "emoji": "🌱",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "asperge", "qty": 1, "unit": "botte" },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Éplucher les asperges, les couper en tronçons et les cuire 8 min à l'eau salée.",
+      "Cuire les pâtes.",
+      "Faire revenir les asperges 2 min dans le beurre, ajouter la crème et les pâtes égouttées, parsemer de parmesan."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "saumon-asperges-pommes-de-terre-nouvelles",
+    "name": "Saumon, asperges et pommes de terre nouvelles",
+    "emoji": "🐟",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "asperge", "qty": 1, "unit": "botte" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre nouvelles 20 min à l'eau salée.",
+      "Éplucher les asperges et les cuire 10 min à l'eau salée.",
+      "Cuire le saumon 4 min côté peau puis 2 min de l'autre côté. Servir avec un peu de beurre fondu citronné."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "saucisses-petits-pois-carottes",
+    "name": "Saucisses et petits pois-carottes à la française",
+    "emoji": "🫛",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "petit-pois", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1, "optional": true },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire fondre l'oignon dans le beurre, ajouter les carottes en rondelles, les pommes de terre en morceaux et 20 cl d'eau.",
+      "Couvrir et cuire 15 min, puis ajouter les petits pois et quelques feuilles de laitue émincées, cuire 10 min.",
+      "Pendant ce temps, cuire les saucisses à la poêle et les servir avec les légumes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "veloute-petits-pois-menthe",
+    "name": "Velouté de petits pois à la menthe",
+    "emoji": "🫛",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "petit-pois", "qty": 600, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "pain", "qty": 4, "unit": "tranche", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, ajouter la pomme de terre en dés, les petits pois, le bouillon cube et 80 cl d'eau.",
+      "Cuire 15 min, ajouter la menthe et mixer avec la crème.",
+      "Servir avec des croûtons."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "saute-veau-carottes-petits-pois",
+    "name": "Sauté de veau aux carottes et petits pois",
+    "emoji": "🥕",
+    "time": 75,
+    "difficulty": 1,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "veau-a-blanquette", "qty": 1, "unit": "kg" },
+      { "ref": "carotte", "qty": 4 },
+      { "ref": "petit-pois", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
+      { "ref": "fond-de-veau", "qty": 2, "unit": "cas" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer la viande dans l'huile dans une cocotte.",
+      "Ajouter le fond de veau délayé dans 40 cl d'eau, couvrir et laisser mijoter 40 min.",
+      "Ajouter les carottes et les pommes de terre, cuire 20 min, puis les petits pois 10 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "salade-pommes-de-terre-radis-oeufs",
+    "name": "Salade de pommes de terre nouvelles, radis et œufs",
+    "emoji": "🥔",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "radis", "qty": 1, "unit": "botte" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "ciboulette", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "moutarde", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min et les œufs 10 min (durs).",
+      "Couper les pommes de terre et les radis en rondelles, les œufs en quartiers.",
+      "Mélanger avec une vinaigrette moutardée et la ciboulette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "cabillaud-puree-petits-pois",
+    "name": "Cabillaud et purée de petits pois",
+    "emoji": "🐟",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "petit-pois", "qty": 600, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 300, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les petits pois et la pomme de terre en dés 15 min à l'eau salée, puis les mixer avec le beurre.",
+      "Cuire le poisson 3 min de chaque côté à la poêle dans l'huile.",
+      "Servir sur la purée de petits pois."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "tarte-epinards-chevre",
+    "name": "Tarte aux épinards et au chèvre",
+    "emoji": "🥬",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "epinard", "qty": 500, "unit": "g" },
+      { "ref": "chevre", "qty": 150, "unit": "g" },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "creme", "qty": 15, "unit": "cl" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Faire tomber les épinards 5 min à la poêle et bien les égoutter.",
+      "Les répartir sur la pâte avec le chèvre en morceaux.",
+      "Battre les œufs avec la crème, saler, poivrer, verser et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["four", "vege"]
+  },
+  {
+    "id": "filet-mignon-carottes-miel",
+    "name": "Filet mignon aux carottes nouvelles et au miel",
+    "emoji": "🍯",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "porc-viande", "qty": 700, "unit": "g" },
+      { "ref": "carotte", "qty": 600, "unit": "g" },
+      { "ref": "miel", "qty": 2, "unit": "cas" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer la viande sur toutes les faces dans l'huile dans une cocotte.",
+      "Ajouter les carottes, les pommes de terre, le thym et 15 cl d'eau, couvrir et cuire 25 min.",
+      "Ajouter le miel, laisser caraméliser 5 min à découvert en retournant la viande."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "asperges-jambon-gratinees",
+    "name": "Asperges au jambon gratinées",
+    "emoji": "🌱",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "asperge", "qty": 2, "unit": "botte" },
+      { "ref": "jambon-blanc", "qty": 8, "unit": "tranche" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Cuire les asperges 8 min et les pommes de terre 20 min à l'eau salée.",
+      "Enrouler les asperges par petits fagots dans les tranches de jambon et les ranger dans un plat.",
+      "Napper de crème, parsemer de fromage et gratiner 15 min. Servir avec les pommes de terre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["four"]
+  },
+  {
+    "id": "pates-epinards-creme",
+    "name": "Pâtes aux épinards et à la crème",
+    "emoji": "🥬",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "epinard", "qty": 400, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire tomber les épinards 3 min à la poêle avec l'ail haché.",
+      "Ajouter la crème, laisser chauffer 2 min et mélanger avec les pâtes et le fromage."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["printemps", "automne"],
+    "tags": ["rapide", "enfants", "vege"]
+  }
+]
