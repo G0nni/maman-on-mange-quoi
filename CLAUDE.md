@@ -15,6 +15,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - **Pas de tiret cadratin (—) dans les textes** de l'interface. Utiliser deux-points, virgule, parenthèses ou une nouvelle phrase.
 - **Couleurs** : uniquement via les tokens Tailwind définis dans `src/index.css` (bloc `@theme`, variante sombre dans le `@media (prefers-color-scheme: dark)`). Pas de couleur en dur dans les composants : ajouter un token si besoin (clair + sombre).
 - **Firestore** : toute nouvelle collection ou sous-collection doit avoir ses règles dans `firestore.rules`, dans le même changement. Mettre aussi à jour la section « Modèle de données » du README.
+- **Claim de profil entre membres : choix assumé.** La règle `members/{memberId}` update laisse tout membre rattacher sa session à n'importe quel profil du foyer. C'est le flux de récupération iOS (PWA réinstallée ou Safari qui purge le stockage, donc nouvel uid anonyme). Ne pas le restreindre.
 - **Plan Spark (gratuit)** : pas de Cloud Functions, pas de service payant. Toute la logique tourne côté client, la sécurité repose sur les Security Rules.
 - Variables Firebase dans `.env.local` (préfixe `VITE_FIREBASE_`), jamais commitées.
 

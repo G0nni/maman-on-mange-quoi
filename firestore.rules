@@ -41,9 +41,13 @@ service cloud.firestore {
         && request.resource.data.memberUids == [request.auth.uid]
         && request.resource.data.keys().hasOnly(['name', 'joinCode', 'memberUids', 'createdAt']);
 
-      // Un membre peut renommer le foyer.
+      // Un membre peut uniquement renommer le foyer (ni memberUids, ni joinCode, ni createdAt).
       // Un non-membre (qui a eu l'id via un code) peut uniquement s'ajouter lui-même.
-      allow update: if isMember(hid)
+      allow update: if (isMember(hid)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name'])
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0
+          && request.resource.data.name.size() <= 60)
         || (signedIn()
           && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberUids'])
           && request.resource.data.memberUids.hasAll(resource.data.memberUids)
