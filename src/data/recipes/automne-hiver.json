@@ -1,0 +1,358 @@
+[
+  {
+    "id": "soupe-oignon-gratinee",
+    "name": "Soupe à l'oignon gratinée",
+    "emoji": "🧅",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "oignon", "qty": 6 },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "farine", "qty": 1, "unit": "cas" },
+      { "ref": "bouillon-cube", "qty": 2 },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 120, "unit": "g" }
+    ],
+    "steps": [
+      "Faire fondre les oignons émincés 20 min dans le beurre, jusqu'à ce qu'ils soient dorés.",
+      "Saupoudrer de farine, verser 1,2 l d'eau avec les cubes de bouillon et cuire 15 min.",
+      "Répartir dans des bols allant au four, poser le pain grillé et le fromage, et gratiner 5 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "veloute-poireaux-pommes-de-terre",
+    "name": "Velouté de poireaux et pommes de terre",
+    "emoji": "🥬",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "poireau", "qty": 3 },
+      { "ref": "pomme-de-terre", "qty": 400, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Faire fondre les poireaux émincés 5 min dans le beurre.",
+      "Ajouter les pommes de terre en dés, le bouillon cube et 1 l d'eau, cuire 20 min.",
+      "Mixer avec la crème, saler, poivrer."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "soupe-legumes-maison",
+    "name": "Soupe de légumes maison",
+    "emoji": "🥕",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "poireau", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 2 },
+      { "ref": "navet", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "pain", "qty": 4, "unit": "tranche", "optional": true }
+    ],
+    "steps": [
+      "Éplucher et couper tous les légumes en morceaux.",
+      "Les cuire 30 min dans 1,5 l d'eau avec le bouillon cube.",
+      "Mixer, saler, poivrer, et servir avec du pain."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "fondue-savoyarde",
+    "name": "Fondue savoyarde",
+    "emoji": "🧀",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "fromage-rape", "qty": 800, "unit": "g" },
+      { "ref": "pain", "qty": 2 },
+      { "ref": "vin-blanc", "qty": 30, "unit": "cl" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "maizena", "qty": 1, "unit": "cac", "optional": true },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Couper le pain en cubes. Frotter le caquelon avec l'ail.",
+      "Chauffer le vin blanc, puis ajouter le fromage (comté, emmental) peu à peu en remuant en huit.",
+      "Ajouter la maïzena délayée pour lier, poivrer, et servir sur le réchaud avec le pain."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "veloute-panais-carottes",
+    "name": "Velouté de panais et carottes",
+    "emoji": "🥕",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "panais", "qty": 500, "unit": "g" },
+      { "ref": "carotte", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Éplucher et couper les légumes en morceaux.",
+      "Les cuire 25 min dans 1 l d'eau avec le bouillon cube.",
+      "Mixer avec la crème, saler, poivrer."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "poulet-roti-legumes-hiver",
+    "name": "Poulet rôti aux légumes d'hiver",
+    "emoji": "🥕",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 8 },
+      { "ref": "panais", "qty": 3 },
+      { "ref": "carotte", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "thym", "qty": 3, "unit": "brin" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C.",
+      "Couper les légumes en gros morceaux et les mélanger avec l'huile, le thym, sel et poivre.",
+      "Poser les morceaux de poulet dessus et enfourner 50 min en arrosant de temps en temps."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "chou-rouge-pommes-saucisses",
+    "name": "Chou rouge aux pommes et saucisses",
+    "emoji": "🥬",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "chou-rouge", "qty": 1 },
+      { "ref": "pomme", "qty": 2 },
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "vinaigre", "qty": 3, "unit": "cas" },
+      { "ref": "sucre", "qty": 1, "unit": "cas" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Émincer finement le chou et le faire revenir 5 min avec l'oignon dans un peu d'huile.",
+      "Ajouter les pommes en dés, le vinaigre, le sucre et 10 cl d'eau, couvrir et cuire 40 min.",
+      "Ajouter les saucisses et les pommes de terre en morceaux 25 min avant la fin."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "choux-bruxelles-lardons-pommes-de-terre",
+    "name": "Poêlée de choux de Bruxelles, lardons et pommes de terre",
+    "emoji": "🥬",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "chou-de-bruxelle", "qty": 600, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les choux de Bruxelles 8 min et les pommes de terre en dés 10 min à l'eau salée.",
+      "Faire dorer les lardons, ajouter les légumes égouttés et l'huile.",
+      "Faire rissoler 10 min en remuant, poivrer."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "blanquette-de-poisson",
+    "name": "Blanquette de poisson",
+    "emoji": "🐟",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "champignon", "qty": 200, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Cuire les carottes en rondelles 15 min dans 40 cl d'eau avec le bouillon cube.",
+      "Ajouter les champignons et le poisson en gros morceaux, cuire 8 min à frémissement.",
+      "Ajouter la crème, laisser épaissir 2 min et servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "poule-au-pot",
+    "name": "Poule au pot",
+    "emoji": "🐔",
+    "time": 150,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet-entier", "qty": 1 },
+      { "ref": "carotte", "qty": 4 },
+      { "ref": "poireau", "qty": 3 },
+      { "ref": "navet", "qty": 3 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "bouquet-garni", "qty": 1 }
+    ],
+    "steps": [
+      "Mettre la volaille dans une grande marmite, couvrir d'eau froide, porter à ébullition et écumer.",
+      "Ajouter le bouquet garni, saler, et laisser frémir 1 h.",
+      "Ajouter les légumes et cuire encore 1 h.",
+      "Cuire le riz dans un peu de bouillon et servir avec la volaille découpée et les légumes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "parmentier-potiron",
+    "name": "Parmentier de bœuf au potiron",
+    "emoji": "🎃",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "courge", "qty": 1, "unit": "kg" },
+      { "ref": "pomme-de-terre", "qty": 300, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Cuire la courge et les pommes de terre en morceaux 20 min à l'eau salée, puis les écraser avec le beurre.",
+      "Faire revenir l'oignon et la viande 10 min en l'émiettant. Saler, poivrer.",
+      "Étaler la viande dans un plat, couvrir de purée et de fromage, et gratiner 20 min à 200 °C."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "boulettes-lentilles-sauce-tomate",
+    "name": "Boulettes de lentilles à la sauce tomate",
+    "emoji": "🫘",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentilles", "qty": 250, "unit": "g" },
+      { "ref": "chapelure", "qty": 60, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les lentilles 20 min, les égoutter et les écraser avec l'œuf, la chapelure, le cumin, sel et poivre.",
+      "Former des boulettes et les dorer dans l'huile.",
+      "Ajouter les tomates et laisser mijoter 10 min. Servir avec les pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "soupe-paysanne-haricots-chou",
+    "name": "Soupe paysanne aux haricots blancs et au chou",
+    "emoji": "🥣",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "haricot-blanc", "qty": 400, "unit": "g" },
+      { "ref": "chou-vert", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "pomme-de-terre", "qty": 2 },
+      { "ref": "poireau", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 1 }
+    ],
+    "steps": [
+      "Couper tous les légumes en morceaux et les cuire 40 min dans 1,5 l d'eau avec le bouillon cube.",
+      "Ajouter les haricots blancs égouttés et cuire encore 10 min. Saler, poivrer."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "confit-canard-pommes-sarladaises",
+    "name": "Confit de canard et pommes sarladaises",
+    "emoji": "🦆",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "confit-de-canard", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "ail", "qty": 3, "unit": "gousse" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte" },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Réchauffer les cuisses de canard 20 min au four à 180 °C.",
+      "Couper les pommes de terre en rondelles et les faire dorer 25 min dans 3 c. à soupe de graisse de canard.",
+      "Ajouter l'ail et le persil hachés en fin de cuisson. Servir avec le canard et la salade."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "pommes-de-terre-sautees-lardons-salade",
+    "name": "Pommes de terre sautées aux lardons et salade",
+    "emoji": "🥔",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lardons-poitrine", "qty": 200, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper les pommes de terre en dés et les faire dorer 20 min dans l'huile en remuant.",
+      "Ajouter les lardons et cuire encore 5 min.",
+      "Servir avec la salade assaisonnée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  }
+]
