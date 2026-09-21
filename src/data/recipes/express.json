@@ -1,0 +1,394 @@
+[
+  {
+    "id": "steak-champignons-pommes-sautees",
+    "name": "Steak, poêlée de champignons et pommes de terre sautées",
+    "emoji": "🥩",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 4 },
+      { "ref": "champignon", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Couper les pommes de terre en petits dés et les faire dorer 20 min dans 2 c. à soupe d'huile.",
+      "Faire sauter les champignons émincés avec l'ail 6 min dans le reste d'huile.",
+      "Cuire les steaks 2 à 3 min de chaque côté et servir avec les légumes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "emince-boeuf-moutarde-pates",
+    "name": "Émincé de bœuf à la moutarde et pâtes",
+    "emoji": "🥩",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 500, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "moutarde", "qty": 2, "unit": "cas" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Saisir la viande en fines lanières 2 min à feu vif dans l'huile, puis la réserver.",
+      "Verser la crème et la moutarde dans la poêle, laisser épaissir 2 min, remettre la viande et servir."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "boeuf-hache-courgettes-semoule",
+    "name": "Poêlée de bœuf haché, courgettes et semoule",
+    "emoji": "🥒",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "viande-hachee", "qty": 400, "unit": "g" },
+      { "ref": "courgette", "qty": 3 },
+      { "ref": "cereales", "qty": 250, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "cumin", "qty": 1, "unit": "cac", "optional": true }
+    ],
+    "steps": [
+      "Préparer la semoule selon le paquet.",
+      "Faire revenir les courgettes en dés 8 min dans l'huile, ajouter la viande et le cumin et cuire 6 min.",
+      "Saler, poivrer et servir avec la semoule."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "steak-hache-a-cheval-pommes-sautees",
+    "name": "Steak haché à cheval et pommes de terre sautées",
+    "emoji": "🍳",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-hache", "qty": 4 },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Couper les pommes de terre en petits dés et les faire dorer 20 min dans l'huile.",
+      "Cuire les steaks hachés 3 min de chaque côté.",
+      "Cuire les œufs au plat et en poser un sur chaque steak."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pates-jambon-champignons-creme",
+    "name": "Pâtes au jambon et aux champignons",
+    "emoji": "🍝",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire revenir les champignons émincés 6 min dans l'huile, ajouter le jambon en dés.",
+      "Verser la crème, laisser chauffer 2 min et mélanger avec les pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "tartines-montagnardes",
+    "name": "Tartines montagnardes et salade",
+    "emoji": "🧀",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "jambon-cru", "qty": 4, "unit": "tranche" },
+      { "ref": "reblochon", "qty": 1 },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C.",
+      "Poser une demi-tranche de jambon cru et des tranches de reblochon sur chaque tartine.",
+      "Cuire 10 min, jusqu'à ce que le fromage soit fondu. Servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "gnocchis-lardons-epinards",
+    "name": "Gnocchis poêlés aux lardons et épinards",
+    "emoji": "🥬",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "gnocchi", "qty": 800, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "epinard", "qty": 300, "unit": "g" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Faire dorer les lardons à sec, puis les gnocchis 8 min dans la même poêle.",
+      "Ajouter les épinards et la crème, laisser tomber 3 min en remuant. Poivrer."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "printemps"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "poulet-tomate-coquillettes",
+    "name": "Poulet à la tomate et coquillettes",
+    "emoji": "🍗",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 500, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire dorer le poulet en dés 6 min dans l'huile.",
+      "Ajouter les tomates et les herbes, laisser mijoter 10 min et servir avec les pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "poisson-pane-riz-petits-pois",
+    "name": "Poisson pané, riz et petits pois",
+    "emoji": "🐟",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-pane", "qty": 8 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "petit-pois", "qty": 400, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz, et les petits pois 8 min à l'eau salée.",
+      "Cuire le poisson pané 4 min de chaque côté dans l'huile.",
+      "Servir avec le riz et les petits pois au beurre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "colin-tomate-coquillettes",
+    "name": "Colin à la tomate et coquillettes",
+    "emoji": "🐟",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 500, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire mijoter les tomates 8 min avec l'huile et les herbes.",
+      "Poser le poisson en morceaux dans la sauce, couvrir et cuire 7 min. Servir avec les pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pain-perdu-sale-fromage",
+    "name": "Pain perdu salé au fromage et salade",
+    "emoji": "🍞",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Battre les œufs avec le lait, sel et poivre.",
+      "Tremper les tranches de pain dans le mélange et les dorer 3 min de chaque côté dans le beurre.",
+      "Parsemer de fromage en fin de cuisson, couvrir pour le faire fondre, et servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "haricots-blancs-tomate-oeufs",
+    "name": "Haricots blancs à la tomate et œufs au plat",
+    "emoji": "🫘",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "haricot-blanc", "qty": 800, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "pain", "qty": 4, "unit": "tranche" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon dans l'huile, ajouter les tomates et les haricots égouttés, laisser mijoter 10 min.",
+      "Cuire les œufs au plat.",
+      "Servir les haricots avec un œuf et du pain grillé."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "omelette-jambon-fromage",
+    "name": "Omelette jambon-fromage et salade",
+    "emoji": "🍳",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "porc-cuisine", "qty": 100, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Battre les œufs, saler, poivrer, puis ajouter le jambon en dés et le fromage.",
+      "Cuire l'omelette dans le beurre à feu moyen.",
+      "Servir avec la salade."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pates-roquefort-noix",
+    "name": "Pâtes au roquefort et aux noix",
+    "emoji": "🧀",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "roquefort", "qty": 150, "unit": "g" },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "noix", "qty": 50, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire fondre le roquefort dans la crème à feu doux.",
+      "Mélanger avec les pâtes égouttées et parsemer de noix concassées."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "pates-saucisse-tomate",
+    "name": "Pâtes à la saucisse et à la tomate",
+    "emoji": "🍝",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "saucisses", "qty": 4 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Retirer la peau des saucisses et faire dorer la chair 6 min dans l'huile en l'émiettant.",
+      "Ajouter les tomates, laisser mijoter 10 min et mélanger avec les pâtes. Parsemer de fromage."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pates-creme-champignons",
+    "name": "Pâtes à la crème de champignons",
+    "emoji": "🍄",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "champignon", "qty": 400, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire revenir les champignons émincés 8 min dans l'huile avec l'ail.",
+      "Ajouter la crème, laisser épaissir 2 min et mélanger avec les pâtes."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "burgers-poisson-pane",
+    "name": "Burgers de poisson pané",
+    "emoji": "🍔",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pain-a-burger", "qty": 4 },
+      { "ref": "poisson-blanc", "qty": 400, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 80, "unit": "g" },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "tomate", "qty": 1 },
+      { "ref": "mayonnaise", "qty": 2, "unit": "cas", "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper le poisson en 4 morceaux, les passer dans l'œuf battu puis dans la chapelure.",
+      "Les cuire 4 min de chaque côté dans l'huile.",
+      "Toaster les pains et monter les burgers avec la salade, la tomate et la mayonnaise."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  }
+]
