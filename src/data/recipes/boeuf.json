@@ -325,7 +325,8 @@
       { "ref": "beurre", "qty": 40, "unit": "g" },
       { "ref": "farine", "qty": 40, "unit": "g" },
       { "ref": "fromage-rape", "qty": 60, "unit": "g" },
-      { "ref": "cannelle", "qty": 1, "unit": "pincee" }
+      { "ref": "cannelle", "qty": 1, "unit": "pincee" },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
     ],
     "steps": [
       "Couper les aubergines en tranches, les huiler et les cuire 20 min au four à 200 °C.",

@@ -10,7 +10,8 @@
       { "ref": "oeuf", "qty": 8 },
       { "ref": "creme", "qty": 10, "unit": "cl" },
       { "ref": "pain", "qty": 8, "unit": "tranche" },
-      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true }
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
     ],
     "steps": [
       "Préchauffer le four à 180 °C. Beurrer 8 ramequins et y mettre une cuillère de crème.",

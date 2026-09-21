@@ -61,7 +61,8 @@
       { "ref": "bouillon-cube", "qty": 1 },
       { "ref": "cumin", "qty": 1, "unit": "cac" },
       { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
-      { "ref": "oignon", "qty": 1 }
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
     ],
     "steps": [
       "Faire revenir l'oignon avec le cumin dans un peu d'huile.",
@@ -164,7 +165,8 @@
       { "ref": "thym", "qty": 2, "unit": "brin" },
       { "ref": "laurier", "qty": 1, "unit": "feuille" },
       { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
-      { "ref": "oignon", "qty": 1 }
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
     ],
     "steps": [
       "Faire revenir l'oignon et le poireau émincés dans un peu d'huile.",

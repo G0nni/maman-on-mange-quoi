@@ -155,7 +155,8 @@
       { "ref": "vinaigre", "qty": 3, "unit": "cas" },
       { "ref": "sucre", "qty": 1, "unit": "cas" },
       { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
-      { "ref": "oignon", "qty": 1 }
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
     ],
     "steps": [
       "Émincer finement le chou et le faire revenir 5 min avec l'oignon dans un peu d'huile.",
