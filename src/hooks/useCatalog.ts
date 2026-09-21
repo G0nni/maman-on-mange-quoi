@@ -32,3 +32,18 @@ export function useCatalog(enabled = true) {
 
   return { catalog, error }
 }
+
+/**
+ * Précharge le catalogue quand le navigateur est inactif, pour que l'écran Idées et
+ * l'autocomplétion s'affichent sans attente. Safari (iPhone) n'a pas requestIdleCallback :
+ * repli sur un délai. Renvoie une fonction d'annulation (cleanup d'useEffect).
+ */
+export function preloadCatalogWhenIdle() {
+  const run = () => void loadCatalog().catch(() => {}) // échec silencieux : useCatalog réessaiera
+  if ('requestIdleCallback' in window) {
+    const id = window.requestIdleCallback(run, { timeout: 5000 })
+    return () => window.cancelIdleCallback(id)
+  }
+  const id = setTimeout(run, 1500)
+  return () => clearTimeout(id)
+}

@@ -1,5 +1,6 @@
-import { useState, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { useAuth } from './hooks/useAuth'
+import { preloadCatalogWhenIdle } from './hooks/useCatalog'
 import { useHousehold } from './hooks/useHousehold'
 import { Onboarding } from './screens/Onboarding'
 import { WhoAreYou } from './screens/WhoAreYou'
@@ -17,6 +18,10 @@ export default function App() {
   const [joinCode] = useState(readJoinCode)
   const { user, error } = useAuth()
   const state = useHousehold(user?.uid)
+  const ready = state.status === 'ready'
+
+  // Foyer prêt : on précharge recettes + référentiel (chunk séparé) pendant un temps mort.
+  useEffect(() => (ready ? preloadCatalogWhenIdle() : undefined), [ready])
 
   if (error) return <FullScreen>Connexion impossible. Vérifie ton réseau puis recharge la page.</FullScreen>
   if (!user || state.status === 'loading') return <FullScreen>Chargement…</FullScreen>
