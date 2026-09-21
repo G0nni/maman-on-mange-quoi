@@ -25,3 +25,6 @@ dist-ssr
 
 # Config locale du serveur de dev (navigateur intégré de Claude)
 .claude/launch.json
+
+# Rapport de couverture (npm run coverage)
+coverage

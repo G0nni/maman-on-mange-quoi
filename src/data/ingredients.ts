@@ -10,6 +10,8 @@
  * - `groups` : une recette peut demander un groupe ("fromage-rape") plutôt qu'un
  *   ingrédient précis ("comte"). Les ids de groupe partagent l'espace des ids d'ingrédients.
  */
+import { createIndex, type Referential, type RefStatus } from '../lib/referential'
+export type { RefStatus }
 
 export const CATEGORIES = [
   'proteine', 'legume', 'feculent', 'laitier', 'fruit', 'epicerie', 'condiment', 'epice', 'herbe',
@@ -307,7 +309,7 @@ export const INGREDIENTS: Ingredient[] = [
 /**
  * Basiques : toujours considérés comme en stock pour les suggestions (personne ne les
  * note dans le stock, et « il manque : sel » serait inutile). Ids d'ingrédients ou de groupes.
- * PROPOSITION, à trancher : voir le récap de la phase 1.
+ * Liste validée (phase 1), beurre, ail et oignon compris.
  */
 export const BASICS: string[] = [
   'sel', 'poivre', 'huile', 'vinaigre', 'moutarde',
@@ -316,22 +318,20 @@ export const BASICS: string[] = [
   'bouillon-cube', 'thym', 'laurier', 'herbe-de-provence', 'muscade',
 ]
 
+export const REFERENTIAL: Referential = {
+  ingredients: INGREDIENTS,
+  groups: GROUPS,
+  basics: BASICS,
+  nonBlockingCategories: NON_BLOCKING_CATEGORIES,
+}
+
+const index = createIndex(REFERENTIAL)
+
 /**
  * Statut d'une ref de recette pour le calcul de « il manque » (voir CLAUDE.md) :
  * - basique : toujours considéré en stock (BASICS) ;
  * - non-bloquant : épice ou herbe, affichée mais jamais manquante ;
  * - obligatoire : doit être en stock (sauf si la recette la marque `optional`).
- * Un groupe est non bloquant si tous ses membres le sont.
+ * Un groupe est non bloquant si tous ses membres le sont. Logique dans src/lib/referential.ts.
  */
-export type RefStatus = 'basique' | 'non-bloquant' | 'obligatoire'
-
-const ingredientById = new Map(INGREDIENTS.map((i) => [i.id, i]))
-const isNonBlocking = (i: Ingredient) => NON_BLOCKING_CATEGORIES.includes(i.category)
-
-export function refStatus(ref: string): RefStatus {
-  if (BASICS.includes(ref)) return 'basique'
-  const ingredient = ingredientById.get(ref)
-  if (ingredient) return isNonBlocking(ingredient) ? 'non-bloquant' : 'obligatoire'
-  const members = INGREDIENTS.filter((i) => i.groups?.includes(ref))
-  return members.length && members.every(isNonBlocking) ? 'non-bloquant' : 'obligatoire'
-}
+export const refStatus = (ref: string): RefStatus => index.status(ref)

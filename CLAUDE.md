@@ -7,7 +7,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - React 19, Vite, TypeScript, Tailwind v4 (`@tailwindcss/vite`), `vite-plugin-pwa`
 - Firebase : Auth anonyme + Firestore (cache IndexedDB persistant, voir `src/lib/firebase.ts`)
 - Déploiement Vercel (`vercel.json`)
-- Commandes : `npm run dev`, `npm run build` (`tsc -b && vite build`), `npm run lint` (oxlint), `npm test` (Vitest, tests à côté du fichier testé : `*.test.ts`)
+- Commandes : `npm run dev`, `npm run build` (`tsc -b && vite build`), `npm run lint` (oxlint), `npm test` (Vitest, tests à côté du fichier testé : `*.test.ts`), `npm run coverage`
 
 ## Conventions
 
@@ -33,6 +33,11 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
   - **obligatoire** : tout le reste, doit être en stock.
   - Indépendamment du statut, `optional: true` dans une recette rend l'ingrédient facultatif pour ce plat-là.
 - **Matching stock / recette optimiste** : un aliment du stock qui correspond à un groupe (« Poulet ») satisfait une recette qui demande un membre précis du groupe (blancs de poulet).
+- **Suggestions** (`suggest()` dans `src/lib/suggest.ts`, fonction pure, hasard injectable via `rng`) :
+  - faisable (0 manquant) avant « presque » (1 manquant), au-delà exclu ;
+  - exclut les plats masqués (foyer) et déjà vus (session) ; du lundi au vendredi, 45 min maximum sauf « On a le temps ce soir » ; pas de limite le week-end ;
+  - 3 plats de protéines toutes différentes (« aucune » compte comme une protéine), tirage pondéré : +1 équilibre P/L/F complet, +1 saison courante, +0,5 toute l'année.
+- La logique du référentiel (statut d'une ref, résolution des ids du stock y compris alias, satisfaction optimiste) vit dans `src/lib/referential.ts` et sert à `refStatus()`, au validateur et à `suggest()`. Ne pas la dupliquer.
 - Pas de desserts. Les fruits restent dans le référentiel pour l'autocomplétion du stock.
 
 ## Points connus

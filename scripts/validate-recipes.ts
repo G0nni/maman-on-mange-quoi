@@ -7,9 +7,10 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
-import { BASICS, GROUPS, INGREDIENTS, MEAT_FISH, NON_BLOCKING_CATEGORIES, type Ingredient, type IngredientGroup } from '../src/data/ingredients'
+import { MEAT_FISH, REFERENTIAL } from '../src/data/ingredients'
 import { RAPIDE_MAX_MINUTES, RecipeSchema, type Recipe } from '../src/data/recipe-schema'
 import { norm, stockId } from '../src/lib/ingredients'
+import { createIndex, type Referential } from '../src/lib/referential'
 
 export const RECIPES_DIR = fileURLToPath(new URL('../src/data/recipes/', import.meta.url))
 
@@ -17,7 +18,6 @@ export const RECIPES_DIR = fileURLToPath(new URL('../src/data/recipes/', import.
 export const NEAR_DUPLICATE_THRESHOLD = 0.8
 
 export type RecipeFile = { file: string; data: unknown }
-export type Referential = { ingredients: Ingredient[]; groups: IngredientGroup[]; basics: string[] }
 type ValidRecipe = Recipe & { file: string }
 
 const EM_DASH = String.fromCharCode(0x2014) // tiret cadratin, interdit dans les textes (voir CLAUDE.md)
@@ -67,7 +67,7 @@ function checkReferential({ ingredients, groups, basics }: Referential, errors: 
   for (const b of basics) if (!ids.has(b)) errors.push(`référentiel : basique inconnu "${b}"`)
 }
 
-export function validate(files: RecipeFile[], ref: Referential = { ingredients: INGREDIENTS, groups: GROUPS, basics: BASICS }) {
+export function validate(files: RecipeFile[], ref: Referential = REFERENTIAL) {
   const errors: string[] = []
   const warnings: string[] = []
   checkReferential(ref, errors)
@@ -81,15 +81,8 @@ export function validate(files: RecipeFile[], ref: Referential = { ingredients: 
     if (ing) return ing.protein ? [ing.protein] : []
     return membersOf(refId).filter((i) => i.protein).map((i) => i.protein!)
   }
-  // Même règle que refStatus(), mais sur le référentiel passé en paramètre (tests).
-  const isNonBlocking = (i: Ingredient) => NON_BLOCKING_CATEGORIES.includes(i.category)
-  const blocks = (refId: string) => {
-    if (ref.basics.includes(refId)) return false
-    const ing = ingredientById.get(refId)
-    if (ing) return !isNonBlocking(ing)
-    const members = membersOf(refId)
-    return !(members.length && members.every(isNonBlocking))
-  }
+  const index = createIndex(ref)
+  const blocks = (refId: string) => index.status(refId) === 'obligatoire'
   /** Ingrédients qui décident si le plat est faisable : obligatoires, hors basiques, épices et herbes. */
   const significant = (r: Recipe) => r.ingredients.filter((i) => !i.optional && blocks(i.ref)).map((i) => i.ref)
 
