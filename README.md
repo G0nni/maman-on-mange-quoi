@@ -27,5 +27,10 @@ Coller `firestore.rules` dans la console (Firestore > Règles > Publier), ou :
     households/{hid}/members/{memberId}      { name, emoji, color, uid }
     households/{hid}/stock/{itemId}          { name, zone: 'frigo'|'placard'|'congel', emoji, addedBy: memberId, createdAt }
                                              itemId = nom normalisé (stockId), ex. "pomme-de-terre"
+    households/{hid}/prefs/recipes           { hidden: recipeId[] }   plats masqués (« On n'aime pas »)
     households/{hid}/polls/{pollId}          (à venir)
     households/{hid}/polls/{pollId}/votes/{memberId}
+
+## Recettes
+
+Base statique dans `src/data/recipes/*.json` (pas de LLM au runtime), validée par `npm run validate:recipes` (aussi lancé par `npm test`). Chargée par l'écran Idées en `import()` dynamique, hors du bundle principal.

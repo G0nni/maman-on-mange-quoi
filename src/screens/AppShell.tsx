@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { TabBar, type Tab } from '../components/TabBar'
 import type { Household, Member } from '../types'
+import { IdeasScreen } from './IdeasScreen'
 import { StockScreen } from './StockScreen'
 
 type Props = { household: Household; members: Member[]; me: Member }
@@ -52,11 +53,9 @@ export function AppShell({ household, me }: Props) {
         </div>
 
         <main>
-          {tab === 'stock' ? (
-            <StockScreen householdId={household.id} me={me} />
-          ) : (
-            <p className="text-muted py-10 text-center">Écran à venir.</p>
-          )}
+          {tab === 'stock' && <StockScreen householdId={household.id} me={me} />}
+          {tab === 'ideas' && <IdeasScreen householdId={household.id} onGoStock={() => setTab('stock')} />}
+          {tab === 'vote' && <p className="text-muted py-10 text-center">Le vote du soir arrive bientôt.</p>}
         </main>
       </div>
 

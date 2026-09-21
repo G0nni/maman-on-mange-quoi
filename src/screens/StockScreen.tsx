@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import { Toast } from '../components/Toast'
+import { useToast } from '../hooks/useToast'
 import { useStock } from '../hooks/useStock'
 import { norm, stockId } from '../lib/ingredients'
 import { ZONES, addStockItem, isDuplicateError, removeStockItem } from '../lib/stock'
@@ -11,13 +13,7 @@ export function StockScreen({ householdId, me }: Props) {
   const [name, setName] = useState('')
   const [zone, setZone] = useState<Zone>('frigo')
   const [filter, setFilter] = useState('')
-  const [toast, setToast] = useState<string | null>(null)
-
-  useEffect(() => {
-    if (!toast) return
-    const t = setTimeout(() => setToast(null), 1800)
-    return () => clearTimeout(t)
-  }, [toast])
+  const [toast, setToast] = useToast()
 
   if (stock.status === 'loading') return <p className="text-muted py-10 text-center">Chargement du stock…</p>
   if (stock.status === 'error') return <p className="text-tomato py-10 text-center">Impossible de charger le stock. Recharge la page.</p>
@@ -142,15 +138,7 @@ export function StockScreen({ householdId, me }: Props) {
         )
       })}
 
-      {toast && (
-        <div
-          role="status"
-          className="fixed left-1/2 -translate-x-1/2 z-50 motion-safe:animate-pop px-4 py-2.5 rounded-2xl bg-ink text-bg text-sm font-semibold shadow-lg"
-          style={{ bottom: 'calc(96px + env(safe-area-inset-bottom, 0px))' }}
-        >
-          {toast}
-        </div>
-      )}
+      <Toast message={toast} />
     </div>
   )
 }

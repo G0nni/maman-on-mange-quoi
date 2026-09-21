@@ -23,7 +23,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 ## Recettes (base statique, pas de LLM au runtime)
 
 - Référentiel : `src/data/ingredients.ts` (ingrédients, groupes, basiques). `id` = `stockId(label)`, vérifié.
-- Recettes : `src/data/recipes/*.json`, un fichier par thème. Schéma zod dans `src/data/recipe-schema.ts`, type `Recipe` déduit (`import type` côté app pour garder zod hors du bundle).
+- Recettes : `src/data/recipes/*.json`, un fichier par thème. Schéma zod dans `src/data/recipe-schema.ts`, type `Recipe` déduit (`import type` côté app ; zod n'est chargé que dans le chunk du catalogue).
 - `npm run validate:recipes` : validation + stats. Également exécuté par `npm test`. À lancer après chaque lot de recettes.
 - Conventions : 4 personnes, étapes courtes, pas de tiret cadratin. `rapide` (time <= 25) et `vege` (aucune viande ni poisson, optionnels compris) sont vérifiés par le validateur. On ne liste pas sel et poivre ; les autres basiques (huile, beurre, farine…) oui, quand ils comptent dans la recette.
 - Une ref peut viser un groupe (`fromage-rape`, `pates`…) : à préférer quand plusieurs ingrédients conviennent.
@@ -51,4 +51,6 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - `src/hooks/useHousehold.ts` : état temps réel du foyer (`loading` / `none` / `unclaimed` / `ready`). N'expose un foyer tout juste créé qu'après confirmation du serveur, pour que les listeners des sous-collections ne soient pas refusés par `isMember()`.
 - `src/lib/ingredients.ts` : `norm`, `stockId`, `guessEmoji` (servira aussi au matching des recettes)
 - `src/lib/stock.ts` + `src/hooks/useStock.ts` : stock du foyer
-- `src/screens/` : Onboarding, WhoAreYou (« Qui es-tu ? »), AppShell, StockScreen
+- `src/data/catalog.ts` : recettes + référentiel. **Toujours via `import()` dynamique** (`useCatalog`/`loadCatalog`), jamais en import statique depuis l'app : zod et 280 recettes resteraient dans le bundle principal.
+- `src/lib/prefs.ts` + `src/hooks/useHiddenRecipes.ts` : plats masqués du foyer (`prefs/recipes`)
+- `src/screens/` : Onboarding, WhoAreYou (« Qui es-tu ? »), AppShell, StockScreen, IdeasScreen

@@ -102,6 +102,19 @@ service cloud.firestore {
           && validEmoji(request.resource.data);
       }
 
+      // ---------- Préférences du foyer ----------
+      // prefs/recipes : { hidden: recipeId[] } (« On n'aime pas »). Pas dans le doc foyer,
+      // dont la règle update n'autorise que name.
+      match /prefs/{prefId} {
+        allow read: if isMember(hid);
+        allow create, update: if isMember(hid)
+          && prefId == 'recipes'
+          && request.resource.data.keys().hasOnly(['hidden'])
+          && request.resource.data.hidden is list
+          && request.resource.data.hidden.size() <= 500;
+        allow delete: if false;
+      }
+
       // ---------- Votes du soir ----------
       match /polls/{pollId} {
         allow read, create, update: if isMember(hid);
