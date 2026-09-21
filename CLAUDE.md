@@ -50,7 +50,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - `src/lib/household.ts` : création de foyer, codes d'invitation, join, membres
 - `src/hooks/useHousehold.ts` : état temps réel du foyer (`loading` / `none` / `unclaimed` / `ready`). N'expose un foyer tout juste créé qu'après confirmation du serveur, pour que les listeners des sous-collections ne soient pas refusés par `isMember()`.
 - `src/lib/ingredients.ts` : `norm`, `stockId`, `guessEmoji` (servira aussi au matching des recettes)
-- `src/lib/stock.ts` + `src/hooks/useStock.ts` : stock du foyer
+- `src/lib/stock.ts` + `src/hooks/useStock.ts` : stock du foyer. Autocomplétion de l'ajout : `searchReferential()` (labels, alias, groupes « rangeables », dès 2 caractères) ; toucher une suggestion ajoute le libellé canonique avec l'emoji du référentiel, la saisie libre reste possible.
 - `src/data/catalog.ts` : recettes + référentiel. **Toujours via `import()` dynamique** (`useCatalog`/`loadCatalog`), jamais en import statique depuis l'app : zod et 280 recettes resteraient dans le bundle principal.
 - `src/lib/prefs.ts` + `src/hooks/useHiddenRecipes.ts` : plats masqués du foyer (`prefs/recipes`)
 - `src/screens/` : Onboarding, WhoAreYou (« Qui es-tu ? »), AppShell, StockScreen, IdeasScreen

@@ -19,12 +19,13 @@ export const ZONES: { id: Zone; label: string; icon: string }[] = [
  * Garde-fou : un setDoc sur un doc existant est une mise à jour, que les rules refusent
  * (name/addedBy/createdAt figés). Le SDK remet alors le cache à la version serveur.
  */
-export function addStockItem(householdId: string, name: string, zone: Zone, memberId: string) {
+/** `emoji` : celui du référentiel quand l'aliment vient de l'autocomplétion, sinon deviné. */
+export function addStockItem(householdId: string, name: string, zone: Zone, memberId: string, emoji = guessEmoji(name)) {
   const id = stockId(name)
   return setDoc(doc(db, 'households', householdId, 'stock', id), {
     name,
     zone,
-    emoji: guessEmoji(name),
+    emoji,
     addedBy: memberId,
     createdAt: serverTimestamp(),
   })

@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Toast } from '../components/Toast'
 import { useToast } from '../hooks/useToast'
+import { useCatalog } from '../hooks/useCatalog'
 import { useStock } from '../hooks/useStock'
 import { norm, stockId } from '../lib/ingredients'
+import { searchReferential } from '../lib/referential'
 import { ZONES, addStockItem, isDuplicateError, removeStockItem } from '../lib/stock'
 import type { Member, Zone } from '../types'
 
@@ -14,14 +16,17 @@ export function StockScreen({ householdId, me }: Props) {
   const [zone, setZone] = useState<Zone>('frigo')
   const [filter, setFilter] = useState('')
   const [toast, setToast] = useToast()
+  // Référentiel chargé à la demande (chunk du catalogue), dès qu'on tape 2 caractères.
+  const { catalog } = useCatalog(name.trim().length >= 2)
 
   if (stock.status === 'loading') return <p className="text-muted py-10 text-center">Chargement du stock…</p>
   if (stock.status === 'error') return <p className="text-tomato py-10 text-center">Impossible de charger le stock. Recharge la page.</p>
 
   const items = stock.items
 
-  const add = () => {
-    const n = name.trim()
+  // Saisie libre (bouton Ajouter, Entrée) ou suggestion du référentiel (libellé canonique + emoji).
+  const add = (raw = name, emoji?: string) => {
+    const n = raw.trim()
     if (!n) return
     const id = stockId(n)
     if (!id) return setToast('Ce nom ne contient ni lettre ni chiffre')
@@ -32,10 +37,16 @@ export function StockScreen({ householdId, me }: Props) {
     // Pas d'await : l'aliment s'affiche tout de suite via le cache local, même hors ligne.
     // Si un autre appareil l'a ajouté entre-temps, les rules refusent l'écriture, parfois
     // bien plus tard (au retour du réseau) : on prévient à ce moment-là.
-    addStockItem(householdId, n, zone, me.id).catch((err) =>
+    addStockItem(householdId, n, zone, me.id, emoji).catch((err) =>
       setToast(isDuplicateError(err) ? 'Déjà dans le stock' : 'Ajout impossible, réessaie.'),
     )
   }
+
+  // Suggestions : on écarte ce qui est déjà dans le stock. Toucher une suggestion l'ajoute
+  // directement dans la zone choisie (un tap de moins par article en rangeant les courses).
+  const picks = catalog
+    ? searchReferential(name, catalog.REFERENTIAL).filter((e) => !items.some((s) => s.id === stockId(e.label)))
+    : []
 
   const remove = (id: string) => {
     removeStockItem(householdId, id).catch(() => setToast('Suppression impossible'))
@@ -57,17 +68,36 @@ export function StockScreen({ householdId, me }: Props) {
             maxLength={60}
             onChange={(e) => setName(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && add()}
+            autoComplete="off"
+            aria-autocomplete="list"
+            aria-controls="add-item-suggestions"
             placeholder="Ex : poivrons, jambon…"
             className="flex-1 min-w-0 bg-surface-2 rounded-2xl px-4 py-3 text-base outline-none placeholder:text-muted"
           />
           <button
-            onClick={add}
+            onClick={() => add()}
             disabled={!name.trim()}
             className="shrink-0 px-4 rounded-2xl bg-herb text-surface font-semibold disabled:opacity-40 active:scale-95 transition"
           >
             Ajouter
           </button>
         </div>
+        {picks.length > 0 && (
+          <ul id="add-item-suggestions" aria-label="Suggestions" className="mt-2 flex flex-wrap gap-2">
+            {picks.map((p) => (
+              <li key={p.id}>
+                <button
+                  onClick={() => add(p.label, p.emoji)}
+                  className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-2 text-sm font-semibold active:scale-95 transition"
+                >
+                  <span aria-hidden="true">{p.emoji}</span>
+                  {p.label}
+                  {p.matched && <span className="text-muted font-normal">({p.matched})</span>}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
         <div className="flex gap-2 mt-3" role="radiogroup" aria-label="Rangement">
           {ZONES.map((z) => (
             <button

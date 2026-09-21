@@ -73,7 +73,8 @@ export type PickerEntry = { id: string; label: string; emoji: string; matched?: 
 /**
  * Suggestions pour l'ajout au stock, dès 2 caractères. Cherche dans les labels et alias
  * des ingrédients et des groupes « rangeables » (pas « Semoule, boulgour ou quinoa »).
- * Classement : début du label > début d'un alias > début d'un mot du label.
+ * Classement : correspondance exacte (label ou alias) > début du label > début d'un alias
+ * > début d'un mot du label. « patate » donne donc Pommes de terre avant Patates douces.
  */
 export function searchReferential(query: string, ref: Referential, limit = 6): PickerEntry[] {
   const q = norm(query)
@@ -85,8 +86,9 @@ export function searchReferential(query: string, ref: Referential, limit = 6): P
   const scored: { entry: PickerEntry; score: number }[] = []
   for (const c of candidates) {
     const label = norm(c.label)
-    let score = label.startsWith(q) ? 3 : 0
-    let matched: string | undefined
+    const exactAlias = (c.aliases ?? []).find((a) => norm(a) === q)
+    let score = label === q ? 4 : exactAlias ? 4 : label.startsWith(q) ? 3 : 0
+    let matched = label === q ? undefined : exactAlias
     if (!score) {
       const alias = (c.aliases ?? []).find((a) => norm(a).startsWith(q))
       if (alias) [score, matched] = [2, alias]
