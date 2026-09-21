@@ -1,0 +1,286 @@
+[
+  {
+    "id": "oeufs-cocotte-mouillettes",
+    "name": "Œufs cocotte à la crème et mouillettes",
+    "emoji": "🥚",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "creme", "qty": 10, "unit": "cl" },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C. Beurrer 8 ramequins et y mettre une cuillère de crème.",
+      "Casser un œuf dans chaque ramequin, saler, poivrer, ajouter un peu de fromage.",
+      "Cuire 10 min au bain-marie dans le four. Servir avec des mouillettes de pain grillé."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "omelette-champignons-salade",
+    "name": "Omelette aux champignons et salade verte",
+    "emoji": "🍄",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Faire revenir les champignons émincés 5 min dans le beurre.",
+      "Verser les œufs battus, salés et poivrés, et cuire à feu moyen en ramenant les bords vers le centre.",
+      "Plier l'omelette et servir avec la salade."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "oeufs-brouilles-tomates-tartines",
+    "name": "Œufs brouillés aux tomates cerises et tartines",
+    "emoji": "🍅",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "tomates-fraiches", "qty": 250, "unit": "g" },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "ciboulette", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Faire griller le pain.",
+      "Faire revenir les tomates coupées en deux 3 min dans le beurre.",
+      "Ajouter les œufs battus et remuer à feu doux jusqu'à ce qu'ils soient crémeux. Parsemer de ciboulette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "oeufs-florentine",
+    "name": "Œufs à la florentine",
+    "emoji": "🥬",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "epinard", "qty": 600, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Faire tomber les épinards 5 min à la poêle et bien les égoutter.",
+      "Les étaler dans un plat avec la crème, saler, poivrer.",
+      "Creuser 8 petits nids, casser un œuf dans chacun et parsemer de fromage.",
+      "Cuire 12 min, jusqu'à ce que les blancs soient pris."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["printemps", "automne"],
+    "tags": ["rapide", "four", "vege"]
+  },
+  {
+    "id": "quiche-courgettes-chevre",
+    "name": "Quiche aux courgettes et au chèvre",
+    "emoji": "🥧",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "chevre", "qty": 150, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Faire revenir les courgettes en fines rondelles 8 min à la poêle.",
+      "Les répartir sur la pâte avec le chèvre en rondelles.",
+      "Battre les œufs avec la crème, saler, poivrer, verser et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "souffle-fromage-salade",
+    "name": "Soufflé au fromage et salade verte",
+    "emoji": "🧀",
+    "time": 45,
+    "difficulty": 2,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "lait", "qty": 25, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "farine", "qty": 40, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "muscade", "qty": 1, "unit": "pincee" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Préparer une béchamel épaisse avec le beurre, la farine et le lait.",
+      "Hors du feu, ajouter les jaunes d'œufs, le fromage et la muscade.",
+      "Monter les blancs en neige ferme et les incorporer délicatement.",
+      "Verser dans un moule beurré et cuire 25 min sans ouvrir le four. Servir aussitôt avec la salade."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "oeufs-au-plat-pommes-de-terre-sautees",
+    "name": "Œufs au plat, pommes de terre sautées et salade",
+    "emoji": "🍳",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper les pommes de terre en petits dés et les faire dorer 20 min à la poêle dans l'huile, en remuant.",
+      "Cuire les œufs au plat dans une autre poêle.",
+      "Servir avec les pommes de terre et la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "omelette-fines-herbes-salade-tomates",
+    "name": "Omelette aux fines herbes et salade de tomates",
+    "emoji": "🌿",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "herbes-fraiches", "qty": 1, "unit": "botte" },
+      { "ref": "tomates-fraiches", "qty": 500, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper les tomates en quartiers et les assaisonner d'huile, de vinaigre, sel et poivre.",
+      "Battre les œufs avec les herbes ciselées, saler, poivrer.",
+      "Cuire l'omelette dans le beurre à feu moyen et servir avec la salade de tomates."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "salade-piemontaise",
+    "name": "Salade piémontaise",
+    "emoji": "🥔",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "cornichon", "qty": 10 },
+      { "ref": "mayonnaise", "qty": 4, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min et les œufs 10 min (durs), puis les laisser refroidir.",
+      "Couper les pommes de terre, les œufs, les tomates et les cornichons en dés.",
+      "Mélanger avec la mayonnaise, saler, poivrer. Servir frais."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "asperges-oeufs-mollets",
+    "name": "Asperges, œufs mollets et mouillettes",
+    "emoji": "🥚",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "asperge", "qty": 2, "unit": "botte" },
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Éplucher les asperges et les cuire 10 à 12 min à l'eau bouillante salée.",
+      "Cuire les œufs 6 min dans l'eau bouillante, puis les passer sous l'eau froide.",
+      "Servir les asperges avec les œufs mollets et des mouillettes de pain grillé beurré."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "piperade",
+    "name": "Pipérade",
+    "emoji": "🫑",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "poivron", "qty": 4 },
+      { "ref": "tomates-fraiches", "qty": 6 },
+      { "ref": "oeuf", "qty": 6 },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "piment-d-espelette", "qty": 1, "unit": "pincee" },
+      { "ref": "jambon-cru", "qty": 4, "unit": "tranche", "optional": true },
+      { "ref": "pain", "qty": 4, "unit": "tranche", "optional": true },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, l'ail et les poivrons en lanières 15 min dans l'huile.",
+      "Ajouter les tomates en morceaux et le piment, cuire 10 min à découvert.",
+      "Verser les œufs battus et remuer doucement jusqu'à ce qu'ils soient juste pris.",
+      "Servir avec le jambon poêlé et du pain."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": []
+  },
+  {
+    "id": "tarte-a-l-oignon",
+    "name": "Tarte à l'oignon",
+    "emoji": "🧅",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "oignon", "qty": 6 },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Faire fondre les oignons émincés 20 min dans le beurre à feu doux, sans les colorer.",
+      "Les étaler sur la pâte, battre les œufs avec la crème et la muscade, saler, poivrer et verser.",
+      "Cuire 30 min."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["four", "vege"]
+  }
+]
