@@ -1,0 +1,229 @@
+[
+  {
+    "id": "tajine-poulet-citron-olives",
+    "name": "Tajine de poulet aux citrons confits et olives",
+    "emoji": "🍋",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 1.2, "unit": "kg" },
+      { "ref": "citron-confit", "qty": 2 },
+      { "ref": "olive", "qty": 100, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "gingembre", "qty": 1, "unit": "cac" },
+      { "ref": "epice-a-couscous", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "coriandre", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de poulet dans l'huile avec les oignons émincés, l'ail et les épices.",
+      "Ajouter 30 cl d'eau, couvrir et laisser mijoter 20 min.",
+      "Ajouter les pommes de terre en quartiers, les citrons confits en morceaux et les olives, cuire encore 25 min.",
+      "Parsemer de coriandre avant de servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "couscous-poulet-merguez",
+    "name": "Couscous poulet-merguez",
+    "emoji": "🥘",
+    "time": 75,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 800, "unit": "g" },
+      { "ref": "merguez", "qty": 8 },
+      { "ref": "semoule", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "navet", "qty": 2 },
+      { "ref": "pois-chiche", "qty": 400, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "epice-a-couscous", "qty": 2, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire dorer le poulet dans l'huile avec l'oignon et les épices, ajouter les tomates et 1,5 l d'eau.",
+      "Ajouter les carottes et les navets, cuire 30 min, puis les courgettes et les pois chiches, cuire 15 min.",
+      "Griller les merguez à la poêle. Préparer la semoule selon le paquet.",
+      "Servir la semoule avec le bouillon, les légumes, le poulet et les merguez."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "tajine-agneau-pruneaux",
+    "name": "Tajine d'agneau aux pruneaux",
+    "emoji": "🍖",
+    "time": 120,
+    "difficulty": 2,
+    "protein": "agneau",
+    "ingredients": [
+      { "ref": "agneau", "qty": 1, "unit": "kg" },
+      { "ref": "pruneau", "qty": 200, "unit": "g" },
+      { "ref": "miel", "qty": 2, "unit": "cas" },
+      { "ref": "cannelle", "qty": 1, "unit": "cac" },
+      { "ref": "epice-a-couscous", "qty": 1, "unit": "cac" },
+      { "ref": "cereales", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "graine-de-sesame", "qty": 1, "unit": "cas", "optional": true }
+    ],
+    "steps": [
+      "Faire dorer l'agneau en morceaux avec les oignons et les épices dans l'huile.",
+      "Couvrir d'eau à hauteur et laisser mijoter 1 h 15 à couvert.",
+      "Ajouter les pruneaux et le miel, cuire encore 20 min à découvert pour réduire la sauce.",
+      "Parsemer de sésame et servir avec la semoule."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": [],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "keftas-sauce-tomate-semoule",
+    "name": "Keftas à la sauce tomate et semoule",
+    "emoji": "🧆",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 600, "unit": "g" },
+      { "ref": "cereales", "qty": 300, "unit": "g" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "herbes-fraiches", "qty": 1, "unit": "botte" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Mélanger la viande avec l'oignon haché, la moitié des herbes, le cumin, sel et poivre, et former des boulettes allongées.",
+      "Les faire dorer dans l'huile, puis ajouter les tomates et laisser mijoter 20 min.",
+      "Préparer la semoule, parsemer le plat du reste d'herbes et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "chakchouka",
+    "name": "Chakchouka",
+    "emoji": "🍳",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "poivron", "qty": 3 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "oeuf", "qty": 6 },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "pain", "qty": 4, "unit": "tranche" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, l'ail et les poivrons en lanières 10 min dans l'huile avec le cumin.",
+      "Ajouter les tomates et laisser mijoter 10 min.",
+      "Creuser des nids, casser les œufs dedans, couvrir et cuire 6 min. Servir avec du pain."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["vege"],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "harira",
+    "name": "Harira, soupe marocaine aux lentilles et pois chiches",
+    "emoji": "🥣",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentilles", "qty": 150, "unit": "g" },
+      { "ref": "pois-chiche", "qty": 400, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "celeri", "qty": 1 },
+      { "ref": "vermicelle", "qty": 60, "unit": "g" },
+      { "ref": "herbes-fraiches", "qty": 1, "unit": "botte" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "epice-a-couscous", "qty": 1, "unit": "cac" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon et le céleri dans l'huile avec les épices.",
+      "Ajouter les lentilles, les tomates et 1,5 l d'eau, cuire 30 min.",
+      "Ajouter les pois chiches et les vermicelles, cuire 10 min, puis les herbes.",
+      "Servir avec un filet de jus de citron."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "taboule",
+    "name": "Taboulé",
+    "emoji": "🥗",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "cereales", "qty": 250, "unit": "g" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "herbes-fraiches", "qty": 1, "unit": "botte" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "huile", "qty": 4, "unit": "cas" }
+    ],
+    "steps": [
+      "Verser 25 cl d'eau bouillante salée sur la semoule, couvrir 5 min, puis l'égrener.",
+      "Couper les tomates et le concombre en petits dés, ciseler la menthe et le persil.",
+      "Mélanger avec l'huile et le jus de citron, saler, poivrer et laisser au frais."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide", "enfants", "vege"],
+    "cuisine": "maghrebine"
+  },
+  {
+    "id": "tajine-legumes-pois-chiches",
+    "name": "Tajine de légumes et pois chiches",
+    "emoji": "🥕",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "pois-chiche", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "patate-douce", "qty": 400, "unit": "g" },
+      { "ref": "citron-confit", "qty": 1, "optional": true },
+      { "ref": "epice-a-couscous", "qty": 2, "unit": "cac" },
+      { "ref": "cereales", "qty": 250, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon avec les épices dans l'huile.",
+      "Ajouter les carottes et la patate douce en morceaux, couvrir d'eau à mi-hauteur et cuire 20 min.",
+      "Ajouter les courgettes, les pois chiches et le citron confit, cuire encore 15 min.",
+      "Servir avec la semoule."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"],
+    "cuisine": "maghrebine"
+  }
+]
