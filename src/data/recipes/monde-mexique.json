@@ -1,0 +1,185 @@
+[
+  {
+    "id": "fajitas-poulet",
+    "name": "Fajitas de poulet",
+    "emoji": "🌯",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "tortilla", "qty": 8 },
+      { "ref": "volaille-escalope", "qty": 500, "unit": "g" },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Couper le poulet, les poivrons et l'oignon en lanières.",
+      "Faire sauter le tout 10 min à feu vif dans l'huile avec les épices, saler.",
+      "Réchauffer les tortillas et les garnir de poulet, de crème et de fromage."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "mexicaine"
+  },
+  {
+    "id": "wraps-poulet-crudites",
+    "name": "Wraps de poulet et crudités",
+    "emoji": "🌯",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "tortilla", "qty": 4 },
+      { "ref": "volaille-escalope", "qty": 400, "unit": "g" },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "fromage-frais", "qty": 100, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire le poulet 10 min à la poêle et le couper en lanières.",
+      "Tartiner les tortillas de fromage frais, ajouter la salade, les tomates en dés et le poulet.",
+      "Rouler serré et couper en deux."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide", "enfants"],
+    "cuisine": "mexicaine"
+  },
+  {
+    "id": "quesadillas-fromage-haricots",
+    "name": "Quesadillas au fromage et aux haricots rouges",
+    "emoji": "🧀",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "tortilla", "qty": 8 },
+      { "ref": "haricot-rouge", "qty": 400, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" },
+      { "ref": "mais", "qty": 1, "unit": "boite", "optional": true },
+      { "ref": "salade-verte", "qty": 1, "optional": true },
+      { "ref": "cumin", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Écraser grossièrement les haricots égouttés avec un peu de sel et de cumin.",
+      "Tartiner 4 tortillas de haricots, ajouter le maïs et le fromage, et couvrir d'une autre tortilla.",
+      "Les dorer 3 min de chaque côté à la poêle, couper en parts et servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "vege"],
+    "cuisine": "mexicaine"
+  },
+  {
+    "id": "tacos-boeuf",
+    "name": "Tacos au bœuf",
+    "emoji": "🌮",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "tortilla", "qty": 8 },
+      { "ref": "viande-hachee", "qty": 400, "unit": "g" },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, ajouter la viande et les épices, cuire 8 min en émiettant.",
+      "Couper les tomates en dés et la salade en lanières.",
+      "Réchauffer les tortillas et les garnir de viande, de tomates, de salade et de fromage."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"],
+    "cuisine": "mexicaine"
+  },
+  {
+    "id": "enchiladas-boeuf-gratinees",
+    "name": "Enchiladas au bœuf gratinées",
+    "emoji": "🌯",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "tortilla", "qty": 8 },
+      { "ref": "viande-hachee", "qty": 400, "unit": "g" },
+      { "ref": "haricot-rouge", "qty": 400, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 120, "unit": "g" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Faire revenir l'oignon et la viande avec le cumin, ajouter les haricots égouttés.",
+      "Garnir les tortillas de ce mélange, les rouler et les ranger dans un plat.",
+      "Napper de tomates assaisonnées, couvrir de fromage et cuire 20 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"],
+    "cuisine": "mexicaine"
+  },
+  {
+    "id": "chili-sin-carne",
+    "name": "Chili sin carne",
+    "emoji": "🌶️",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "haricot-rouge", "qty": 800, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon et le poivron en dés dans l'huile avec les épices.",
+      "Ajouter les tomates, les haricots rouges et le maïs égouttés, laisser mijoter 20 min.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"],
+    "cuisine": "mexicaine"
+  },
+  {
+    "id": "bowl-mexicain-riz-haricots-avocat",
+    "name": "Bowl mexicain riz, haricots rouges et avocat",
+    "emoji": "🥑",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "riz", "qty": 250, "unit": "g" },
+      { "ref": "haricot-rouge", "qty": 400, "unit": "g" },
+      { "ref": "avocat", "qty": 2 },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "citrons", "qty": 1 }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Rincer les haricots et le maïs, couper l'avocat et les tomates en dés.",
+      "Répartir le tout dans des bols, arroser de jus de citron, saler et poivrer."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "vege"],
+    "cuisine": "mexicaine"
+  }
+]
