@@ -1,4 +1,4 @@
-import { deleteDoc, doc, runTransaction, serverTimestamp } from 'firebase/firestore'
+import { deleteDoc, doc, serverTimestamp, setDoc } from 'firebase/firestore'
 import { db } from './firebase'
 import { guessEmoji, stockId } from './ingredients'
 import type { Zone } from '../types'
@@ -9,22 +9,34 @@ export const ZONES: { id: Zone; label: string; icon: string }[] = [
   { id: 'congel', label: 'Congélo', icon: '❄️' },
 ]
 
-export class AlreadyInStockError extends Error {}
+/**
+ * Ajoute un aliment. L'id du doc est le nom normalisé, donc un doublon vise un doc existant.
+ *
+ * Pas de lecture préalable : l'écriture apparaît tout de suite via le cache local (y compris
+ * hors ligne) et part au serveur dès que possible. La promesse ne se résout qu'à l'accusé
+ * du serveur : l'appelant ne doit pas l'attendre pour mettre l'UI à jour.
+ *
+ * Garde-fou : un setDoc sur un doc existant est une mise à jour, que les rules refusent
+ * (name/addedBy/createdAt figés). Le SDK remet alors le cache à la version serveur.
+ */
+export function addStockItem(householdId: string, name: string, zone: Zone, memberId: string) {
+  const id = stockId(name)
+  return setDoc(doc(db, 'households', householdId, 'stock', id), {
+    name,
+    zone,
+    emoji: guessEmoji(name),
+    addedBy: memberId,
+    createdAt: serverTimestamp(),
+  })
+}
 
 /**
- * Ajoute un aliment. L'id du doc est le nom normalisé : la transaction lit ce doc
- * et refuse d'écraser s'il existe (cas où la liste en mémoire n'était pas encore à jour).
- * Les transactions exigent le réseau : hors ligne, la promesse est rejetée.
+ * Refus des rules sur un ajout : dans l'usage normal de l'écran, c'est un doublon.
+ * On lit le code plutôt que `instanceof FirestoreError` : l'erreur réellement rejetée
+ * n'est pas une instance de la classe exportée (vérifié avec firebase 12).
  */
-export async function addStockItem(householdId: string, name: string, zone: Zone, memberId: string) {
-  const id = stockId(name)
-  if (!id) throw new Error('Nom invalide')
-  const ref = doc(db, 'households', householdId, 'stock', id)
-
-  await runTransaction(db, async (tx) => {
-    if ((await tx.get(ref)).exists()) throw new AlreadyInStockError()
-    tx.set(ref, { name, zone, emoji: guessEmoji(name), addedBy: memberId, createdAt: serverTimestamp() })
-  })
+export function isDuplicateError(err: unknown) {
+  return (err as { code?: string } | null)?.code === 'permission-denied'
 }
 
 export async function removeStockItem(householdId: string, itemId: string) {

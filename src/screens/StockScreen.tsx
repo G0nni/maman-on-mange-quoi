@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useStock } from '../hooks/useStock'
 import { norm, stockId } from '../lib/ingredients'
-import { AlreadyInStockError, ZONES, addStockItem, removeStockItem } from '../lib/stock'
+import { ZONES, addStockItem, isDuplicateError, removeStockItem } from '../lib/stock'
 import type { Member, Zone } from '../types'
 
 type Props = { householdId: string; me: Member }
@@ -11,7 +11,6 @@ export function StockScreen({ householdId, me }: Props) {
   const [name, setName] = useState('')
   const [zone, setZone] = useState<Zone>('frigo')
   const [filter, setFilter] = useState('')
-  const [pending, setPending] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
 
   useEffect(() => {
@@ -25,32 +24,21 @@ export function StockScreen({ householdId, me }: Props) {
 
   const items = stock.items
 
-  const add = async () => {
+  const add = () => {
     const n = name.trim()
-    if (!n || pending) return
+    if (!n) return
     const id = stockId(n)
     if (!id) return setToast('Ce nom ne contient ni lettre ni chiffre')
-    // Vérification gratuite et instantanée sur la liste déjà reçue.
-    // La transaction de addStockItem couvre le cas où elle n'est pas encore à jour.
-    if (items.some((s) => s.id === id)) {
-      setName('')
-      return setToast('Déjà dans le stock')
-    }
+    setName('')
+    // Vérification gratuite et instantanée sur la liste déjà reçue (écritures locales comprises).
+    if (items.some((s) => s.id === id)) return setToast('Déjà dans le stock')
 
-    setPending(true)
-    try {
-      await addStockItem(householdId, n, zone, me.id)
-      setName('')
-    } catch (err) {
-      if (err instanceof AlreadyInStockError) {
-        setName('')
-        setToast('Déjà dans le stock')
-      } else {
-        setToast('Ajout impossible. Vérifie ta connexion.')
-      }
-    } finally {
-      setPending(false)
-    }
+    // Pas d'await : l'aliment s'affiche tout de suite via le cache local, même hors ligne.
+    // Si un autre appareil l'a ajouté entre-temps, les rules refusent l'écriture, parfois
+    // bien plus tard (au retour du réseau) : on prévient à ce moment-là.
+    addStockItem(householdId, n, zone, me.id).catch((err) =>
+      setToast(isDuplicateError(err) ? 'Déjà dans le stock' : 'Ajout impossible, réessaie.'),
+    )
   }
 
   const remove = (id: string) => {
@@ -78,7 +66,7 @@ export function StockScreen({ householdId, me }: Props) {
           />
           <button
             onClick={add}
-            disabled={!name.trim() || pending}
+            disabled={!name.trim()}
             className="shrink-0 px-4 rounded-2xl bg-herb text-surface font-semibold disabled:opacity-40 active:scale-95 transition"
           >
             Ajouter
