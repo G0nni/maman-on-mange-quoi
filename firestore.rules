@@ -116,14 +116,62 @@ service cloud.firestore {
       }
 
       // ---------- Votes du soir ----------
+      // polls/{date} : un vote par jour, date YYYY-MM-DD en heure de Paris.
+      // { status: open|closed, options: recipeId[] (1 à 4), createdBy: memberId, winner, closedAt }
       match /polls/{pollId} {
-        allow read, create, update: if isMember(hid);
+        function pollFields() {
+          return ['status', 'options', 'createdBy', 'winner', 'closedAt'];
+        }
+        function validOptions(options) {
+          return options is list && options.size() >= 1 && options.size() <= 4;
+        }
+        // Ajout d'UNE option à la fin : ni retrait, ni doublon, 4 maximum.
+        function addsOneOption() {
+          let before = resource.data.options;
+          let after = request.resource.data.options;
+          return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['options'])
+            && validOptions(after)
+            && after.size() == before.size() + 1
+            && after.hasAll(before)
+            && !(after[before.size()] in before);
+        }
+        // Clôture : un gagnant parmi les options, horodatée par le serveur.
+        function closes() {
+          return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'winner', 'closedAt'])
+            && request.resource.data.status == 'closed'
+            && request.resource.data.winner in resource.data.options
+            && request.resource.data.closedAt == request.time;
+        }
+
+        allow read: if isMember(hid);
+        allow create: if isMember(hid)
+          && pollId.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
+          && request.resource.data.keys().hasOnly(pollFields())
+          && request.resource.data.keys().hasAll(pollFields())
+          && request.resource.data.status == 'open'
+          && validOptions(request.resource.data.options)
+          && request.resource.data.createdBy is string
+          && isMe(hid, request.resource.data.createdBy)
+          && request.resource.data.winner == null
+          && request.resource.data.closedAt == null;
+        // Seul un poll ouvert se modifie : un poll clos ne peut être ni rouvert ni changé.
+        allow update: if isMember(hid) && resource.data.status == 'open' && (addsOneOption() || closes());
         allow delete: if false;
 
         // L'id du doc de vote EST le memberId : un vote par personne, garanti par la structure.
+        // { recipeId, updatedAt }. On vote pour soi, tant que c'est ouvert, pour une des options.
         match /votes/{memberId} {
+          function poll() {
+            return get(/databases/$(database)/documents/households/$(hid)/polls/$(pollId)).data;
+          }
           allow read: if isMember(hid);
-          allow write: if isMember(hid) && isMe(hid, memberId);
+          allow create, update: if isMember(hid)
+            && isMe(hid, memberId)
+            && poll().status == 'open'
+            && request.resource.data.keys().hasOnly(['recipeId', 'updatedAt'])
+            && request.resource.data.recipeId in poll().options
+            && request.resource.data.updatedAt == request.time;
+          allow delete: if false;
         }
       }
     }

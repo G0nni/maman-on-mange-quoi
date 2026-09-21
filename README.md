@@ -34,8 +34,9 @@ Toujours lancer `npm run test:rules` avant de déployer. Puis coller `firestore.
     households/{hid}/stock/{itemId}          { name, zone: 'frigo'|'placard'|'congel', emoji, addedBy: memberId, createdAt }
                                              itemId = nom normalisé (stockId), ex. "pomme-de-terre"
     households/{hid}/prefs/recipes           { hidden: recipeId[] }   plats masqués (« On n'aime pas »)
-    households/{hid}/polls/{pollId}          (à venir)
-    households/{hid}/polls/{pollId}/votes/{memberId}
+    households/{hid}/polls/{date}            { status: open|closed, options: recipeId[] (4 max), createdBy: memberId, winner, closedAt }
+                                             date = AAAA-MM-JJ en heure de Paris (un vote par jour)
+    households/{hid}/polls/{date}/votes/{memberId}   { recipeId, updatedAt }   un vote par personne
 
 ## Recettes
 

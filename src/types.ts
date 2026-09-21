@@ -38,3 +38,21 @@ export type StockItem = {
   addedBy: string // memberId
   createdAt: Timestamp
 }
+
+// households/{householdId}/polls/{date}, date YYYY-MM-DD en heure de Paris
+export type PollStatus = 'open' | 'closed'
+export type Poll = {
+  id: string
+  status: PollStatus
+  options: string[] // recipe ids, 4 maximum
+  createdBy: string // memberId
+  winner: string | null
+  closedAt: Timestamp | null
+}
+
+// households/{householdId}/polls/{date}/votes/{memberId}
+export type Vote = {
+  memberId: string
+  recipeId: string
+  updatedAt: Timestamp
+}

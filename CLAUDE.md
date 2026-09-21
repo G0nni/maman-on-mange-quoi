@@ -47,6 +47,13 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - **Collision pâtes / pâté sur `stockId`** : `norm()` retire accents et pluriel, donc « Pâtes » et « Pâté » donnent le même id `pate`. Le second ajout est refusé comme doublon (« Déjà dans le stock »). Tout changement de `norm()` change les ids existants : le traiter comme une migration, et garder `ingredients.test.ts` à jour.
 - **Ajout au stock** : `setDoc` sans `await` pour l'UI (affichage instantané et hors ligne). Le refus d'un doublon par les rules (`permission-denied`) peut arriver bien plus tard, au retour du réseau. Tester l'erreur par son `code`, pas par `instanceof FirestoreError` (ne matche pas avec firebase 12).
 
+## Vote du soir
+
+- `polls/{date}` : **date en heure de Paris** (`parisDate()`, `src/lib/dates.ts`), jamais `toISOString()` (UTC). Historique : `shiftDate()` (calcul calendaire).
+- Règles : on vote pour soi, tant que le poll est ouvert, pour une des options ; une option ajoutée à la fois, 4 maximum ; un poll clos ne se modifie plus.
+- Opérations dans `src/lib/poll-ops.ts` (instance `db` en paramètre, testées sur l'émulateur sous les vraies règles) : `addOption` et `closePoll` sont des transactions. Une écriture concurrente fait échouer l'autre en `permission-denied` (les règles voient l'état à jour) : elles sont rejouées une fois (`retryOnceIfDenied`), ce qui garantit un seul gagnant.
+- Dépouillement pur dans `src/lib/tally.ts` : majorité, tirage au sort entre ex aequo (y compris sans aucun vote).
+
 ## Repères
 
 - `src/lib/household.ts` : création de foyer, codes d'invitation, join, membres
