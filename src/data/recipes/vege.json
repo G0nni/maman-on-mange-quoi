@@ -1,0 +1,187 @@
+[
+  {
+    "id": "omelette-pommes-de-terre-fromage",
+    "name": "Omelette aux pommes de terre et fromage",
+    "emoji": "🍳",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Couper les pommes de terre en petits dés et les faire dorer 15 min à la poêle avec l'huile et l'oignon émincé.",
+      "Battre les œufs avec le fromage râpé, sel et poivre.",
+      "Verser sur les pommes de terre et cuire à feu doux 5 min en couvrant.",
+      "Servir avec une salade verte."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["vege", "rapide", "enfants"]
+  },
+  {
+    "id": "dahl-lentilles-corail",
+    "name": "Dahl de lentilles corail",
+    "emoji": "🫘",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentille-corail", "qty": 250, "unit": "g" },
+      { "ref": "lait-de-coco", "qty": 400, "unit": "ml" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "curry", "qty": 2, "unit": "cac" },
+      { "ref": "gingembre", "qty": 1, "unit": "cac", "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "riz", "qty": 250, "unit": "g" },
+      { "ref": "coriandre", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, l'ail et les épices dans l'huile 3 min.",
+      "Ajouter les lentilles rincées, les tomates, le lait de coco et 30 cl d'eau.",
+      "Cuire 20 min à feu doux en remuant souvent, jusqu'à ce que les lentilles soient fondantes.",
+      "Servir avec le riz et la coriandre ciselée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "tarte-tomate-moutarde",
+    "name": "Tarte à la tomate et à la moutarde",
+    "emoji": "🍅",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "tomate", "qty": 5 },
+      { "ref": "moutarde", "qty": 3, "unit": "cas" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Étaler la moutarde sur le fond, puis parsemer de fromage râpé.",
+      "Couper les tomates en rondelles et les disposer en rosace.",
+      "Arroser d'un filet d'huile, ajouter les herbes, saler, poivrer et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["vege", "four"]
+  },
+  {
+    "id": "veloute-potiron",
+    "name": "Velouté de potiron",
+    "emoji": "🎃",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "courge", "qty": 1, "unit": "kg" },
+      { "ref": "pomme-de-terre", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Éplucher le potiron et les pommes de terre, puis les couper en cubes.",
+      "Faire revenir l'oignon dans le beurre, ajouter les légumes, le bouillon cube et couvrir d'eau.",
+      "Cuire 25 min, puis mixer avec la crème. Saler, poivrer."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege", "enfants"]
+  },
+  {
+    "id": "risotto-champignons",
+    "name": "Risotto aux champignons",
+    "emoji": "🍄",
+    "time": 35,
+    "difficulty": 2,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "riz-a-risotto", "qty": 300, "unit": "g" },
+      { "ref": "champignon", "qty": 400, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 2 },
+      { "ref": "parmesan", "qty": 60, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "vin-blanc", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Préparer 1 l de bouillon chaud avec les cubes.",
+      "Faire revenir l'oignon et les champignons émincés dans le beurre, puis ajouter le riz et le faire nacrer 2 min.",
+      "Verser le vin blanc, puis le bouillon louche par louche en remuant, pendant 18 min.",
+      "Hors du feu, ajouter le parmesan et une noix de beurre, couvrir 2 min avant de servir."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "couscous-legumes-pois-chiches",
+    "name": "Couscous aux légumes et pois chiches",
+    "emoji": "🥘",
+    "time": 50,
+    "difficulty": 2,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "semoule", "qty": 300, "unit": "g" },
+      { "ref": "pois-chiche", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "navet", "qty": 2 },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "epice-a-couscous", "qty": 2, "unit": "cac" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "harissa", "qty": 1, "unit": "cac", "optional": true }
+    ],
+    "steps": [
+      "Faire revenir l'oignon dans l'huile, ajouter les épices, puis les carottes et les navets en morceaux.",
+      "Ajouter les tomates, le bouillon cube et 1 l d'eau, cuire 20 min.",
+      "Ajouter les courgettes et les pois chiches égouttés, cuire encore 15 min.",
+      "Préparer la semoule selon le paquet et servir avec le bouillon, les légumes et un peu de harissa."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "quiche-poireaux",
+    "name": "Quiche aux poireaux",
+    "emoji": "🥧",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "poireau", "qty": 3 },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 70, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee", "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Émincer les poireaux et les faire fondre 15 min dans le beurre.",
+      "Battre les œufs avec la crème, le fromage, sel, poivre et muscade.",
+      "Répartir les poireaux sur la pâte, verser le mélange et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege", "four"]
+  }
+]

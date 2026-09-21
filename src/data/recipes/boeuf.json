@@ -1,0 +1,115 @@
+[
+  {
+    "id": "hachis-parmentier",
+    "name": "Hachis parmentier",
+    "emoji": "🥔",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 50, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre épluchées 20 min à l'eau salée.",
+      "Faire revenir l'oignon émincé, ajouter la viande et la cuire 10 min en l'émiettant. Saler, poivrer.",
+      "Écraser les pommes de terre avec le lait chaud, le beurre et la muscade.",
+      "Dans un plat, étaler la viande puis la purée, et parsemer de fromage râpé.",
+      "Gratiner 20 min au four à 200 °C."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "chili-con-carne",
+    "name": "Chili con carne",
+    "emoji": "🌶️",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-hache", "qty": 500, "unit": "g" },
+      { "ref": "haricot-rouge", "qty": 2, "unit": "boite" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, l'ail et le poivron coupés en dés dans l'huile.",
+      "Ajouter la viande et la faire dorer en l'émiettant.",
+      "Ajouter les épices, les tomates et les haricots rouges égouttés.",
+      "Laisser mijoter 25 min à couvert en remuant de temps en temps.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "boulettes-boeuf-sauce-tomate",
+    "name": "Boulettes de bœuf à la sauce tomate",
+    "emoji": "🍝",
+    "time": 40,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-hache", "qty": 500, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 50, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 700, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "persil", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "pates", "qty": 400, "unit": "g" }
+    ],
+    "steps": [
+      "Mélanger la viande, l'œuf, la chapelure, le persil haché, sel et poivre, puis former des boulettes.",
+      "Les faire dorer sur toutes les faces dans une sauteuse huilée, puis les réserver.",
+      "Faire revenir l'oignon et l'ail, ajouter la sauce tomate et laisser frémir 5 min.",
+      "Remettre les boulettes et laisser mijoter 15 min à couvert.",
+      "Cuire les pâtes et servir avec les boulettes et la sauce."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "burgers-maison",
+    "name": "Burgers maison",
+    "emoji": "🍔",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "pain-a-burger", "qty": 4 },
+      { "ref": "boeuf-hache", "qty": 500, "unit": "g" },
+      { "ref": "cheddar", "qty": 4, "unit": "tranche" },
+      { "ref": "tomate", "qty": 2 },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "oignon-rouge", "qty": 1 },
+      { "ref": "ketchup", "qty": 4, "unit": "cas", "optional": true }
+    ],
+    "steps": [
+      "Former 4 steaks de la taille des pains, saler, poivrer.",
+      "Couper les tomates et l'oignon rouge en rondelles.",
+      "Cuire les steaks 3 à 4 min de chaque côté et poser le cheddar dessus en fin de cuisson.",
+      "Toaster les pains à la poêle ou au four.",
+      "Monter les burgers : pain, salade, steak, tomate, oignon, sauce, pain."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  }
+]

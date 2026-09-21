@@ -20,6 +20,14 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - Variables Firebase dans `.env.local` (préfixe `VITE_FIREBASE_`), jamais commitées.
 - **Plus de tests sur la base Firestore réelle.** Pas de foyers de test, pas d'écritures de vérification des rules en production. Les tests d'intégration et de rules passeront par l'émulateur Firebase (à mettre en place).
 
+## Recettes (base statique, pas de LLM au runtime)
+
+- Référentiel : `src/data/ingredients.ts` (ingrédients, groupes, basiques). `id` = `stockId(label)`, vérifié.
+- Recettes : `src/data/recipes/*.json`, un fichier par thème. Schéma zod dans `src/data/recipe-schema.ts`, type `Recipe` déduit (`import type` côté app pour garder zod hors du bundle).
+- `npm run validate:recipes` : validation + stats. Également exécuté par `npm test`. À lancer après chaque lot de recettes.
+- Conventions : 4 personnes, étapes courtes, pas de tiret cadratin. `rapide` (time <= 25) et `vege` (aucune viande ni poisson, optionnels compris) sont vérifiés par le validateur. On ne liste pas sel et poivre ; les autres basiques (huile, beurre, farine…) oui, quand ils comptent dans la recette.
+- Une ref peut viser un groupe (`fromage-rape`, `pates`…) : à préférer quand plusieurs ingrédients conviennent.
+
 ## Points connus
 
 - **Collision pâtes / pâté sur `stockId`** : `norm()` retire accents et pluriel, donc « Pâtes » et « Pâté » donnent le même id `pate`. Le second ajout est refusé comme doublon (« Déjà dans le stock »). Tout changement de `norm()` change les ids existants : le traiter comme une migration, et garder `ingredients.test.ts` à jour.

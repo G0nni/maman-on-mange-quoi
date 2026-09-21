@@ -1,7 +1,7 @@
 // Mots qui finissent par s/x au singulier : on ne leur retire pas la dernière lettre.
 // Formes déjà normalisées (minuscules, sans accents : maïs -> mais).
 const INVARIABLES = new Set([
-  'ananas', 'anchois', 'brebis', 'cassis', 'couscous', 'frais', 'gras',
+  'ananas', 'anchois', 'brebis', 'cassis', 'coulis', 'couscous', 'frais', 'gras',
   'hachis', 'jus', 'mais', 'noix', 'panais', 'pois', 'radis', 'salsifis',
 ])
 

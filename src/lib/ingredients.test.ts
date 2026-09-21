@@ -26,6 +26,7 @@ describe('norm', () => {
     expect(norm('Ananas')).toBe('ananas')
     expect(norm('Petits pois')).toBe('petit pois')
     expect(norm('Radis')).toBe('radis')
+    expect(norm('Coulis de tomate')).toBe('coulis de tomate')
   })
 
   it('ne touche pas aux mots sans marque de pluriel', () => {

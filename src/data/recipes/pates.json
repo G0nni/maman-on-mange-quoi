@@ -1,0 +1,132 @@
+[
+  {
+    "id": "spaghetti-bolognaise",
+    "name": "Spaghetti bolognaise",
+    "emoji": "🍝",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "viande-hachee", "qty": 400, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 800, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "carotte", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "parmesan", "qty": 40, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, la carotte râpée et l'ail dans l'huile 5 min.",
+      "Ajouter la viande et la faire dorer en l'émiettant.",
+      "Ajouter les tomates et les herbes, saler, poivrer et laisser mijoter 25 min.",
+      "Cuire les pâtes, les égoutter et servir avec la sauce et le parmesan."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "pates-carbonara-familiale",
+    "name": "Pâtes carbonara (version familiale)",
+    "emoji": "🍝",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "lardon", "qty": 200, "unit": "g" },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "parmesan", "qty": 50, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pâtes dans une grande casserole d'eau salée.",
+      "Faire dorer les lardons à sec dans une poêle.",
+      "Battre les œufs avec la crème, le parmesan et du poivre.",
+      "Égoutter les pâtes, les verser sur les lardons hors du feu et ajouter le mélange œufs-crème en remuant vite pour napper sans cuire les œufs."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "coquillettes-jambon-fromage",
+    "name": "Coquillettes jambon-fromage",
+    "emoji": "🧀",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "coquillette", "qty": 400, "unit": "g" },
+      { "ref": "jambon-blanc", "qty": 4, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Cuire les coquillettes dans l'eau bouillante salée selon le paquet.",
+      "Couper le jambon en petits morceaux.",
+      "Égoutter les pâtes, ajouter le beurre, la crème, le jambon et le fromage, et mélanger jusqu'à ce que le fromage fonde."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pates-thon-tomate",
+    "name": "Pâtes au thon et à la tomate",
+    "emoji": "🐟",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "olive", "qty": 50, "unit": "g", "optional": true },
+      { "ref": "basilic", "qty": 6, "unit": "feuille", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pâtes dans l'eau bouillante salée.",
+      "Faire revenir l'oignon émincé dans l'huile, ajouter les tomates et laisser réduire 10 min.",
+      "Ajouter le thon émietté et les olives, réchauffer 2 min.",
+      "Mélanger avec les pâtes égouttées et parsemer de basilic."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "lasagnes-bolognaise",
+    "name": "Lasagnes à la bolognaise",
+    "emoji": "🍝",
+    "time": 80,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "feuille-de-lasagne", "qty": 250, "unit": "g" },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 800, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "carotte", "qty": 1 },
+      { "ref": "lait", "qty": 60, "unit": "cl" },
+      { "ref": "beurre", "qty": 50, "unit": "g" },
+      { "ref": "farine", "qty": 50, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee", "optional": true }
+    ],
+    "steps": [
+      "Sauce : faire revenir l'oignon et la carotte, ajouter la viande puis les tomates, laisser mijoter 20 min.",
+      "Béchamel : faire fondre le beurre, ajouter la farine, puis le lait en fouettant. Saler, poivrer, muscader.",
+      "Dans un plat, alterner béchamel, feuilles de lasagne et sauce, en finissant par la béchamel.",
+      "Parsemer de fromage râpé et cuire 40 min au four à 180 °C."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  }
+]

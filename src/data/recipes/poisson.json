@@ -1,0 +1,131 @@
+[
+  {
+    "id": "saumon-papillote-courgettes",
+    "name": "Saumon en papillote, courgettes et riz",
+    "emoji": "🐟",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "citron", "qty": 1 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "herbes-fraiches", "qty": 4, "unit": "brin", "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire le riz.",
+      "Couper les courgettes en fines rondelles et les répartir sur 4 feuilles de papier cuisson.",
+      "Poser un pavé de saumon sur chaque lit de courgettes avec une rondelle de citron, les herbes, un filet d'huile, sel et poivre.",
+      "Fermer les papillotes et cuire 18 min au four.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "poisson-blanc-fondue-poireaux",
+    "name": "Poisson blanc à la fondue de poireaux",
+    "emoji": "🐟",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "poireau", "qty": 4 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre à la vapeur ou à l'eau 20 min.",
+      "Émincer les poireaux et les faire fondre 15 min dans le beurre à feu doux avec un peu de sel.",
+      "Ajouter la crème, poser le poisson sur les poireaux, couvrir et cuire 8 à 10 min.",
+      "Servir avec les pommes de terre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "poisson-pane-puree-carottes",
+    "name": "Poisson pané et purée de carottes",
+    "emoji": "🐟",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-pane", "qty": 8 },
+      { "ref": "carotte", "qty": 800, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 400, "unit": "g" },
+      { "ref": "lait", "qty": 10, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Éplucher les carottes et les pommes de terre, les couper en morceaux et les cuire 20 min à l'eau salée.",
+      "Les écraser avec le lait chaud et le beurre, saler, poivrer.",
+      "Cuire le poisson pané à la poêle avec un peu d'huile, 4 min de chaque côté.",
+      "Servir le poisson avec la purée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "salade-nicoise",
+    "name": "Salade niçoise",
+    "emoji": "🥗",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "tomate", "qty": 4 },
+      { "ref": "haricot-vert", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "olive", "qty": 50, "unit": "g", "optional": true },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire en même temps les œufs 10 min (durs), les pommes de terre 20 min et les haricots verts 10 min.",
+      "Laisser tiédir, écaler les œufs, couper les pommes de terre et les tomates en quartiers.",
+      "Préparer la vinaigrette avec l'huile, le vinaigre, sel et poivre.",
+      "Disposer la salade, les légumes, le thon émietté, les œufs et les olives, puis arroser de vinaigrette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "riz-saute-crevettes-petits-pois",
+    "name": "Riz sauté aux crevettes et petits pois",
+    "emoji": "🦐",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "crevette", "qty": 300, "unit": "g" },
+      { "ref": "petit-pois", "qty": 200, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "sauce-soja", "qty": 3, "unit": "cas" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz et bien l'égoutter (du riz de la veille, c'est encore mieux).",
+      "Brouiller les œufs dans le wok huilé, puis les réserver.",
+      "Faire revenir l'oignon, ajouter les crevettes décortiquées et les petits pois, cuire 4 min.",
+      "Ajouter le riz, les œufs et la sauce soja, faire sauter 3 min à feu vif."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  }
+]

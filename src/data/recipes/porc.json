@@ -1,0 +1,107 @@
+[
+  {
+    "id": "endives-au-jambon",
+    "name": "Endives au jambon",
+    "emoji": "🥬",
+    "time": 55,
+    "difficulty": 2,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "endive", "qty": 8 },
+      { "ref": "jambon-blanc", "qty": 8, "unit": "tranche" },
+      { "ref": "lait", "qty": 50, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "farine", "qty": 40, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee" }
+    ],
+    "steps": [
+      "Cuire les endives 20 min à la vapeur, puis bien les égoutter en les pressant.",
+      "Béchamel : faire fondre le beurre, ajouter la farine, puis le lait petit à petit en fouettant jusqu'à ce que ça épaississe. Saler, poivrer, muscader.",
+      "Enrouler chaque endive dans une tranche de jambon et les ranger dans un plat.",
+      "Napper de béchamel et parsemer de fromage râpé.",
+      "Gratiner 25 min au four à 200 °C."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["four"]
+  },
+  {
+    "id": "tartiflette",
+    "name": "Tartiflette",
+    "emoji": "🧀",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 1.2, "unit": "kg" },
+      { "ref": "reblochon", "qty": 1 },
+      { "ref": "lardon", "qty": 200, "unit": "g" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "creme-fraiche", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "vin-blanc", "qty": 5, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau, les éplucher et les couper en rondelles.",
+      "Faire revenir les lardons et les oignons émincés 10 min, puis déglacer au vin blanc.",
+      "Dans un plat, alterner pommes de terre, lardons et oignons, puis ajouter la crème.",
+      "Couper le reblochon en deux dans l'épaisseur et le poser croûte vers le haut.",
+      "Cuire 25 min au four à 200 °C."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "saucisses-lentilles",
+    "name": "Saucisses aux lentilles",
+    "emoji": "🌭",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "lentille-verte", "qty": 300, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "laurier", "qty": 2, "unit": "feuille" }
+    ],
+    "steps": [
+      "Rincer les lentilles et les mettre dans une casserole avec 3 fois leur volume d'eau froide, le thym et le laurier.",
+      "Ajouter les carottes en rondelles et l'oignon émincé, cuire 25 min à petits bouillons sans saler.",
+      "Pendant ce temps, faire dorer les saucisses à la poêle 15 min en les retournant.",
+      "Saler les lentilles en fin de cuisson, ajouter les saucisses et laisser mijoter 5 min ensemble."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "quiche-lorraine",
+    "name": "Quiche lorraine",
+    "emoji": "🥧",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "lardon", "qty": 200, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "lait", "qty": 10, "unit": "cl" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee", "optional": true },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Faire dorer les lardons à sec, puis les égoutter.",
+      "Battre les œufs avec la crème, le lait, la muscade et un peu de poivre.",
+      "Répartir les lardons sur la pâte et verser le mélange.",
+      "Cuire 30 min jusqu'à ce que la quiche soit dorée. Servir avec une salade verte."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  }
+]
