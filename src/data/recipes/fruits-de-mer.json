@@ -1,0 +1,183 @@
+[
+  {
+    "id": "moules-marinieres-frites",
+    "name": "Moules marinières et frites au four",
+    "emoji": "🦪",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "moule", "qty": 2, "unit": "kg" },
+      { "ref": "vin-blanc", "qty": 20, "unit": "cl" },
+      { "ref": "echalote", "qty": 3 },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C. Couper les pommes de terre en frites, les mélanger avec l'huile et les enfourner 35 min.",
+      "Gratter et rincer les moules, jeter celles qui sont ouvertes.",
+      "Faire fondre les échalotes hachées dans le beurre, verser le vin blanc et ajouter les moules.",
+      "Couvrir et cuire 6 à 8 min à feu vif en remuant, jusqu'à ce qu'elles s'ouvrent. Parsemer de persil."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["ete", "automne"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "moules-creme-curry-riz",
+    "name": "Moules à la crème et au curry",
+    "emoji": "🦪",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "moule", "qty": 2, "unit": "kg" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "curry", "qty": 1, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "echalote", "qty": 2, "optional": true },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire le riz. Gratter et rincer les moules.",
+      "Faire fondre les échalotes dans le beurre, ajouter les moules, couvrir et cuire 6 min à feu vif.",
+      "Retirer les moules, ajouter la crème et le curry au jus de cuisson et laisser réduire 3 min.",
+      "Remettre les moules dans la sauce et servir avec le riz."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "pates-crevettes-ail-persil",
+    "name": "Pâtes aux crevettes, ail et persil",
+    "emoji": "🦐",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "crevette", "qty": 300, "unit": "g" },
+      { "ref": "ail", "qty": 3, "unit": "gousse" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire revenir l'ail haché 1 min dans l'huile, ajouter les crevettes décortiquées et les cuire 3 min.",
+      "Ajouter le persil, un filet de citron, et mélanger avec les pâtes égouttées."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "tagliatelles-crevettes-courgettes",
+    "name": "Tagliatelles aux crevettes, courgettes et crème",
+    "emoji": "🦐",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "crevette", "qty": 300, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire revenir les courgettes en fines lamelles 6 min dans l'huile, ajouter les crevettes et cuire 3 min.",
+      "Ajouter la crème, saler, poivrer et mélanger avec les pâtes égouttées."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "paella",
+    "name": "Paella",
+    "emoji": "🥘",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "riz", "qty": 350, "unit": "g" },
+      { "ref": "crevette", "qty": 300, "unit": "g" },
+      { "ref": "moule", "qty": 500, "unit": "g" },
+      { "ref": "poulet", "qty": 400, "unit": "g" },
+      { "ref": "chorizo", "qty": 80, "unit": "g", "optional": true },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "petit-pois", "qty": 150, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer le poulet en morceaux et le chorizo dans l'huile, dans une grande poêle.",
+      "Ajouter le poivron, les tomates et le riz, mélanger 2 min.",
+      "Verser 80 cl d'eau avec le bouillon cube et le paprika, cuire 15 min sans remuer.",
+      "Ajouter les crevettes, les moules et les petits pois, couvrir et cuire encore 8 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": [],
+    "cuisine": "autre"
+  },
+  {
+    "id": "salade-riz-crevettes-avocat",
+    "name": "Salade de riz, crevettes et avocat",
+    "emoji": "🥑",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "riz", "qty": 250, "unit": "g" },
+      { "ref": "crevette", "qty": 250, "unit": "g" },
+      { "ref": "avocat", "qty": 2 },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz, le rincer à l'eau froide et l'égoutter.",
+      "Couper les avocats et les tomates en dés.",
+      "Mélanger le riz, les crevettes, l'avocat et les tomates avec l'huile, le jus de citron, sel et poivre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "risotto-crevettes-petits-pois",
+    "name": "Risotto aux crevettes et petits pois",
+    "emoji": "🦐",
+    "time": 35,
+    "difficulty": 2,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "riz-a-risotto", "qty": 300, "unit": "g" },
+      { "ref": "crevette", "qty": 300, "unit": "g" },
+      { "ref": "petit-pois", "qty": 200, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 2 },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "vin-blanc", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Préparer 1 l de bouillon chaud avec les cubes.",
+      "Faire nacrer le riz 2 min dans le beurre avec l'oignon haché, puis verser le vin blanc.",
+      "Ajouter le bouillon louche par louche en remuant pendant 18 min, avec les petits pois à mi-cuisson.",
+      "Ajouter les crevettes 3 min avant la fin, puis le fromage hors du feu."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": [],
+    "cuisine": "italienne"
+  }
+]
