@@ -138,5 +138,654 @@
     "saisons": ["toute-annee"],
     "tags": ["rapide", "enfants"],
     "cuisine": "asiatique"
+  },
+  {
+    "id": "poulet-creme-champignons",
+    "name": "Poulet à la crème et aux champignons",
+    "emoji": "🍄",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "champignon", "qty": 300, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Couper le poulet en morceaux, émincer les champignons et l'oignon.",
+      "Faire dorer le poulet 5 min dans l'huile, puis ajouter l'oignon et les champignons.",
+      "Verser la crème, saler, poivrer et laisser mijoter 10 min.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "emince-poulet-moutarde",
+    "name": "Émincé de poulet à la moutarde",
+    "emoji": "🍗",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "moutarde", "qty": 2, "unit": "cas" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Couper le poulet en lanières et le faire dorer 6 min dans l'huile.",
+      "Ajouter la crème et la moutarde, laisser épaissir 3 min. Saler, poivrer.",
+      "Servir sur les pâtes."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pilons-miel-patates-douces",
+    "name": "Pilons de poulet au miel et patates douces rôties",
+    "emoji": "🍯",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "cuisse-de-poulet", "qty": 8 },
+      { "ref": "patate-douce", "qty": 800, "unit": "g" },
+      { "ref": "miel", "qty": 3, "unit": "cas" },
+      { "ref": "sauce-soja", "qty": 2, "unit": "cas" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "thym", "qty": 2, "unit": "brin" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C.",
+      "Mélanger le miel, la sauce soja et l'huile, et en badigeonner les pilons.",
+      "Couper les patates douces en cubes et les disposer autour du poulet avec le thym.",
+      "Enfourner 40 min en retournant à mi-cuisson."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "poulet-provencale-olives",
+    "name": "Poulet à la provençale, olives et tomates",
+    "emoji": "🫒",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 8 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "olive", "qty": 80, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "pates", "qty": 400, "unit": "g" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de poulet dans l'huile dans une cocotte.",
+      "Ajouter les courgettes en dés, les tomates, les olives et les herbes.",
+      "Couvrir et laisser mijoter 30 min.",
+      "Servir avec des pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete", "automne"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "poulet-citron-haricots-verts",
+    "name": "Poulet au citron et haricots verts",
+    "emoji": "🍋",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "haricot-vert", "qty": 500, "unit": "g" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "thym", "qty": 2, "unit": "brin" }
+    ],
+    "steps": [
+      "Cuire les haricots verts 10 min à l'eau salée.",
+      "Faire dorer les escalopes 5 min de chaque côté dans l'huile avec l'ail et le thym.",
+      "Arroser du jus de citron, saler, poivrer et laisser réduire 1 min.",
+      "Servir avec les haricots verts."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "brochettes-poulet-courgettes-semoule",
+    "name": "Brochettes de poulet et courgettes, semoule",
+    "emoji": "🍢",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "cereales", "qty": 250, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Couper le poulet et les légumes en cubes, les mariner 10 min avec l'huile, le citron et les herbes.",
+      "Monter les brochettes en alternant poulet et légumes.",
+      "Les griller 12 min au barbecue ou à la plancha en les retournant.",
+      "Préparer la semoule (ou le boulgour) selon le paquet et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "salade-cesar",
+    "name": "Salade César",
+    "emoji": "🥗",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 400, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "pain", "qty": 4, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" },
+      { "ref": "mayonnaise", "qty": 3, "unit": "cas" },
+      { "ref": "citrons", "qty": 1, "optional": true },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le poulet 10 min à la poêle, puis le couper en lamelles.",
+      "Couper le pain en cubes et le faire dorer à la poêle avec un peu d'huile.",
+      "Mélanger la mayonnaise avec le jus de citron et un peu d'eau pour faire la sauce.",
+      "Mélanger la salade, le poulet, les croûtons, le fromage et la sauce."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "nuggets-frites-four",
+    "name": "Nuggets de poulet maison et frites au four",
+    "emoji": "🍟",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "chapelure", "qty": 120, "unit": "g" },
+      { "ref": "farine", "qty": 3, "unit": "cas" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C. Couper les pommes de terre en frites, les mélanger avec 2 c. à soupe d'huile et les enfourner 35 min.",
+      "Couper le poulet en morceaux, les passer dans la farine, l'œuf battu puis la chapelure.",
+      "Les disposer sur une plaque huilée et les cuire 15 min au four avec les frites."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "cordons-bleus-puree",
+    "name": "Cordons bleus maison et purée",
+    "emoji": "🧀",
+    "time": 40,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 4 },
+      { "ref": "jambon-blanc", "qty": 2, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 100, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 50, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau salée, puis les écraser avec le lait chaud et 30 g de beurre.",
+      "Aplatir les escalopes, poser sur une moitié une demi-tranche de jambon et du fromage, puis replier.",
+      "Les passer dans l'œuf battu puis dans la chapelure.",
+      "Les cuire 6 min de chaque côté à la poêle dans le reste du beurre."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "gratin-pates-poulet-brocoli",
+    "name": "Gratin de pâtes au poulet et brocoli",
+    "emoji": "🥦",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "volaille-escalope", "qty": 400, "unit": "g" },
+      { "ref": "brocoli", "qty": 400, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Cuire les pâtes et le brocoli en fleurettes ensemble 8 min, puis égoutter.",
+      "Faire dorer le poulet en dés à la poêle 6 min.",
+      "Mélanger pâtes, brocoli, poulet et crème dans un plat, saler, poivrer.",
+      "Couvrir de fromage râpé et gratiner 20 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "parmentier-de-canard",
+    "name": "Parmentier de canard",
+    "emoji": "🦆",
+    "time": 50,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "confit-de-canard", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "echalote", "qty": 2 },
+      { "ref": "beurre", "qty": 30, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau salée et les écraser avec le lait chaud et le beurre.",
+      "Réchauffer les cuisses de canard, retirer la peau et effilocher la viande.",
+      "Faire revenir les échalotes dans un peu de graisse de canard, puis ajouter la viande.",
+      "Dans un plat, étaler le canard puis la purée, et gratiner 20 min à 200 °C."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["four"]
+  },
+  {
+    "id": "magret-pommes-de-terre-sautees",
+    "name": "Magret de canard et pommes de terre sautées",
+    "emoji": "🦆",
+    "time": 35,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "magret-de-canard", "qty": 2 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Couper les pommes de terre en dés et les cuire 20 min à la poêle, à feu moyen, avec l'huile.",
+      "Quadriller la peau des magrets et les cuire côté peau 8 min, puis 4 min côté chair.",
+      "Ajouter aux pommes de terre un peu de graisse de canard, l'ail et le persil.",
+      "Laisser reposer les magrets 5 min, les trancher et servir."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "soupe-poulet-vermicelles",
+    "name": "Soupe de poulet aux vermicelles",
+    "emoji": "🍜",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 300, "unit": "g" },
+      { "ref": "vermicelle", "qty": 100, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "poireau", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 2 }
+    ],
+    "steps": [
+      "Porter 1,5 l d'eau à ébullition avec les cubes de bouillon.",
+      "Ajouter les carottes en rondelles, le poireau émincé et le poulet, cuire 20 min.",
+      "Retirer le poulet, l'effilocher et le remettre avec les vermicelles, cuire 4 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "salade-poulet-avocat-mais",
+    "name": "Salade de poulet, avocat et maïs",
+    "emoji": "🥑",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 400, "unit": "g" },
+      { "ref": "avocat", "qty": 2 },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le poulet 10 min à la poêle et le couper en dés.",
+      "Couper les avocats et les tomates en morceaux, égoutter le maïs.",
+      "Préparer la vinaigrette et mélanger le tout avec la salade."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "poulet-poireaux-creme",
+    "name": "Poulet aux poireaux et à la crème",
+    "emoji": "🥬",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "poireau", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Émincer les poireaux et les faire fondre 15 min dans le beurre.",
+      "Ajouter le poulet en morceaux et le faire dorer 5 min.",
+      "Verser la crème, saler, poivrer et laisser mijoter 10 min. Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "poulet-petits-pois-pommes-de-terre-nouvelles",
+    "name": "Poulet aux petits pois et pommes de terre nouvelles",
+    "emoji": "🫛",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 8 },
+      { "ref": "petit-pois", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 100, "unit": "g", "optional": true },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de poulet dans l'huile dans une cocotte, avec les lardons.",
+      "Ajouter les carottes en rondelles, les pommes de terre, le bouillon cube et 20 cl d'eau, couvrir et cuire 20 min.",
+      "Ajouter les petits pois et poursuivre 10 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "coq-au-vin",
+    "name": "Coq au vin",
+    "emoji": "🍷",
+    "time": 120,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 1.5, "unit": "kg" },
+      { "ref": "vin-rouge", "qty": 75, "unit": "cl" },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "farine", "qty": 1, "unit": "cas" },
+      { "ref": "bouquet-garni", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" }
+    ],
+    "steps": [
+      "2 h avant, faire mariner les morceaux de poulet dans le vin avec les carottes et le bouquet garni.",
+      "Égoutter le poulet, le faire dorer dans une cocotte avec les lardons, saupoudrer de farine.",
+      "Verser le vin de la marinade avec les carottes, couvrir et laisser mijoter 1 h 15.",
+      "Ajouter les champignons 20 min avant la fin. Servir avec des pommes de terre vapeur."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "poulet-chasseur",
+    "name": "Poulet chasseur",
+    "emoji": "🍄",
+    "time": 50,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 8 },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "echalote", "qty": 3 },
+      { "ref": "vin-blanc", "qty": 15, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "pates", "qty": 400, "unit": "g" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de poulet dans l'huile, puis les réserver.",
+      "Faire revenir les échalotes et les champignons émincés, puis verser le vin blanc.",
+      "Ajouter les tomates, remettre le poulet, couvrir et mijoter 30 min.",
+      "Servir avec des pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "salade-pates-poulet-pesto",
+    "name": "Salade de pâtes au poulet et au pesto",
+    "emoji": "🥗",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "volaille-escalope", "qty": 400, "unit": "g" },
+      { "ref": "pesto", "qty": 4, "unit": "cas" },
+      { "ref": "tomates-fraiches", "qty": 250, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pâtes, les rincer à l'eau froide et les égoutter.",
+      "Cuire le poulet 10 min à la poêle et le couper en dés.",
+      "Couper les tomates en morceaux.",
+      "Mélanger pâtes, poulet, tomates et pesto, puis parsemer de fromage."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "poulet-legumes-du-soleil-four",
+    "name": "Poulet et légumes du soleil au four",
+    "emoji": "☀️",
+    "time": 55,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 8 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "aubergine", "qty": 1 },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "tomates-fraiches", "qty": 4 },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C.",
+      "Couper les légumes en gros morceaux et les mélanger avec l'huile, les herbes, sel et poivre.",
+      "Disposer les morceaux de poulet par-dessus et enfourner 45 min en arrosant de temps en temps."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "blancs-poulet-puree-celeri",
+    "name": "Blancs de poulet et purée de céleri",
+    "emoji": "🥔",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "celeri-rave", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 400, "unit": "g" },
+      { "ref": "lait", "qty": 15, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" }
+    ],
+    "steps": [
+      "Éplucher le céleri et les pommes de terre, les couper en cubes et les cuire 25 min à l'eau salée.",
+      "Les écraser avec le lait chaud et le beurre.",
+      "Faire dorer le poulet 6 min de chaque côté à la poêle. Saler, poivrer et servir avec la purée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "blanquette-de-poulet",
+    "name": "Blanquette de poulet",
+    "emoji": "🍚",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 1, "unit": "kg" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "farine", "qty": 2, "unit": "cas" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Faire revenir les morceaux de poulet sans les colorer, saupoudrer de farine et mélanger.",
+      "Couvrir d'eau avec le bouillon cube, ajouter les carottes en rondelles et cuire 25 min à couvert.",
+      "Ajouter les champignons et la crème, cuire 10 min, puis ajouter un filet de citron.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "burgers-poulet-pane",
+    "name": "Burgers de poulet pané",
+    "emoji": "🍔",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "pain-a-burger", "qty": 4 },
+      { "ref": "volaille-escalope", "qty": 4 },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 80, "unit": "g" },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "tomate", "qty": 1 },
+      { "ref": "mayonnaise", "qty": 2, "unit": "cas", "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Aplatir les escalopes, les passer dans l'œuf battu puis dans la chapelure.",
+      "Les cuire 5 min de chaque côté dans l'huile chaude.",
+      "Toaster les pains, puis monter les burgers avec la salade, la tomate en rondelles, le poulet et la mayonnaise."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "riz-poulet-chorizo",
+    "name": "Riz au poulet et chorizo",
+    "emoji": "🍚",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 500, "unit": "g" },
+      { "ref": "chorizo", "qty": 100, "unit": "g" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "petit-pois", "qty": 150, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer le poulet en dés et le chorizo en rondelles dans l'huile.",
+      "Ajouter le poivron en lanières et le riz, mélanger 2 min.",
+      "Verser 70 cl d'eau avec le bouillon cube et le paprika, couvrir et cuire 18 min.",
+      "Ajouter les petits pois 5 min avant la fin."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "poulet-normande-pommes",
+    "name": "Poulet à la normande, pommes et crème",
+    "emoji": "🍎",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "pomme", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Couper les pommes en quartiers et les faire dorer 8 min dans la moitié du beurre, puis les réserver.",
+      "Faire dorer le poulet en morceaux dans le reste du beurre.",
+      "Ajouter la crème et les pommes, laisser mijoter 10 min. Saler, poivrer.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "blancs-poulet-farcis-epinards",
+    "name": "Blancs de poulet farcis aux épinards et fromage frais",
+    "emoji": "🥬",
+    "time": 40,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 4 },
+      { "ref": "epinard", "qty": 300, "unit": "g" },
+      { "ref": "fromage-frais", "qty": 150, "unit": "g" },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Faire tomber les épinards 3 min à la poêle et bien les égoutter.",
+      "Mélanger les épinards avec le fromage frais, sel et poivre.",
+      "Entailler les blancs de poulet en portefeuille, les garnir et les fermer avec un cure-dent.",
+      "Cuire 25 min au four et servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["four"]
   }
 ]
