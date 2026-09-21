@@ -10,7 +10,10 @@
     "preview": "vite preview",
     "test": "vitest run",
     "validate:recipes": "tsx scripts/validate-recipes.ts",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-mmq \"vitest run --config vitest.rules.config.ts\"",
+    "emulators": "firebase emulators:start --only auth,firestore --project demo-mmq",
+    "dev:emu": "vite --mode emulator --port 5175"
   },
   "dependencies": {
     "firebase": "^12.19.0",
@@ -19,6 +22,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.2",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",

@@ -7,7 +7,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - React 19, Vite, TypeScript, Tailwind v4 (`@tailwindcss/vite`), `vite-plugin-pwa`
 - Firebase : Auth anonyme + Firestore (cache IndexedDB persistant, voir `src/lib/firebase.ts`)
 - Déploiement Vercel (`vercel.json`)
-- Commandes : `npm run dev`, `npm run build` (`tsc -b && vite build`), `npm run lint` (oxlint), `npm test` (Vitest, tests à côté du fichier testé : `*.test.ts`), `npm run coverage`
+- Commandes : `npm run dev`, `npm run build` (`tsc -b && vite build`), `npm run lint` (oxlint), `npm test` (Vitest, tests à côté du fichier testé : `*.test.ts`), `npm run coverage`, `npm run test:rules` (émulateur), `npm run emulators` / `npm run dev:emu`
 
 ## Conventions
 
@@ -18,7 +18,9 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - **Claim de profil entre membres : choix assumé.** La règle `members/{memberId}` update laisse tout membre rattacher sa session à n'importe quel profil du foyer. C'est le flux de récupération iOS (PWA réinstallée ou Safari qui purge le stockage, donc nouvel uid anonyme). Ne pas le restreindre.
 - **Plan Spark (gratuit)** : pas de Cloud Functions, pas de service payant. Toute la logique tourne côté client, la sécurité repose sur les Security Rules.
 - Variables Firebase dans `.env.local` (préfixe `VITE_FIREBASE_`), jamais commitées.
-- **Plus de tests sur la base Firestore réelle.** Pas de foyers de test, pas d'écritures de vérification des rules en production. Les tests d'intégration et de rules passeront par l'émulateur Firebase (à mettre en place).
+- **Plus de tests sur la base Firestore réelle.** Pas de foyers de test, pas d'écritures de vérification des rules en production. Tout passe par l'émulateur (projet fictif `demo-mmq`, Java 21 requis) :
+  - `npm run test:rules` : tests des Security Rules (`tests/rules/`, `@firebase/rules-unit-testing`). **Toute modification de `firestore.rules` doit être couverte par un test ici, et ne se déploie que si `npm run test:rules` est vert.**
+  - `npm run emulators` + `npm run dev:emu` : l'app en dev sur l'émulateur (`.env.emulator` : `VITE_USE_EMULATOR=true`, pris en compte en dev uniquement).
 
 ## Recettes (base statique, pas de LLM au runtime)
 

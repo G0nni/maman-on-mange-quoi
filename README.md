@@ -11,9 +11,15 @@ Stack : React 19, Vite, TypeScript, Tailwind v4, Firebase (Auth anonyme + Firest
     npm run dev
     npm test                     # tests unitaires (Vitest)
 
+## Émulateur Firebase (Java 21 requis)
+
+    npm run test:rules       # tests des Security Rules sur l'émulateur
+    npm run emulators        # émulateurs Auth + Firestore (projet fictif demo-mmq)
+    npm run dev:emu          # l'app en dev, branchée sur les émulateurs
+
 ## Security Rules
 
-Coller `firestore.rules` dans la console (Firestore > Règles > Publier), ou :
+Toujours lancer `npm run test:rules` avant de déployer. Puis coller `firestore.rules` dans la console (Firestore > Règles > Publier), ou :
 
     npm i -g firebase-tools
     firebase login
