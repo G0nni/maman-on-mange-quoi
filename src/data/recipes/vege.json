@@ -186,5 +186,343 @@
     "balance": ["P", "L", "F"],
     "saisons": ["automne", "hiver"],
     "tags": ["vege", "four"]
+  },
+  {
+    "id": "gratin-dauphinois-salade",
+    "name": "Gratin dauphinois et salade verte",
+    "emoji": "🥔",
+    "time": 75,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 1.2, "unit": "kg" },
+      { "ref": "lait", "qty": 50, "unit": "cl" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee" },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 160 °C. Couper les pommes de terre en fines rondelles, sans les rincer.",
+      "Les faire frémir 10 min dans le lait avec l'ail, sel, poivre et muscade.",
+      "Verser dans un plat frotté d'ail, ajouter la crème et cuire 1 h. Servir avec la salade."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "gratin-courgettes-riz",
+    "name": "Gratin de courgettes et riz",
+    "emoji": "🥒",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "courgette", "qty": 1, "unit": "kg" },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "riz", "qty": 250, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire le riz.",
+      "Faire revenir les courgettes en rondelles 10 min à la poêle et les mettre dans un plat.",
+      "Battre les œufs avec la crème et la moitié du fromage, saler, poivrer, verser sur les courgettes.",
+      "Parsemer du reste de fromage et gratiner 20 min. Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "tian-legumes-semoule",
+    "name": "Tian de légumes provençal et semoule",
+    "emoji": "🍅",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "aubergine", "qty": 1 },
+      { "ref": "tomates-fraiches", "qty": 4 },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "cereales", "qty": 250, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C.",
+      "Couper les légumes en fines rondelles et les ranger en les alternant, bien serrés, dans un plat.",
+      "Arroser d'huile, parsemer d'herbes, saler, poivrer et cuire 50 min.",
+      "Servir avec la semoule (ou le boulgour)."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["ete"],
+    "tags": ["four", "vege"]
+  },
+  {
+    "id": "ratatouille-riz",
+    "name": "Ratatouille et riz",
+    "emoji": "🍆",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "aubergine", "qty": 2 },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "tomates-fraiches", "qty": 4 },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" }
+    ],
+    "steps": [
+      "Couper tous les légumes en dés.",
+      "Faire revenir l'oignon et les poivrons 10 min dans l'huile, puis ajouter les aubergines et les courgettes.",
+      "Ajouter les tomates, l'ail et les herbes, couvrir et laisser mijoter 35 min.",
+      "Servir avec le riz."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "macaronis-gratines-fromage",
+    "name": "Macaronis gratinés au fromage",
+    "emoji": "🧀",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "lait", "qty": 50, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "farine", "qty": 40, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire les pâtes 2 min de moins que sur le paquet.",
+      "Préparer une béchamel avec le beurre, la farine et le lait, puis y faire fondre les deux tiers du fromage.",
+      "Mélanger avec les pâtes dans un plat, couvrir du reste de fromage et gratiner 15 min."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "tarte-fine-legumes-chevre",
+    "name": "Tarte fine aux légumes du soleil et chèvre",
+    "emoji": "🥧",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "courgette", "qty": 1 },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "chevre", "qty": 150, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et étaler la pâte sur une plaque.",
+      "Disposer la courgette et les tomates en fines rondelles, puis le chèvre en tranches.",
+      "Arroser d'huile, parsemer d'herbes et cuire 25 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["four", "vege"]
+  },
+  {
+    "id": "camembert-roti-pommes-de-terre",
+    "name": "Camembert rôti, pommes de terre et salade",
+    "emoji": "🧀",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "camembert", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "thym", "qty": 1, "unit": "brin" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire les pommes de terre 20 min à l'eau.",
+      "Entailler le dessus du camembert, piquer l'ail et le thym, et le cuire 20 min dans sa boîte, sans le couvercle.",
+      "Tremper les pommes de terre dans le fromage fondu. Servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "rostis-salade-verte",
+    "name": "Röstis et salade verte",
+    "emoji": "🥔",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "fromage-frais", "qty": 150, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Râper les pommes de terre, les presser dans un torchon pour enlever l'eau.",
+      "Mélanger avec l'œuf, sel et poivre, puis former des galettes.",
+      "Les cuire 5 min de chaque côté dans l'huile chaude. Servir avec la salade et le fromage frais."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"],
+    "cuisine": "autre"
+  },
+  {
+    "id": "salade-chevre-chaud-noix-miel",
+    "name": "Salade de chèvre chaud, noix et miel",
+    "emoji": "🥗",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "chevre", "qty": 200, "unit": "g" },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "noix", "qty": 50, "unit": "g" },
+      { "ref": "miel", "qty": 2, "unit": "cas" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four en position gril.",
+      "Poser une rondelle de chèvre sur chaque tranche de pain, ajouter un filet de miel et gratiner 5 min.",
+      "Assaisonner la salade de vinaigrette, ajouter les noix et les toasts chauds."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "automne"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "poivrons-farcis-riz-fromage",
+    "name": "Poivrons farcis au riz et au fromage",
+    "emoji": "🫑",
+    "time": 55,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "poivron", "qty": 4 },
+      { "ref": "riz", "qty": 200, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Préchauffer le four à 190 °C et cuire le riz.",
+      "Couper un chapeau aux poivrons et les épépiner.",
+      "Mélanger le riz avec les tomates, les herbes et les deux tiers du fromage, puis farcir les poivrons.",
+      "Parsemer du reste de fromage et cuire 35 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["four", "vege"]
+  },
+  {
+    "id": "salade-pates-feta-olives",
+    "name": "Salade de pâtes à la feta, olives et tomates",
+    "emoji": "🥗",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "feta", "qty": 150, "unit": "g" },
+      { "ref": "olive", "qty": 80, "unit": "g" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes, les rincer à l'eau froide et les égoutter.",
+      "Couper les tomates et le concombre en dés, émietter la feta.",
+      "Mélanger le tout avec les olives et l'huile, saler peu et poivrer."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "pommes-de-terre-fromage-blanc-herbes",
+    "name": "Pommes de terre en robe des champs et fromage blanc aux herbes",
+    "emoji": "🥔",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 1.2, "unit": "kg" },
+      { "ref": "yaourt-fromage-blanc", "qty": 400, "unit": "g" },
+      { "ref": "herbes-fraiches", "qty": 1, "unit": "botte" },
+      { "ref": "echalote", "qty": 1, "optional": true },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Cuire les pommes de terre avec la peau 25 min à l'eau salée.",
+      "Mélanger le fromage blanc avec les herbes ciselées, l'échalote hachée, sel et poivre.",
+      "Servir les pommes de terre ouvertes avec le fromage blanc et la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "galettes-champignons-fromage",
+    "name": "Galettes aux champignons et au fromage",
+    "emoji": "🥞",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "galette-de-sarrasin", "qty": 4 },
+      { "ref": "champignon", "qty": 300, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
+    ],
+    "steps": [
+      "Faire revenir les champignons émincés 8 min dans la moitié du beurre, ajouter la crème.",
+      "Chauffer les galettes une à une dans une poêle beurrée.",
+      "Garnir de champignons et de fromage, replier les bords et laisser fondre 1 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne"],
+    "tags": ["rapide", "enfants", "vege"]
+  },
+  {
+    "id": "tartines-gratinees-tomate-salade",
+    "name": "Tartines gratinées à la tomate et salade",
+    "emoji": "🍅",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four en position gril.",
+      "Arroser les tranches de pain d'un filet d'huile, puis les couvrir de tomates en rondelles et de fromage.",
+      "Parsemer d'herbes et gratiner 5 à 8 min. Servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants", "vege"]
   }
 ]

@@ -139,7 +139,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'creme-liquide', label: 'Crème liquide', emoji: '🥛', category: 'laitier', groups: ['creme'], aliases: ['crème fleurette'] },
   { id: 'beurre', label: 'Beurre', emoji: '🧈', category: 'laitier' },
   { id: 'yaourt-nature', label: 'Yaourts nature', emoji: '🥛', category: 'laitier', groups: ['yaourt-fromage-blanc'], aliases: ['yaourt'] },
-  { id: 'fromage-blanc', label: 'Fromage blanc', emoji: '🥛', category: 'laitier', groups: ['yaourt-fromage-blanc'] },
+  { id: 'fromage-blanc', label: 'Fromage blanc', emoji: '🥛', category: 'laitier', protein: 'fromage', groups: ['yaourt-fromage-blanc'] },
   { id: 'fromage-frais', label: 'Fromage frais', emoji: '🧀', category: 'laitier', aliases: ['St Môret', 'Kiri'] },
   { id: 'emmental', label: 'Emmental', emoji: '🧀', category: 'laitier', protein: 'fromage', groups: ['fromage-rape'] },
   { id: 'gruyere', label: 'Gruyère', emoji: '🧀', category: 'laitier', protein: 'fromage', groups: ['fromage-rape'] },
