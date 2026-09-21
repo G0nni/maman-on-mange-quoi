@@ -128,5 +128,442 @@
     "saisons": ["toute-annee"],
     "tags": ["rapide", "enfants"],
     "cuisine": "asiatique"
+  },
+  {
+    "id": "saumon-riz-brocolis",
+    "name": "Saumon, riz et brocolis",
+    "emoji": "🐟",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "brocoli", "qty": 500, "unit": "g" },
+      { "ref": "citrons", "qty": 1, "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz. Cuire les brocolis en bouquets 8 min à la vapeur ou à l'eau salée.",
+      "Cuire les pavés de saumon 4 min côté peau puis 2 min de l'autre côté dans l'huile.",
+      "Saler, poivrer, arroser d'un filet de citron et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "saumon-creme-citron-pates",
+    "name": "Saumon à la crème citronnée et pâtes",
+    "emoji": "🍋",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Cuire les pavés de saumon 6 min dans le beurre, puis les émietter grossièrement.",
+      "Ajouter la crème et le zeste et le jus du citron, laisser chauffer 2 min.",
+      "Mélanger avec les pâtes égouttées."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "tagliatelles-saumon-fume",
+    "name": "Tagliatelles au saumon fumé",
+    "emoji": "🐟",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "saumon-fume", "qty": 200, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "citrons", "qty": 1, "optional": true },
+      { "ref": "aneth", "qty": 4, "unit": "brin", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Chauffer la crème avec un peu de poivre et le jus de citron, sans faire bouillir.",
+      "Égoutter les pâtes, ajouter la crème et le saumon coupé en lanières, parsemer d'aneth."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "cabillaud-provencale",
+    "name": "Cabillaud à la provençale et riz",
+    "emoji": "🍅",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "olive", "qty": 60, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir l'oignon et l'ail dans l'huile, ajouter les tomates, les olives et les herbes, laisser mijoter 10 min.",
+      "Poser le poisson sur la sauce, couvrir et cuire 8 min à feu doux."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete", "automne"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "parmentier-de-poisson",
+    "name": "Parmentier de poisson",
+    "emoji": "🐟",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lait", "qty": 30, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau salée. Pocher le poisson 8 min dans 20 cl de lait frémissant.",
+      "Écraser les pommes de terre avec le reste du lait, le beurre et l'ail haché.",
+      "Émietter le poisson dans un plat, couvrir de purée et parsemer de fromage.",
+      "Gratiner 20 min au four à 200 °C."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "salade-riz-thon",
+    "name": "Salade de riz au thon",
+    "emoji": "🍚",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "riz", "qty": 250, "unit": "g" },
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz et les œufs 10 min (durs), puis les refroidir.",
+      "Couper les tomates et les œufs en morceaux, égoutter le thon et le maïs.",
+      "Mélanger le tout avec une vinaigrette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "quiche-thon-tomate",
+    "name": "Quiche au thon et à la tomate",
+    "emoji": "🥧",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Émietter le thon sur le fond et ajouter les tomates en rondelles.",
+      "Battre les œufs avec la crème, saler, poivrer, et verser sur la garniture.",
+      "Parsemer de fromage et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "tomates-farcies-thon",
+    "name": "Tomates farcies au thon",
+    "emoji": "🍅",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "tomate", "qty": 8 },
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "mayonnaise", "qty": 3, "unit": "cas" },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "pain", "qty": 4, "unit": "tranche", "optional": true }
+    ],
+    "steps": [
+      "Cuire les œufs 10 min pour qu'ils soient durs, puis les écaler et les hacher.",
+      "Couper un chapeau aux tomates et les évider.",
+      "Mélanger le thon émietté, les œufs, la mayonnaise et les herbes, puis farcir les tomates. Servir frais avec du pain."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "salade-pates-surimi",
+    "name": "Salade de pâtes au surimi",
+    "emoji": "🦀",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "surimi", "qty": 200, "unit": "g" },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 250, "unit": "g" },
+      { "ref": "mayonnaise", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes, les rincer à l'eau froide et les égoutter.",
+      "Couper le surimi en tronçons et les tomates en morceaux.",
+      "Mélanger avec le maïs égoutté et la mayonnaise. Servir frais."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "papillotes-poisson-blanc-julienne",
+    "name": "Papillotes de poisson blanc aux petits légumes",
+    "emoji": "🐟",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "courgette", "qty": 1 },
+      { "ref": "poireau", "qty": 1 },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire les pommes de terre à la vapeur 20 min.",
+      "Couper les légumes en fins bâtonnets et les répartir sur 4 feuilles de papier cuisson.",
+      "Poser le poisson dessus avec une rondelle de citron, un filet d'huile, sel et poivre.",
+      "Fermer les papillotes et cuire 15 min. Servir avec les pommes de terre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["four"]
+  },
+  {
+    "id": "saumon-lentilles-vertes",
+    "name": "Saumon et lentilles vertes",
+    "emoji": "🐟",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "lentille-verte", "qty": 250, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "echalote", "qty": 1, "optional": true },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les lentilles 25 min avec les carottes en dés et le thym, dans 3 fois leur volume d'eau.",
+      "Égoutter et assaisonner d'huile, de vinaigre et d'échalote hachée.",
+      "Cuire le saumon 4 min côté peau puis 2 min de l'autre côté et le servir sur les lentilles."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "poisson-meuniere-pommes-vapeur",
+    "name": "Poisson meunière et pommes de terre vapeur",
+    "emoji": "🐟",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "farine", "qty": 3, "unit": "cas" },
+      { "ref": "beurre", "qty": 50, "unit": "g" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à la vapeur.",
+      "Fariner légèrement le poisson et le cuire 3 min de chaque côté dans le beurre mousseux.",
+      "Arroser de jus de citron, parsemer de persil et servir avec les pommes de terre."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "wraps-saumon-fume",
+    "name": "Wraps au saumon fumé et fromage frais",
+    "emoji": "🌯",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "tortilla", "qty": 4 },
+      { "ref": "saumon-fume", "qty": 200, "unit": "g" },
+      { "ref": "fromage-frais", "qty": 150, "unit": "g" },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "concombre", "qty": 1 }
+    ],
+    "steps": [
+      "Tartiner les tortillas de fromage frais.",
+      "Ajouter la salade, le concombre en fins bâtonnets et le saumon fumé.",
+      "Rouler serré et couper en deux."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "poisson-ratatouille-four",
+    "name": "Poisson au four et ratatouille",
+    "emoji": "🐟",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-filet", "qty": 600, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "aubergine", "qty": 1 },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C.",
+      "Couper les légumes en dés, les mélanger avec l'huile et les herbes et les enfourner 25 min.",
+      "Poser le poisson sur les légumes, saler, poivrer et cuire encore 12 min."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["four"]
+  },
+  {
+    "id": "gratin-poisson-epinards",
+    "name": "Gratin de poisson aux épinards",
+    "emoji": "🥬",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "epinard", "qty": 500, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "riz", "qty": 250, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire le riz.",
+      "Faire tomber les épinards 3 min à la poêle et bien les égoutter.",
+      "Étaler les épinards dans un plat, poser le poisson, napper de crème salée et poivrée.",
+      "Parsemer de fromage et cuire 20 min. Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver", "printemps"],
+    "tags": ["four"]
+  },
+  {
+    "id": "poisson-pane-maison-frites",
+    "name": "Poisson pané maison et frites au four",
+    "emoji": "🍟",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 100, "unit": "g" },
+      { "ref": "farine", "qty": 3, "unit": "cas" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C. Couper les pommes de terre en frites, les mélanger avec 2 c. à soupe d'huile et les enfourner 35 min.",
+      "Couper le poisson en bâtonnets, les passer dans la farine, l'œuf battu puis la chapelure.",
+      "Les cuire sur une plaque huilée 12 min au four avec les frites."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "galettes-saumon-fume",
+    "name": "Galettes au saumon fumé et à la crème",
+    "emoji": "🥞",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "galette-de-sarrasin", "qty": 4 },
+      { "ref": "saumon-fume", "qty": 200, "unit": "g" },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "citrons", "qty": 1, "optional": true },
+      { "ref": "ciboulette", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Chauffer les galettes une à une dans une poêle beurrée.",
+      "Étaler un peu de crème citronnée, ajouter le saumon fumé et la ciboulette.",
+      "Replier les bords et servir aussitôt."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "saumon-salade-quinoa",
+    "name": "Saumon grillé et salade de quinoa",
+    "emoji": "🥗",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "cereales", "qty": 200, "unit": "g" },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le quinoa (ou le boulgour) selon le paquet et le laisser tiédir.",
+      "Couper le concombre et les tomates en dés, mélanger avec le quinoa, l'huile et le jus de citron.",
+      "Griller le saumon 4 min côté peau puis 2 min de l'autre côté et le servir sur la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide"]
   }
 ]
