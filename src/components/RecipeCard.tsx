@@ -23,14 +23,27 @@ export function BalanceTags({ balance }: { balance: Recipe['balance'] }) {
   )
 }
 
+/** État du bouton « Mettre au vote » pour ce plat, d'après le vote du jour. */
+export type VoteButton = 'available' | 'pending' | 'in-poll' | 'full' | 'closed'
+
+const VOTE_LABEL: Record<VoteButton, string> = {
+  available: 'Mettre au vote',
+  pending: 'Un instant…',
+  'in-poll': '✓ Au vote',
+  full: 'Vote complet (4 plats)',
+  closed: 'Vote du jour clos',
+}
+
 type Props = {
   recipe: Recipe
   missingLabels: string[]
   onOpen: () => void
   onHide: () => void
+  vote: VoteButton
+  onVote: () => void
 }
 
-export function RecipeCard({ recipe, missingLabels, onOpen, onHide }: Props) {
+export function RecipeCard({ recipe, missingLabels, onOpen, onHide, vote, onVote }: Props) {
   return (
     <article className="motion-safe:animate-pop bg-surface border border-line rounded-3xl p-4">
       <button onClick={onOpen} className="w-full flex gap-3 text-left">
@@ -53,8 +66,18 @@ export function RecipeCard({ recipe, missingLabels, onOpen, onHide }: Props) {
         </p>
       )}
 
-      <div className="mt-3 flex items-center justify-between gap-2">
-        <button onClick={onOpen} className="px-4 py-2 rounded-2xl bg-ink text-bg text-sm font-semibold active:scale-[.98] transition">
+      <button
+        onClick={onVote}
+        disabled={vote !== 'available'}
+        className={`mt-3 w-full py-3 rounded-2xl font-semibold transition active:scale-[.98] ${
+          vote === 'in-poll' ? 'bg-herb-soft text-herb' : vote === 'available' || vote === 'pending' ? 'bg-ink text-bg' : 'bg-surface-2 text-muted'
+        }`}
+      >
+        {VOTE_LABEL[vote]}
+      </button>
+
+      <div className="mt-2 flex items-center justify-between gap-2">
+        <button onClick={onOpen} className="px-3 py-2 rounded-2xl text-sm font-semibold text-ink underline underline-offset-4">
           Voir la recette
         </button>
         <button onClick={onHide} className="px-3 py-2 rounded-2xl text-sm font-semibold text-muted hover:text-tomato transition">

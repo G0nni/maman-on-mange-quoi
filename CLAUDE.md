@@ -53,6 +53,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - Règles : on vote pour soi, tant que le poll est ouvert, pour une des options ; une option ajoutée à la fois, 4 maximum ; un poll clos ne se modifie plus.
 - Opérations dans `src/lib/poll-ops.ts` (instance `db` en paramètre, testées sur l'émulateur sous les vraies règles) : `addOption` et `closePoll` sont des transactions. Une écriture concurrente fait échouer l'autre en `permission-denied` (les règles voient l'état à jour) : elles sont rejouées une fois (`retryOnceIfDenied`), ce qui garantit un seul gagnant.
 - Dépouillement pur dans `src/lib/tally.ts` : majorité, tirage au sort entre ex aequo (y compris sans aucun vote).
+- UI : `AppShell` écoute le poll du jour et ses votes (`useRecentPolls`, `useVotes`) pour la pastille de l'onglet Vote ; chacun vote en tant que « me » depuis son téléphone (pas de sélecteur de membre) ; clôture en deux appuis ; « Mettre au vote » depuis les cartes Idées (transaction, réseau nécessaire).
 
 ## Repères
 
@@ -62,4 +63,5 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - `src/lib/stock.ts` + `src/hooks/useStock.ts` : stock du foyer. Autocomplétion de l'ajout : `searchReferential()` (labels, alias, groupes « rangeables », dès 2 caractères) ; toucher une suggestion ajoute le libellé canonique avec l'emoji du référentiel, la saisie libre reste possible.
 - `src/data/catalog.ts` : recettes + référentiel. **Toujours via `import()` dynamique** (`useCatalog`/`loadCatalog`), jamais en import statique depuis l'app : les recettes resteraient dans le bundle principal. Préchargé pendant un temps mort dès que le foyer est prêt (`preloadCatalogWhenIdle`).
 - `src/lib/prefs.ts` + `src/hooks/useHiddenRecipes.ts` : plats masqués du foyer (`prefs/recipes`)
-- `src/screens/` : Onboarding, WhoAreYou (« Qui es-tu ? »), AppShell, StockScreen, IdeasScreen
+- `src/lib/polls.ts` + `src/hooks/usePolls.ts` : vote du soir côté app (poll-ops sur la base de l'app, écoutes temps réel)
+- `src/screens/` : Onboarding, WhoAreYou (« Qui es-tu ? »), AppShell, StockScreen, IdeasScreen, VoteScreen

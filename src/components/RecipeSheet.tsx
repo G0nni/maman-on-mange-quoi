@@ -15,7 +15,8 @@ type Props = {
   recipe: Recipe
   /** Libellé et statut de chaque ingrédient, dans l'ordre de la recette. */
   ingredients: { label: string; state: IngredientState }[]
-  onHide: () => void
+  /** « On n'aime pas » ; absent (ex. plat gagnant du vote), le bouton n'est pas affiché. */
+  onHide?: () => void
   onClose: () => void
 }
 
@@ -83,9 +84,11 @@ export function RecipeSheet({ recipe, ingredients, onHide, onClose }: Props) {
         </ol>
 
         <div className="mt-6 flex gap-2">
-          <button onClick={onHide} className="flex-1 py-3 rounded-2xl border-2 border-line font-semibold text-muted">
-            On n'aime pas
-          </button>
+          {onHide && (
+            <button onClick={onHide} className="flex-1 py-3 rounded-2xl border-2 border-line font-semibold text-muted">
+              On n'aime pas
+            </button>
+          )}
           <button onClick={onClose} className="flex-1 py-3 rounded-2xl bg-ink text-bg font-semibold">
             Fermer
           </button>

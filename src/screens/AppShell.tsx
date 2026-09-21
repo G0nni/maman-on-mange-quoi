@@ -1,20 +1,34 @@
 import { useState } from 'react'
 import { TabBar, type Tab } from '../components/TabBar'
+import { useRecentPolls, useVotes } from '../hooks/usePolls'
+import { parisDate, shiftDate } from '../lib/dates'
 import type { Household, Member } from '../types'
 import { IdeasScreen } from './IdeasScreen'
 import { StockScreen } from './StockScreen'
+import { VoteScreen } from './VoteScreen'
 
 type Props = { household: Household; members: Member[]; me: Member }
 
 const TITLES: Record<Tab, { title: string; sub: string }> = {
   stock: { title: 'Ce qu’on a', sub: 'Frigo, placard et congélo' },
   ideas: { title: 'Idées de recettes', sub: 'Des repas équilibrés avec le stock' },
-  vote: { title: 'Le vote du soir', sub: 'Chacun choisit, la majorité gagne' },
+  vote: { title: 'Le vote du soir', sub: 'Chacun choisit depuis son téléphone' },
 }
 
-export function AppShell({ household, me }: Props) {
+/** Fenêtre d'historique : aujourd'hui et les 6 jours précédents (7 jours). */
+export const HISTORY_DAYS = 7
+
+export function AppShell({ household, members, me }: Props) {
   const [tab, setTab] = useState<Tab>('stock')
   const [copied, setCopied] = useState(false)
+
+  // Écoutés ici (et pas dans l'écran Vote) pour la pastille de l'onglet, visible partout.
+  // `today` est recalculé à chaque rendu : après minuit, le vote du lendemain prend le relais.
+  const today = parisDate()
+  const polls = useRecentPolls(household.id, shiftDate(today, -(HISTORY_DAYS - 1)))
+  const todayPoll = polls?.find((p) => p.id === today)
+  const votes = useVotes(household.id, todayPoll ? today : null)
+  const mustVote = todayPoll?.status === 'open' && todayPoll.options.length > 0 && !votes.some((v) => v.memberId === me.id)
 
   const invite = async () => {
     const url = `${location.origin}/join/${household.joinCode}`
@@ -54,12 +68,31 @@ export function AppShell({ household, me }: Props) {
 
         <main>
           {tab === 'stock' && <StockScreen householdId={household.id} me={me} />}
-          {tab === 'ideas' && <IdeasScreen householdId={household.id} onGoStock={() => setTab('stock')} />}
-          {tab === 'vote' && <p className="text-muted py-10 text-center">Le vote du soir arrive bientôt.</p>}
+          {tab === 'ideas' && (
+            <IdeasScreen
+              householdId={household.id}
+              me={me}
+              today={today}
+              todayPoll={todayPoll}
+              onGoStock={() => setTab('stock')}
+              onGoVote={() => setTab('vote')}
+            />
+          )}
+          {tab === 'vote' && (
+            <VoteScreen
+              householdId={household.id}
+              members={members}
+              me={me}
+              today={today}
+              poll={todayPoll}
+              votes={votes}
+              onGoIdeas={() => setTab('ideas')}
+            />
+          )}
         </main>
       </div>
 
-      <TabBar tab={tab} onChange={setTab} />
+      <TabBar tab={tab} onChange={setTab} badges={mustVote ? { vote: 'Vote ouvert, tu n’as pas encore voté' } : {}} />
     </div>
   )
 }

@@ -10,10 +10,21 @@ import { hideRecipe, unhideRecipe } from '../lib/prefs'
 import { createIndex } from '../lib/referential'
 import { WEEKDAY_MAX_MINUTES, currentSaison, ingredientState, isWeekday, missingRefs, suggest } from '../lib/suggest'
 import type { Recipe } from '../data/recipe-schema'
+import { MAX_OPTIONS, PollError, addToPoll } from '../lib/polls'
+import type { VoteButton } from '../components/RecipeCard'
+import type { Member, Poll } from '../types'
 
-type Props = { householdId: string; onGoStock: () => void }
+type Props = {
+  householdId: string
+  me: Member
+  /** Date du jour (AAAA-MM-JJ, Paris) et vote du jour s'il existe. */
+  today: string
+  todayPoll: Poll | undefined
+  onGoStock: () => void
+  onGoVote: () => void
+}
 
-export function IdeasScreen({ householdId, onGoStock }: Props) {
+export function IdeasScreen({ householdId, me, today, todayPoll, onGoStock, onGoVote }: Props) {
   const stock = useStock(householdId)
   const hidden = useHiddenRecipes(householdId)
   const { catalog, error } = useCatalog()
@@ -22,6 +33,7 @@ export function IdeasScreen({ householdId, onGoStock }: Props) {
   const [seen, setSeen] = useState<string[]>([])
   const [shownIds, setShownIds] = useState<string[] | null>(null)
   const [openId, setOpenId] = useState<string | null>(null)
+  const [pendingVoteId, setPendingVoteId] = useState<string | null>(null)
   const [toast, setToast] = useToast()
 
   const index = useMemo(() => (catalog ? createIndex(catalog.REFERENTIAL) : null), [catalog])
@@ -58,6 +70,31 @@ export function IdeasScreen({ householdId, onGoStock }: Props) {
     hideRecipe(householdId, recipe.id).catch(() => setToast('Impossible de masquer ce plat'))
     setOpenId(null)
     setToast(`« ${recipe.name} » ne sera plus proposé`)
+  }
+
+  const voteButton = (recipe: Recipe): VoteButton => {
+    if (pendingVoteId === recipe.id) return 'pending'
+    if (!todayPoll) return 'available'
+    if (todayPoll.options.includes(recipe.id)) return 'in-poll'
+    if (todayPoll.status === 'closed') return 'closed'
+    return todayPoll.options.length >= MAX_OPTIONS ? 'full' : 'available'
+  }
+
+  // Transaction (réseau nécessaire) : crée le vote du jour ou y ajoute le plat.
+  const putToVote = (recipe: Recipe) => {
+    setPendingVoteId(recipe.id)
+    addToPoll(householdId, today, recipe.id, me.id)
+      .then((result) => setToast(result === 'already' ? 'Déjà au vote' : 'Ajouté au vote du soir'))
+      .catch((err) =>
+        setToast(
+          err instanceof PollError && err.code === 'closed'
+            ? 'Le vote de ce soir est déjà clos'
+            : err instanceof PollError && err.code === 'full'
+              ? `${MAX_OPTIONS} plats maximum au vote`
+              : 'Impossible de mettre au vote, vérifie ta connexion',
+        ),
+      )
+      .finally(() => setPendingVoteId(null))
   }
 
   const shown = (shownIds ?? []).map((id) => recipeById.get(id)).filter((r): r is Recipe => !!r && !hiddenSet.has(r.id))
@@ -130,10 +167,18 @@ export function IdeasScreen({ householdId, onGoStock }: Props) {
               missingLabels={missingRefs(recipe, have, index).map(index.label)}
               onOpen={() => setOpenId(recipe.id)}
               onHide={() => hide(recipe)}
+              vote={voteButton(recipe)}
+              onVote={() => putToVote(recipe)}
             />
           </li>
         ))}
       </ul>
+
+      {todayPoll?.status === 'open' && (
+        <button onClick={onGoVote} className="w-full py-3 rounded-2xl border-2 border-ink font-semibold">
+          Voir le vote ({todayPoll.options.length} plat{todayPoll.options.length > 1 ? 's' : ''})
+        </button>
+      )}
 
       {hiddenRecipes.length > 0 && (
         <details className="bg-surface border border-line rounded-2xl px-4 py-3">

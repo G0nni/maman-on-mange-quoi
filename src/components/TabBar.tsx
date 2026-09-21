@@ -6,7 +6,14 @@ const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: 'vote', label: 'Vote du soir', icon: '🗳️' },
 ]
 
-export function TabBar({ tab, onChange }: { tab: Tab; onChange: (t: Tab) => void }) {
+type Props = {
+  tab: Tab
+  onChange: (t: Tab) => void
+  /** Pastille « à faire » (ex. vote ouvert auquel je n'ai pas encore répondu). */
+  badges?: Partial<Record<Tab, string>>
+}
+
+export function TabBar({ tab, onChange, badges = {} }: Props) {
   return (
     <nav
       className="fixed bottom-0 inset-x-0 z-40 bg-surface border-t border-line"
@@ -27,6 +34,12 @@ export function TabBar({ tab, onChange }: { tab: Tab; onChange: (t: Tab) => void
               </span>
               <span className={`text-xs font-semibold ${active ? 'text-ink' : 'text-muted'}`}>{t.label}</span>
               {active && <span className="absolute -top-2 w-8 h-1 rounded-full bg-mustard" aria-hidden="true" />}
+              {badges[t.id] && (
+                <>
+                  <span className="absolute top-1 right-[30%] w-3 h-3 rounded-full bg-tomato ring-2 ring-surface" aria-hidden="true" />
+                  <span className="sr-only">{badges[t.id]}</span>
+                </>
+              )}
             </button>
           )
         })}
