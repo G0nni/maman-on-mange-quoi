@@ -20,11 +20,13 @@ type Props = {
   /** Date du jour (AAAA-MM-JJ, Paris) et vote du jour s'il existe. */
   today: string
   todayPoll: Poll | undefined
+  /** Gagnants des votes des 7 derniers jours : exclus des suggestions. */
+  recentWinners: string[]
   onGoStock: () => void
   onGoVote: () => void
 }
 
-export function IdeasScreen({ householdId, me, today, todayPoll, onGoStock, onGoVote }: Props) {
+export function IdeasScreen({ householdId, me, today, todayPoll, recentWinners, onGoStock, onGoVote }: Props) {
   const stock = useStock(householdId)
   const hidden = useHiddenRecipes(householdId)
   const { catalog, error } = useCatalog()
@@ -53,7 +55,7 @@ export function IdeasScreen({ householdId, me, today, todayPoll, onGoStock, onGo
   const hiddenSet = new Set(hidden)
 
   const propose = () => {
-    const options = { weekday, saison: currentSaison(now), modeLong, hidden }
+    const options = { weekday, saison: currentSaison(now), modeLong, hidden, recentWinners }
     let result = suggest(stockIds, catalog.RECIPES, catalog.REFERENTIAL, { ...options, seen })
     let alreadySeen = seen
     if (result.length === 0 && seen.length > 0) {

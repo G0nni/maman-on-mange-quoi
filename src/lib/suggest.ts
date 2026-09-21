@@ -17,6 +17,8 @@ export type SuggestOptions = {
   hidden?: Iterable<string>
   /** Déjà proposées pendant la session. */
   seen?: Iterable<string>
+  /** Gagnants des votes des 7 derniers jours (recentWinners()) : on ne remange pas le même plat. */
+  recentWinners?: Iterable<string>
   /** « On a le temps ce soir » : lève la limite de temps en semaine. */
   modeLong?: boolean
   count?: number
@@ -87,7 +89,7 @@ export function suggest(stockIds: Iterable<string>, recipes: Recipe[], ref: Refe
   const { weekday, saison, modeLong = false, count = 3, rng = Math.random } = options
   const index = createIndex(ref)
   const have = index.resolveStock(stockIds)
-  const excluded = new Set([...(options.hidden ?? []), ...(options.seen ?? [])])
+  const excluded = new Set([...(options.hidden ?? []), ...(options.seen ?? []), ...(options.recentWinners ?? [])])
   const timeLimit = isWeekday(weekday) && !modeLong ? WEEKDAY_MAX_MINUTES : Infinity
 
   const faisables: Suggestion[] = []

@@ -37,7 +37,7 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - **Matching stock / recette optimiste** : un aliment du stock qui correspond à un groupe (« Poulet ») satisfait une recette qui demande un membre précis du groupe (blancs de poulet).
 - **Suggestions** (`suggest()` dans `src/lib/suggest.ts`, fonction pure, hasard injectable via `rng`) :
   - faisable (0 manquant) avant « presque » (1 manquant), au-delà exclu ;
-  - exclut les plats masqués (foyer) et déjà vus (session) ; du lundi au vendredi, 45 min maximum sauf « On a le temps ce soir » ; pas de limite le week-end ;
+  - exclut les plats masqués (foyer), déjà vus (session) et gagnants d'un vote des 7 derniers jours, aujourd'hui compris (`recentWinners()`, `src/lib/history.ts`) ; du lundi au vendredi, 45 min maximum sauf « On a le temps ce soir » ; pas de limite le week-end ;
   - 3 plats de protéines toutes différentes (« aucune » compte comme une protéine), tirage pondéré : +1 équilibre P/L/F complet, +1 saison courante, +0,5 toute l'année.
 - La logique du référentiel (statut d'une ref, résolution des ids du stock y compris alias, satisfaction optimiste) vit dans `src/lib/referential.ts` et sert à `refStatus()`, au validateur et à `suggest()`. Ne pas la dupliquer.
 - Pas de desserts. Les fruits restent dans le référentiel pour l'autocomplétion du stock.

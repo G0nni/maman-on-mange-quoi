@@ -152,6 +152,13 @@ describe('suggest', () => {
     expect(ids(suggest(stock, [poulet, steakRiz], ref, opts({ seen: ['steak-riz'] })))).toEqual(['poulet-riz'])
   })
 
+  it('exclut les gagnants des derniers jours (historique des votes)', () => {
+    const stock = ['poulet', 'riz', 'steak']
+    expect(ids(suggest(stock, [poulet, steakRiz], ref, opts({ recentWinners: ['poulet-riz'] })))).toEqual(['steak-riz'])
+    // Tout ce qui est faisable a gagné récemment : rien à proposer plutôt que de répéter.
+    expect(suggest(stock, [poulet, steakRiz], ref, opts({ recentWinners: ['poulet-riz', 'steak-riz'] }))).toEqual([])
+  })
+
   it('propose 3 plats de protéines toutes différentes', () => {
     const volailles = Array.from({ length: 6 }, (_, i) => recipe(`poulet-${i}`, 'volaille', ['poulet', 'riz']))
     const stock = ['poulet', 'riz', 'steak', 'oeuf', 'emmental']

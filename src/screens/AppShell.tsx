@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { TabBar, type Tab } from '../components/TabBar'
 import { useRecentPolls, useVotes } from '../hooks/usePolls'
-import { parisDate, shiftDate } from '../lib/dates'
+import { parisDate } from '../lib/dates'
+import { historyStart, recentWinners } from '../lib/history'
 import type { Household, Member } from '../types'
 import { IdeasScreen } from './IdeasScreen'
 import { StockScreen } from './StockScreen'
@@ -15,9 +16,6 @@ const TITLES: Record<Tab, { title: string; sub: string }> = {
   vote: { title: 'Le vote du soir', sub: 'Chacun choisit depuis son téléphone' },
 }
 
-/** Fenêtre d'historique : aujourd'hui et les 6 jours précédents (7 jours). */
-export const HISTORY_DAYS = 7
-
 export function AppShell({ household, members, me }: Props) {
   const [tab, setTab] = useState<Tab>('stock')
   const [copied, setCopied] = useState(false)
@@ -25,8 +23,9 @@ export function AppShell({ household, members, me }: Props) {
   // Écoutés ici (et pas dans l'écran Vote) pour la pastille de l'onglet, visible partout.
   // `today` est recalculé à chaque rendu : après minuit, le vote du lendemain prend le relais.
   const today = parisDate()
-  const polls = useRecentPolls(household.id, shiftDate(today, -(HISTORY_DAYS - 1)))
+  const polls = useRecentPolls(household.id, historyStart(today))
   const todayPoll = polls?.find((p) => p.id === today)
+  const winners = recentWinners(polls ?? [], today)
   const votes = useVotes(household.id, todayPoll ? today : null)
   const mustVote = todayPoll?.status === 'open' && todayPoll.options.length > 0 && !votes.some((v) => v.memberId === me.id)
 
@@ -74,6 +73,7 @@ export function AppShell({ household, members, me }: Props) {
               me={me}
               today={today}
               todayPoll={todayPoll}
+              recentWinners={winners}
               onGoStock={() => setTab('stock')}
               onGoVote={() => setTab('vote')}
             />
