@@ -1,12 +1,14 @@
 import { z } from 'zod'
 import { PROTEIN_FAMILIES } from './ingredients'
+import { RECIPE_DEFAULTS } from './recipe-defaults'
 
 /**
  * Schéma d'une recette (src/data/recipes/*.json). Le type Recipe en est déduit.
  * Ce fichier ne vérifie que la structure : l'existence des refs dans le référentiel et la
  * cohérence protéine / végé sont vérifiées par scripts/validate-recipes.ts.
  *
- * Côté app, importer le type avec `import type` : zod reste alors hors du bundle.
+ * Côté app : UNIQUEMENT `import type` depuis ce fichier (zod ne doit pas partir dans le bundle
+ * client). Les valeurs par défaut sont appliquées par withDefaults() (recipe-defaults.ts).
  */
 
 const Slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'slug attendu : minuscules, chiffres, tirets')
@@ -31,7 +33,7 @@ const RecipeIngredientSchema = z
     ref: Slug, // id d'ingrédient ou de groupe du référentiel
     qty: z.number().positive().optional(),
     unit: z.enum(UNITS).optional(),
-    optional: z.boolean().default(false),
+    optional: z.boolean().default(RECIPE_DEFAULTS.optional),
   })
   .refine((i) => !(i.unit && i.qty === undefined), { message: 'unit sans qty' })
 
@@ -44,7 +46,7 @@ export const RecipeSchema = z
     emoji: z.string().min(1).max(8),
     time: z.number().int().min(5).max(300), // minutes, préparation + cuisson
     difficulty: z.number().int().min(1).max(3),
-    servings: z.number().int().min(1).max(12).default(4),
+    servings: z.number().int().min(1).max(12).default(RECIPE_DEFAULTS.servings),
     // Protéine principale : sert à ne pas proposer deux plats de la même famille.
     protein: z.enum([...PROTEIN_FAMILIES, 'aucune']),
     ingredients: z.array(RecipeIngredientSchema).min(2),
@@ -52,7 +54,7 @@ export const RecipeSchema = z
     balance: z.array(z.enum(BALANCE)).min(1),
     saisons: z.array(z.enum(SAISONS)).min(1),
     tags: z.array(z.enum(TAGS)).default([]),
-    cuisine: z.enum(CUISINES).default('francaise'),
+    cuisine: z.enum(CUISINES).default(RECIPE_DEFAULTS.cuisine),
   })
   .superRefine((r, ctx) => {
     const issue = (message: string) => ctx.addIssue({ code: 'custom', message })
@@ -68,3 +70,5 @@ export const RecipeSchema = z
 
 export type Recipe = z.infer<typeof RecipeSchema>
 export type RecipeIngredient = Recipe['ingredients'][number]
+/** Recette telle qu'écrite dans les JSON (champs par défaut facultatifs). */
+export type RecipeInput = z.input<typeof RecipeSchema>
