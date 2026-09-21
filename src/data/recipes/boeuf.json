@@ -112,5 +112,355 @@
     "balance": ["P", "L", "F"],
     "saisons": ["toute-annee"],
     "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "steaks-haches-puree-haricots-verts",
+    "name": "Steaks hachés, purée et haricots verts",
+    "emoji": "🥩",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-hache", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "lait", "qty": 15, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "haricot-vert", "qty": 400, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min et les haricots verts 10 min à l'eau salée.",
+      "Écraser les pommes de terre avec le lait chaud et le beurre.",
+      "Cuire les steaks hachés 3 min de chaque côté à la poêle. Saler, poivrer et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "bavette-echalotes-frites-four",
+    "name": "Bavette à l'échalote et frites au four",
+    "emoji": "🥩",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 4 },
+      { "ref": "echalote", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C. Couper les pommes de terre en frites, les mélanger avec l'huile et les enfourner 35 min.",
+      "Émincer les échalotes et les faire fondre 5 min dans le beurre.",
+      "Cuire la viande 2 à 3 min de chaque côté à feu vif, puis la napper des échalotes."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "boeuf-bourguignon",
+    "name": "Bœuf bourguignon",
+    "emoji": "🍷",
+    "time": 180,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-a-braiser", "qty": 1.2, "unit": "kg" },
+      { "ref": "vin-rouge", "qty": 75, "unit": "cl" },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "farine", "qty": 2, "unit": "cas" },
+      { "ref": "bouquet-garni", "qty": 1 },
+      { "ref": "pates", "qty": 400, "unit": "g" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de bœuf en plusieurs fois dans une cocotte, avec les lardons.",
+      "Saupoudrer de farine, mélanger, puis verser le vin et ajouter les carottes et le bouquet garni.",
+      "Couvrir et laisser mijoter 2 h 30 à feu très doux.",
+      "Ajouter les champignons 30 min avant la fin. Servir avec des pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "pot-au-feu",
+    "name": "Pot-au-feu",
+    "emoji": "🥕",
+    "time": 210,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-a-braiser", "qty": 1.5, "unit": "kg" },
+      { "ref": "carotte", "qty": 6 },
+      { "ref": "poireau", "qty": 3 },
+      { "ref": "navet", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "bouquet-garni", "qty": 1 }
+    ],
+    "steps": [
+      "Mettre la viande dans une grande marmite, couvrir d'eau froide, porter à ébullition et écumer.",
+      "Ajouter le bouquet garni, saler, et laisser frémir 2 h.",
+      "Ajouter les carottes, les poireaux et les navets, cuire encore 45 min.",
+      "Cuire les pommes de terre à part 25 min et servir le tout avec le bouillon."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "roti-boeuf-pommes-de-terre",
+    "name": "Rôti de bœuf, pommes de terre et haricots verts",
+    "emoji": "🥩",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "roti-de-boeuf", "qty": 1, "unit": "kg" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "haricot-vert", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "thym", "qty": 2, "unit": "brin" }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C. Couper les pommes de terre en quartiers et les mélanger avec 2 c. à soupe d'huile et le thym.",
+      "Enfourner les pommes de terre 15 min, puis ajouter le rôti huilé, salé et poivré.",
+      "Cuire 30 à 35 min selon la cuisson souhaitée, puis laisser reposer 10 min sous une feuille d'aluminium.",
+      "Pendant ce temps, cuire les haricots verts 10 min à l'eau salée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "boeuf-aux-carottes",
+    "name": "Bœuf aux carottes",
+    "emoji": "🥕",
+    "time": 150,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-a-braiser", "qty": 1, "unit": "kg" },
+      { "ref": "carotte", "qty": 1, "unit": "kg" },
+      { "ref": "vin-blanc", "qty": 20, "unit": "cl", "optional": true },
+      { "ref": "bouquet-garni", "qty": 1 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de bœuf dans l'huile dans une cocotte.",
+      "Ajouter les carottes en rondelles, le vin blanc, le bouquet garni et 30 cl d'eau.",
+      "Couvrir et laisser mijoter 2 h à feu doux.",
+      "Ajouter les pommes de terre en morceaux 30 min avant la fin."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "tomates-farcies",
+    "name": "Tomates farcies",
+    "emoji": "🍅",
+    "time": 70,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "tomate", "qty": 8 },
+      { "ref": "viande-hachee", "qty": 400, "unit": "g" },
+      { "ref": "riz", "qty": 200, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C. Couper un chapeau aux tomates, les évider et garder la pulpe.",
+      "Mélanger la viande avec l'oignon et l'ail hachés, le persil, sel et poivre, puis farcir les tomates.",
+      "Mettre le riz cru au fond du plat avec la pulpe et 30 cl d'eau, poser les tomates dessus.",
+      "Cuire 50 min au four, jusqu'à ce que le riz soit tendre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "courgettes-farcies",
+    "name": "Courgettes farcies",
+    "emoji": "🥒",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "courgette", "qty": 4 },
+      { "ref": "viande-hachee", "qty": 400, "unit": "g" },
+      { "ref": "riz", "qty": 200, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire le riz.",
+      "Couper les courgettes en deux, les évider et hacher la chair.",
+      "Faire revenir la viande avec la chair des courgettes, ajouter les tomates et la moitié du riz.",
+      "Farcir les courgettes, parsemer de fromage et cuire 35 min. Servir avec le reste du riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "moussaka",
+    "name": "Moussaka",
+    "emoji": "🍆",
+    "time": 90,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "aubergine", "qty": 3 },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "lait", "qty": 50, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "farine", "qty": 40, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "cannelle", "qty": 1, "unit": "pincee" }
+    ],
+    "steps": [
+      "Couper les aubergines en tranches, les huiler et les cuire 20 min au four à 200 °C.",
+      "Faire revenir la viande, ajouter les tomates et la cannelle, laisser mijoter 15 min.",
+      "Préparer une béchamel avec le beurre, la farine et le lait.",
+      "Alterner aubergines et viande dans un plat, couvrir de béchamel et de fromage, cuire 35 min à 180 °C."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete", "automne"],
+    "tags": ["four"],
+    "cuisine": "autre"
+  },
+  {
+    "id": "boeuf-stroganoff",
+    "name": "Bœuf Stroganoff",
+    "emoji": "🍄",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 600, "unit": "g" },
+      { "ref": "champignon", "qty": 300, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "paprika", "qty": 1, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Couper la viande en fines lanières et la saisir 2 min à feu vif dans l'huile, puis la réserver.",
+      "Faire revenir les champignons émincés 5 min, ajouter la crème et le paprika.",
+      "Remettre la viande 1 min pour la réchauffer et servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"],
+    "cuisine": "autre"
+  },
+  {
+    "id": "pain-de-viande",
+    "name": "Pain de viande et pommes de terre vapeur",
+    "emoji": "🍞",
+    "time": 70,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "viande-hachee", "qty": 600, "unit": "g" },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "chapelure", "qty": 60, "unit": "g" },
+      { "ref": "lait", "qty": 10, "unit": "cl" },
+      { "ref": "concentre-de-tomate", "qty": 2, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C.",
+      "Mélanger la viande, les œufs, la chapelure trempée dans le lait, les herbes, sel et poivre.",
+      "Tasser dans un moule à cake, étaler le concentré de tomate dessus et cuire 50 min.",
+      "Cuire les pommes de terre à la vapeur 25 min et servir avec des tranches de pain de viande."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "chou-farci",
+    "name": "Chou farci",
+    "emoji": "🥬",
+    "time": 120,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "chou-vert", "qty": 1 },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "riz", "qty": 100, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "lardons-poitrine", "qty": 100, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Blanchir les feuilles de chou 5 min à l'eau bouillante et les égoutter.",
+      "Mélanger la viande, le riz cru, l'œuf, sel et poivre.",
+      "Tapisser un saladier de feuilles de chou, alterner farce et feuilles, puis refermer.",
+      "Démouler dans une cocotte avec les carottes, les lardons et le bouillon, couvrir et cuire 1 h 30 à feu doux."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": []
+  },
+  {
+    "id": "pates-viande-hachee-courgettes-creme",
+    "name": "Pâtes à la viande hachée, courgettes et crème",
+    "emoji": "🍝",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "viande-hachee", "qty": 350, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire revenir les courgettes en dés 8 min dans l'huile, ajouter la viande et la cuire 5 min.",
+      "Ajouter la crème, saler, poivrer et mélanger avec les pâtes égouttées."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "brochettes-boeuf-legumes",
+    "name": "Brochettes de bœuf et légumes grillés",
+    "emoji": "🍢",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 600, "unit": "g" },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "courgette", "qty": 1 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Couper la viande et les légumes en cubes, les mélanger avec l'huile, les herbes, sel et poivre.",
+      "Monter les brochettes et les griller 8 à 10 min en les retournant."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
   }
 ]
