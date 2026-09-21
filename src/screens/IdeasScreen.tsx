@@ -56,7 +56,6 @@ export function IdeasScreen({ householdId, onGoStock }: Props) {
 
   const hide = (recipe: Recipe) => {
     hideRecipe(householdId, recipe.id).catch(() => setToast('Impossible de masquer ce plat'))
-    setShownIds((ids) => ids?.filter((id) => id !== recipe.id) ?? null)
     setOpenId(null)
     setToast(`« ${recipe.name} » ne sera plus proposé`)
   }
@@ -76,7 +75,11 @@ export function IdeasScreen({ householdId, onGoStock }: Props) {
           {shownIds ? '3 autres idées' : 'Proposer 3 recettes'}
         </span>
         <span className="block text-sm font-medium mt-1 opacity-80">
-          Avec les {stockIds.length} aliment{stockIds.length > 1 ? 's' : ''} du stock
+          {stockIds.length === 0
+            ? 'Le stock est vide pour l’instant'
+            : stockIds.length === 1
+              ? 'Avec le seul aliment du stock'
+              : `Avec les ${stockIds.length} aliments du stock`}
         </span>
       </button>
 
@@ -111,9 +114,11 @@ export function IdeasScreen({ householdId, onGoStock }: Props) {
         </div>
       )}
 
-      {shown.length > 0 && shown.length < 3 && (
+      {/* Compte ce qui a été proposé, pas ce qui reste affiché : masquer un plat ne doit pas
+          faire croire à un stock trop maigre. */}
+      {shownIds !== null && shownIds.length > 0 && shownIds.length < 3 && (
         <p className="text-sm text-muted bg-surface border border-line rounded-2xl p-3">
-          Seulement {shown.length} idée{shown.length > 1 ? 's' : ''} avec le stock actuel. Ajoute des aliments pour avoir plus de choix.
+          Seulement {shownIds.length} idée{shownIds.length > 1 ? 's' : ''} avec le stock actuel. Ajoute des aliments pour avoir plus de choix.
         </p>
       )}
 
