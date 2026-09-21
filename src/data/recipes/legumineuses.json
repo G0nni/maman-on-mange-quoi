@@ -1,0 +1,255 @@
+[
+  {
+    "id": "soupe-pois-casses",
+    "name": "Soupe de pois cassés",
+    "emoji": "🫛",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "pois-casse", "qty": 300, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "pomme-de-terre", "qty": 2 },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "pain", "qty": 4, "unit": "tranche", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Rincer les pois cassés et les mettre dans une grande casserole avec 1,5 l d'eau et le bouillon cube.",
+      "Ajouter l'oignon, les carottes et les pommes de terre en morceaux.",
+      "Cuire 50 min à feu doux, puis mixer. Servir avec des croûtons."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "salade-lentilles-carottes-feta",
+    "name": "Salade de lentilles, carottes et feta",
+    "emoji": "🥗",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentille-verte", "qty": 500, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "feta", "qty": 150, "unit": "g" },
+      { "ref": "echalote", "qty": 1, "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" },
+      { "ref": "moutarde", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Rincer et égoutter les lentilles cuites (en bocal ou cuites la veille).",
+      "Râper les carottes, émietter la feta et hacher l'échalote.",
+      "Mélanger le tout avec une vinaigrette moutardée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "veloute-lentilles-carottes",
+    "name": "Velouté de lentilles et carottes",
+    "emoji": "🥕",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentilles", "qty": 200, "unit": "g" },
+      { "ref": "carotte", "qty": 500, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon avec le cumin dans un peu d'huile.",
+      "Ajouter les carottes en rondelles, les lentilles rincées, le bouillon cube et 1 l d'eau.",
+      "Cuire 20 min, puis mixer avec la crème."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "legumes-rotis-pois-chiches-yaourt",
+    "name": "Légumes rôtis, pois chiches et sauce au yaourt",
+    "emoji": "🫘",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "patate-douce", "qty": 600, "unit": "g" },
+      { "ref": "pois-chiche", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "yaourt-fromage-blanc", "qty": 200, "unit": "g" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 210 °C.",
+      "Couper les patates douces, les carottes et les oignons en morceaux, les mélanger avec les pois chiches égouttés, l'huile et le cumin.",
+      "Enfourner 30 min en remuant à mi-cuisson.",
+      "Servir avec le yaourt assaisonné de sel, poivre et jus de citron."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["four", "vege"]
+  },
+  {
+    "id": "salade-pois-chiches-feta",
+    "name": "Salade de pois chiches, tomates, concombre et feta",
+    "emoji": "🥗",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "pois-chiche", "qty": 400, "unit": "g" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "feta", "qty": 150, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Rincer et égoutter les pois chiches.",
+      "Couper les tomates et le concombre en dés, émietter la feta.",
+      "Mélanger avec l'huile, le jus de citron, les herbes, sel et poivre."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "burgers-vege-haricots-rouges",
+    "name": "Burgers végétariens aux haricots rouges",
+    "emoji": "🍔",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "haricot-rouge", "qty": 400, "unit": "g" },
+      { "ref": "chapelure", "qty": 60, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "pain-a-burger", "qty": 4 },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "tomate", "qty": 1 },
+      { "ref": "cumin", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Écraser les haricots rouges égouttés à la fourchette avec l'œuf, la chapelure, le cumin, sel et poivre.",
+      "Former 4 galettes et les cuire 4 min de chaque côté dans l'huile.",
+      "Toaster les pains et monter les burgers avec la salade et la tomate en rondelles."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "lentilles-mijotees-legumes",
+    "name": "Lentilles mijotées aux légumes",
+    "emoji": "🫘",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentille-verte", "qty": 300, "unit": "g" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "poireau", "qty": 1 },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "laurier", "qty": 1, "unit": "feuille" },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon et le poireau émincés dans un peu d'huile.",
+      "Ajouter les lentilles rincées, les carottes en dés, le thym, le laurier et 3 fois leur volume d'eau.",
+      "Cuire 25 min à feu doux, saler en fin de cuisson et ajouter la crème."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "soupe-au-pistou",
+    "name": "Soupe au pistou",
+    "emoji": "🌿",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "haricot-blanc", "qty": 400, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "haricot-vert", "qty": 200, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "pomme-de-terre", "qty": 2 },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "pates", "qty": 80, "unit": "g" },
+      { "ref": "pesto", "qty": 4, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper tous les légumes en petits dés et les mettre dans 2 l d'eau salée.",
+      "Cuire 30 min, puis ajouter les haricots blancs égouttés et les petites pâtes, cuire encore 10 min.",
+      "Hors du feu, ajouter le pesto et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "bolognaise-lentilles",
+    "name": "Bolognaise végétarienne aux lentilles",
+    "emoji": "🍝",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "lentilles", "qty": 150, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 800, "unit": "g" },
+      { "ref": "carotte", "qty": 1 },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon et la carotte râpée dans l'huile.",
+      "Ajouter les lentilles rincées, les tomates, les herbes et 20 cl d'eau, laisser mijoter 20 min.",
+      "Cuire les pâtes et servir avec la sauce et le fromage."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "parmentier-lentilles",
+    "name": "Hachis parmentier végétarien aux lentilles",
+    "emoji": "🥔",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentilles", "qty": 250, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les lentilles 25 min avec les carottes en dés. Cuire les pommes de terre 20 min à l'eau salée.",
+      "Écraser les pommes de terre avec le lait chaud et le beurre.",
+      "Étaler les lentilles dans un plat, couvrir de purée et de fromage.",
+      "Gratiner 20 min au four à 200 °C."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four", "vege"]
+  }
+]
