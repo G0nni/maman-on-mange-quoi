@@ -22,6 +22,14 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
   - `npm run test:rules` : tests des Security Rules (`tests/rules/`, `@firebase/rules-unit-testing`). **Toute modification de `firestore.rules` doit être couverte par un test ici, et ne se déploie que si `npm run test:rules` est vert.**
   - `npm run emulators` + `npm run dev:emu` : l'app en dev sur l'émulateur (`.env.emulator` : `VITE_USE_EMULATOR=true`, pris en compte en dev uniquement).
 
+## Workflow Git
+
+- **Plus de commit direct sur `main`.** Une branche par fonctionnalité, nommée par type : `feat/…`, `fix/…`, `chore/…`, `ci/…`, `docs/…`, `test/…`.
+- Cycle : branche → commits → push → PR vers `main` → CI verte (jobs « Vérifications » et « Règles Firestore », `.github/workflows/ci.yml`) → preview Vercel testée sur téléphone, iPhone compris → merge.
+- Avant de pousser : `npx tsc -b`, `npm run lint`, `npm test`, et `npm run test:rules` si `firestore.rules` ou `src/lib/poll-ops.ts` a changé (la CI le refait, mais autant ne pas attendre).
+- **Règles Firestore : déployées uniquement depuis `main`, après merge**, et seulement si `npm run test:rules` est vert. Jamais depuis une branche : les previews Vercel utilisent le même projet Firebase que la production.
+- Pour Claude : ne jamais pousser sur `main` ni merger soi-même ; créer la branche, pousser, ouvrir la PR, s'arrêter là.
+
 ## Recettes (base statique, pas de LLM au runtime)
 
 - Référentiel : `src/data/ingredients.ts` (ingrédients, groupes, basiques). `id` = `stockId(label)`, vérifié.
