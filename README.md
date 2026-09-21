@@ -1,5 +1,7 @@
 # Maman, on mange quoi ?
 
+[![CI](https://github.com/G0nni/maman-on-mange-quoi/actions/workflows/ci.yml/badge.svg)](https://github.com/G0nni/maman-on-mange-quoi/actions/workflows/ci.yml)
+
 PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel.
 
 Stack : React 19, Vite, TypeScript, Tailwind v4, Firebase (Auth anonyme + Firestore), déployée sur Vercel.
