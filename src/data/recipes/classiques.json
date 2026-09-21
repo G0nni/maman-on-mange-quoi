@@ -1,0 +1,201 @@
+[
+  {
+    "id": "roti-boeuf-froid-salade-pommes-de-terre",
+    "name": "Rôti de bœuf froid et salade de pommes de terre",
+    "emoji": "🥩",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "roti-de-boeuf", "qty": 800, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "cornichon", "qty": 8, "optional": true },
+      { "ref": "moutarde", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le rôti la veille (ou utiliser un reste) et le trancher finement.",
+      "Cuire les pommes de terre 20 min à l'eau salée, les couper en rondelles tièdes.",
+      "Les assaisonner d'une vinaigrette moutardée. Servir avec le rôti froid, la salade et les cornichons."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "boulettes-puree-petits-pois",
+    "name": "Boulettes de viande, purée et petits pois",
+    "emoji": "🧆",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 50, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "lait", "qty": 15, "unit": "cl" },
+      { "ref": "petit-pois", "qty": 300, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Mélanger la viande, l'œuf, la chapelure, sel et poivre, et former des boulettes.",
+      "Cuire les pommes de terre 20 min et les petits pois 10 min à l'eau salée. Écraser les pommes de terre avec le lait et le beurre.",
+      "Dorer les boulettes 12 min dans l'huile en les retournant, et servir avec la purée et les petits pois."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "daube-provencale",
+    "name": "Daube provençale",
+    "emoji": "🍷",
+    "time": 180,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "boeuf-a-braiser", "qty": 1.2, "unit": "kg" },
+      { "ref": "vin-rouge", "qty": 50, "unit": "cl" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "olive", "qty": 100, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer le bœuf en morceaux dans l'huile, dans une cocotte.",
+      "Ajouter les carottes, les tomates, les herbes et le vin, couvrir et laisser mijoter 2 h 30 à feu très doux.",
+      "Ajouter les olives 20 min avant la fin. Servir avec des pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "escalopes-veau-panees-puree",
+    "name": "Escalopes de veau panées et purée",
+    "emoji": "🥩",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "escalope-de-veau", "qty": 4 },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 80, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 50, "unit": "g" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau salée et les écraser avec le lait chaud et 30 g de beurre.",
+      "Passer les escalopes dans l'œuf battu puis dans la chapelure.",
+      "Les cuire 3 min de chaque côté dans le reste du beurre. Servir avec un quartier de citron."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "epaule-agneau-pommes-de-terre",
+    "name": "Agneau rôti à l'ail et pommes de terre boulangères",
+    "emoji": "🍖",
+    "time": 90,
+    "difficulty": 1,
+    "protein": "agneau",
+    "ingredients": [
+      { "ref": "agneau", "qty": 1.2, "unit": "kg" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "ail", "qty": 4, "unit": "gousse" },
+      { "ref": "thym", "qty": 3, "unit": "brin" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C. Couper les pommes de terre en fines rondelles et les ranger dans un plat avec l'oignon émincé.",
+      "Verser 30 cl de bouillon, poser l'agneau frotté d'huile, d'ail et de thym par-dessus.",
+      "Cuire 1 h 15 en arrosant la viande de temps en temps."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "clafoutis-legumes-soleil",
+    "name": "Clafoutis de courgettes et tomates cerises",
+    "emoji": "🍅",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "lait", "qty": 25, "unit": "cl" },
+      { "ref": "farine", "qty": 60, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "tomates-fraiches", "qty": 250, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C. Faire revenir les courgettes en dés 8 min à la poêle.",
+      "Battre les œufs avec la farine, puis le lait et le fromage, saler, poivrer.",
+      "Répartir les courgettes et les tomates dans un plat, verser la pâte et cuire 30 min."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four", "vege"]
+  },
+  {
+    "id": "saumon-puree-patate-douce",
+    "name": "Saumon et purée de patate douce",
+    "emoji": "🍠",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "patate-douce", "qty": 800, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "lait", "qty": 10, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les patates douces en morceaux 20 min à l'eau salée, puis les écraser avec le lait et le beurre.",
+      "Cuire le saumon 4 min côté peau puis 2 min de l'autre côté dans l'huile.",
+      "Saler, poivrer et servir avec la purée."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "salade-tiede-lentilles-oeuf-lardons",
+    "name": "Salade tiède de lentilles, œuf mollet et lardons",
+    "emoji": "🥗",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "lentille-verte", "qty": 250, "unit": "g" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "lardons-poitrine", "qty": 120, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1, "optional": true },
+      { "ref": "echalote", "qty": 1, "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les lentilles 25 min dans 3 fois leur volume d'eau, puis les égoutter.",
+      "Faire dorer les lardons et cuire les œufs 6 min dans l'eau bouillante, puis les écaler.",
+      "Assaisonner les lentilles tièdes de vinaigrette et d'échalote, ajouter les lardons et un œuf mollet par assiette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  }
+]
