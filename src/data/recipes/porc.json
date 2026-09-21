@@ -103,5 +103,535 @@
     "balance": ["P", "F"],
     "saisons": ["toute-annee"],
     "tags": ["enfants", "four"]
+  },
+  {
+    "id": "cotes-porc-moutarde-haricots-verts",
+    "name": "Côtes de porc à la moutarde et haricots verts",
+    "emoji": "🥩",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "porc-viande", "qty": 4 },
+      { "ref": "moutarde", "qty": 2, "unit": "cas" },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "haricot-vert", "qty": 500, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les haricots verts 10 min à l'eau salée.",
+      "Cuire les côtes de porc 5 min de chaque côté dans l'huile, puis les réserver.",
+      "Verser la crème et la moutarde dans la poêle, laisser épaissir 2 min et napper la viande."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "porc-champignons-creme-pates",
+    "name": "Porc aux champignons et à la crème",
+    "emoji": "🍄",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "porc-viande", "qty": 600, "unit": "g" },
+      { "ref": "champignon", "qty": 300, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "echalote", "qty": 2, "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper la viande en lanières et la faire dorer 6 min dans l'huile, puis la réserver.",
+      "Faire revenir les échalotes et les champignons émincés 8 min.",
+      "Remettre la viande, ajouter la crème et laisser mijoter 5 min.",
+      "Servir avec les pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "roti-porc-pommes-de-terre",
+    "name": "Rôti de porc et pommes de terre fondantes",
+    "emoji": "🥩",
+    "time": 80,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "roti-de-porc", "qty": 1, "unit": "kg" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "ail", "qty": 3, "unit": "gousse" },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 190 °C. Badigeonner le rôti d'huile, saler, poivrer.",
+      "Le mettre dans un plat avec les pommes de terre en quartiers, l'ail et le thym, et 10 cl d'eau.",
+      "Enfourner 1 h 10 en arrosant régulièrement."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "choucroute-garnie",
+    "name": "Choucroute garnie",
+    "emoji": "🥬",
+    "time": 90,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "choucroute", "qty": 1.2, "unit": "kg" },
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "lardons-poitrine", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "vin-blanc", "qty": 20, "unit": "cl" },
+      { "ref": "laurier", "qty": 2, "unit": "feuille" }
+    ],
+    "steps": [
+      "Rincer la choucroute et la mettre dans une cocotte avec le vin blanc, le laurier et 20 cl d'eau.",
+      "Ajouter la poitrine, couvrir et cuire 1 h à feu doux.",
+      "Ajouter les pommes de terre épluchées et les saucisses, cuire encore 25 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": []
+  },
+  {
+    "id": "raclette",
+    "name": "Raclette",
+    "emoji": "🧀",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "fromage-a-raclette", "qty": 800, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1.2, "unit": "kg" },
+      { "ref": "jambon-cru", "qty": 8, "unit": "tranche" },
+      { "ref": "cornichon", "qty": 1, "unit": "pot", "optional": true },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre avec la peau 25 min à l'eau salée.",
+      "Disposer la charcuterie et les cornichons sur un plat.",
+      "Faire fondre le fromage dans l'appareil à raclette et le verser sur les pommes de terre."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "croque-monsieur-salade",
+    "name": "Croque-monsieur et salade",
+    "emoji": "🥪",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pain-de-mie", "qty": 8, "unit": "tranche" },
+      { "ref": "jambon-blanc", "qty": 4, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Beurrer les tranches de pain sur une face.",
+      "Garnir 4 tranches de jambon et de fromage, puis refermer, face beurrée à l'extérieur.",
+      "Cuire 10 min au four à 200 °C ou dans un appareil à croque. Servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "galettes-completes",
+    "name": "Galettes complètes jambon, œuf, fromage",
+    "emoji": "🥞",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "galette-de-sarrasin", "qty": 4 },
+      { "ref": "jambon-blanc", "qty": 4, "unit": "tranche" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "beurre", "qty": 20, "unit": "g" }
+    ],
+    "steps": [
+      "Faire chauffer une galette dans une grande poêle beurrée.",
+      "Casser un œuf au centre, ajouter le jambon et le fromage autour.",
+      "Quand le blanc est pris, replier les bords et servir. Recommencer avec les autres galettes."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "cake-jambon-olives-salade",
+    "name": "Cake jambon-olives et salade verte",
+    "emoji": "🫒",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "farine", "qty": 200, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "levure-chimique", "qty": 1, "unit": "sachet" },
+      { "ref": "lait", "qty": 10, "unit": "cl" },
+      { "ref": "huile", "qty": 10, "unit": "cl" },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "olive", "qty": 100, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C.",
+      "Mélanger la farine, la levure et les œufs, puis ajouter le lait et l'huile.",
+      "Ajouter le jambon en dés, les olives et le fromage, saler peu et poivrer.",
+      "Verser dans un moule à cake et cuire 45 min. Servir tiède avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "boudin-noir-pommes-puree",
+    "name": "Boudin noir aux pommes et purée",
+    "emoji": "🍎",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "boudin-noir", "qty": 4 },
+      { "ref": "pomme", "qty": 4 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "lait", "qty": 15, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau salée et les écraser avec le lait chaud et la moitié du beurre.",
+      "Couper les pommes en quartiers et les faire dorer 10 min dans le reste du beurre.",
+      "Piquer le boudin et le cuire 10 min à la poêle à feu doux. Servir avec les pommes et la purée."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "saucisses-puree",
+    "name": "Saucisses-purée",
+    "emoji": "🌭",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" }
+    ],
+    "steps": [
+      "Cuire les pommes de terre épluchées 20 min à l'eau salée.",
+      "Pendant ce temps, cuire les saucisses 15 min à la poêle en les retournant.",
+      "Écraser les pommes de terre avec le lait chaud et le beurre, saler, poivrer."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "cassoulet",
+    "name": "Cassoulet",
+    "emoji": "🫘",
+    "time": 150,
+    "difficulty": 2,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "haricot-blanc", "qty": 800, "unit": "g" },
+      { "ref": "saucisses", "qty": 4 },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "confit-de-canard", "qty": 2, "optional": true },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "laurier", "qty": 2, "unit": "feuille" }
+    ],
+    "steps": [
+      "Faire dorer les saucisses coupées en tronçons, les lardons et le confit dans une cocotte.",
+      "Ajouter les haricots égouttés, les tomates, le thym, le laurier et de l'eau à hauteur.",
+      "Transférer dans un plat à four et cuire 1 h 30 à 160 °C, en enfonçant la croûte qui se forme de temps en temps."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["hiver"],
+    "tags": ["four"]
+  },
+  {
+    "id": "potee-auvergnate",
+    "name": "Potée auvergnate",
+    "emoji": "🥬",
+    "time": 150,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "chou-vert", "qty": 1 },
+      { "ref": "lardons-poitrine", "qty": 300, "unit": "g" },
+      { "ref": "saucisses", "qty": 4 },
+      { "ref": "carotte", "qty": 4 },
+      { "ref": "navet", "qty": 3 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "bouquet-garni", "qty": 1 }
+    ],
+    "steps": [
+      "Mettre la poitrine dans une grande marmite, couvrir d'eau froide et porter à ébullition.",
+      "Ajouter le chou coupé en quartiers, les carottes, les navets et le bouquet garni, cuire 1 h 30.",
+      "Ajouter les saucisses et les pommes de terre et cuire encore 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "gratin-chou-fleur-jambon",
+    "name": "Gratin de chou-fleur au jambon",
+    "emoji": "🥦",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "chou-fleur", "qty": 1 },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "lait", "qty": 50, "unit": "cl" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "farine", "qty": 40, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Cuire le chou-fleur en bouquets 10 min à l'eau salée et bien l'égoutter.",
+      "Préparer une béchamel avec le beurre, la farine et le lait.",
+      "Disposer le chou-fleur et le jambon en dés dans un plat, napper de béchamel et parsemer de fromage.",
+      "Gratiner 20 min."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "flammekueche",
+    "name": "Flammekueche",
+    "emoji": "🍕",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pate-a-pizza", "qty": 1 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "oignon", "qty": 2 }
+    ],
+    "steps": [
+      "Préchauffer le four à 240 °C.",
+      "Étaler la pâte sur une plaque et la couvrir de crème, salée et poivrée.",
+      "Répartir les oignons en fines rondelles et les lardons.",
+      "Cuire 12 à 15 min, jusqu'à ce que les bords soient dorés."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "salade-lyonnaise",
+    "name": "Salade lyonnaise",
+    "emoji": "🥗",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "lardons-poitrine", "qty": 200, "unit": "g" },
+      { "ref": "oeuf", "qty": 4 },
+      { "ref": "pain", "qty": 4, "unit": "tranche" },
+      { "ref": "vinaigre", "qty": 2, "unit": "cas" },
+      { "ref": "moutarde", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer les lardons à sec, puis les croûtons de pain dans leur graisse.",
+      "Pocher les œufs 3 min dans de l'eau frémissante vinaigrée.",
+      "Préparer une vinaigrette moutardée et en assaisonner la salade.",
+      "Répartir les lardons, les croûtons et un œuf poché sur chaque assiette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps", "automne"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "rougail-saucisses",
+    "name": "Rougail saucisses",
+    "emoji": "🌶️",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "gingembre", "qty": 1, "unit": "cac" },
+      { "ref": "piment-d-espelette", "qty": 1, "unit": "pincee", "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Piquer les saucisses, les couvrir d'eau froide et les porter 5 min à ébullition pour les dessaler, puis les couper en rondelles.",
+      "Les faire dorer dans l'huile, ajouter l'oignon, l'ail et le gingembre.",
+      "Ajouter les tomates et le piment, couvrir et laisser mijoter 25 min.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": [],
+    "cuisine": "autre"
+  },
+  {
+    "id": "grillades-salade-pommes-de-terre",
+    "name": "Grillades de saucisses et salade de pommes de terre",
+    "emoji": "🌭",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "echalote", "qty": 1, "optional": true },
+      { "ref": "vinaigre", "qty": 2, "unit": "cas" },
+      { "ref": "moutarde", "qty": 1, "unit": "cac" },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pommes de terre 20 min à l'eau salée, les couper en rondelles tièdes.",
+      "Les mélanger avec une vinaigrette moutardée, l'échalote hachée et les herbes.",
+      "Griller les saucisses au barbecue ou à la poêle et servir avec la salade verte."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "hot-dogs-maison",
+    "name": "Hot-dogs maison",
+    "emoji": "🌭",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pain", "qty": 2 },
+      { "ref": "saucisses", "qty": 8 },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "moutarde", "qty": 2, "unit": "cas" },
+      { "ref": "ketchup", "qty": 2, "unit": "cas", "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Cuire les saucisses 5 min dans l'eau frémissante.",
+      "Couper les baguettes en tronçons et les ouvrir sans les séparer.",
+      "Garnir de moutarde, d'une saucisse et de fromage, puis passer 8 min au four."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pates-chorizo-poivrons",
+    "name": "Pâtes au chorizo et aux poivrons",
+    "emoji": "🌶️",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "chorizo", "qty": 120, "unit": "g" },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire revenir les poivrons en lanières 10 min dans l'huile, ajouter le chorizo en rondelles.",
+      "Ajouter la crème, laisser épaissir 2 min et mélanger avec les pâtes égouttées."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "crepes-jambon-fromage",
+    "name": "Crêpes jambon-fromage",
+    "emoji": "🥞",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "farine", "qty": 250, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "lait", "qty": 50, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "jambon-blanc", "qty": 6, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Mélanger la farine et les œufs, puis ajouter le lait petit à petit et 20 g de beurre fondu. Laisser reposer si possible.",
+      "Cuire les crêpes dans une poêle beurrée.",
+      "Garnir chaque crêpe d'une demi-tranche de jambon et de fromage, la plier et la réchauffer 1 min de chaque côté."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "pates-lardons-petits-pois",
+    "name": "Pâtes aux lardons et petits pois",
+    "emoji": "🫛",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "petit-pois", "qty": 300, "unit": "g" },
+      { "ref": "creme", "qty": 15, "unit": "cl" }
+    ],
+    "steps": [
+      "Cuire les pâtes, en ajoutant les petits pois 5 min avant la fin.",
+      "Faire dorer les lardons à sec.",
+      "Égoutter pâtes et petits pois, ajouter les lardons et la crème, poivrer et mélanger."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pommes-de-terre-farcies-jambon",
+    "name": "Pommes de terre farcies au jambon",
+    "emoji": "🥔",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pomme-de-terre", "qty": 8 },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "fromage-frais", "qty": 150, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire les pommes de terre entières 40 min.",
+      "Les couper en deux, les évider et écraser la chair avec le fromage frais et le jambon en dés.",
+      "Remplir les pommes de terre, parsemer de fromage et gratiner 10 min."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
   }
 ]
