@@ -1,0 +1,160 @@
+[
+  {
+    "id": "garbure",
+    "name": "Garbure",
+    "emoji": "🥣",
+    "time": 150,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "chou-vert", "qty": 1 },
+      { "ref": "haricot-blanc", "qty": 400, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 4 },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "poireau", "qty": 2 },
+      { "ref": "navet", "qty": 2 },
+      { "ref": "confit-de-canard", "qty": 2 },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g", "optional": true },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "laurier", "qty": 2, "unit": "feuille" },
+      { "ref": "pain", "qty": 8, "unit": "tranche", "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir les lardons et l'oignon dans un peu de graisse de canard, dans une grande marmite.",
+      "Ajouter 2,5 l d'eau, le thym, le laurier, les carottes, les navets et les poireaux en morceaux, cuire 45 min.",
+      "Ajouter le chou émincé, les pommes de terre et le confit, cuire encore 45 min.",
+      "Ajouter les haricots égouttés 15 min avant la fin. Servir avec du pain grillé."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["hiver"],
+    "tags": []
+  },
+  {
+    "id": "axoa-de-veau",
+    "name": "Axoa de veau",
+    "emoji": "🌶️",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "veau-a-blanquette", "qty": 800, "unit": "g" },
+      { "ref": "poivron", "qty": 3 },
+      { "ref": "piment-d-espelette", "qty": 1, "unit": "cac" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper la viande au couteau en tout petits dés (ou demander au boucher de la hacher grossièrement).",
+      "Faire revenir les oignons, l'ail et les poivrons en lanières 10 min dans l'huile.",
+      "Ajouter la viande et le piment, remuer 5 min, puis ajouter 10 cl d'eau, couvrir et mijoter 30 min.",
+      "Servir avec des pommes de terre vapeur."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete", "automne"],
+    "tags": []
+  },
+  {
+    "id": "haricots-tarbais-confit",
+    "name": "Haricots tarbais au confit de canard",
+    "emoji": "🫘",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "haricot-blanc", "qty": 800, "unit": "g" },
+      { "ref": "confit-de-canard", "qty": 4 },
+      { "ref": "lardons-poitrine", "qty": 150, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "laurier", "qty": 2, "unit": "feuille" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire fondre un peu de graisse de canard et y faire revenir les lardons, l'oignon et les carottes en dés.",
+      "Ajouter les haricots cuits (en bocal ou cuits la veille), les tomates, le thym, le laurier et 20 cl d'eau.",
+      "Poser les cuisses de canard dessus, couvrir et laisser mijoter 40 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": []
+  },
+  {
+    "id": "salade-landaise",
+    "name": "Salade landaise",
+    "emoji": "🥗",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "gesier-confit", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
+      { "ref": "tomates-fraiches", "qty": 2, "optional": true },
+      { "ref": "oeuf", "qty": 4, "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Couper les pommes de terre en dés et les faire dorer 20 min à la poêle dans un peu de graisse de canard ou d'huile.",
+      "Réchauffer les gésiers émincés 3 min dans une autre poêle.",
+      "Assaisonner la salade de vinaigrette, ajouter les pommes de terre, les gésiers chauds et les tomates."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "printemps"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "tourin-a-l-ail",
+    "name": "Tourin à l'ail",
+    "emoji": "🧄",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "ail", "qty": 8, "unit": "gousse" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "farine", "qty": 1, "unit": "cas" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire revenir l'ail émincé 3 min à feu doux dans l'huile, sans le colorer, puis ajouter la farine.",
+      "Verser 1,2 l d'eau avec le bouillon cube et cuire 15 min.",
+      "Hors du feu, ajouter les blancs d'œufs en filet en remuant, puis les jaunes battus avec un peu de vinaigre.",
+      "Servir sur des tranches de pain grillé."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"]
+  },
+  {
+    "id": "omelette-cepes",
+    "name": "Omelette aux cèpes et pommes de terre sautées",
+    "emoji": "🍄",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "champignon", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer les pommes de terre en petits dés 20 min dans 2 c. à soupe d'huile.",
+      "Faire sauter les cèpes (ou d'autres champignons) émincés 6 min avec l'ail dans le reste d'huile.",
+      "Verser les œufs battus sur les champignons, cuire à feu moyen, parsemer de persil et servir avec les pommes de terre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne"],
+    "tags": ["enfants", "vege"]
+  }
+]

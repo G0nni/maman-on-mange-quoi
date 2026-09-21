@@ -79,6 +79,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'escalope-de-dinde', label: 'Escalopes de dinde', emoji: '🦃', category: 'proteine', protein: 'volaille', groups: ['volaille-escalope'], aliases: ['dinde'] },
   { id: 'magret-de-canard', label: 'Magrets de canard', emoji: '🦆', category: 'proteine', protein: 'volaille', aliases: ['magret'] },
   { id: 'confit-de-canard', label: 'Confit de canard', emoji: '🦆', category: 'proteine', protein: 'volaille', aliases: ['cuisses de canard confites'] },
+  { id: 'gesier-confit', label: 'Gésiers confits', emoji: '🦆', category: 'proteine', protein: 'volaille', aliases: ['gésiers', 'gésiers de canard'] },
 
   // ---------- Protéines : bœuf, veau, agneau ----------
   { id: 'boeuf-hache', label: 'Bœuf haché', emoji: '🥩', category: 'proteine', protein: 'boeuf', groups: ['viande-hachee'], aliases: ['steak haché'] },
@@ -94,7 +95,7 @@ export const INGREDIENTS: Ingredient[] = [
   // ---------- Protéines : porc et charcuterie ----------
   { id: 'lardon', label: 'Lardons', emoji: '🥓', category: 'proteine', protein: 'porc', groups: ['porc-cuisine', 'lardons-poitrine'], aliases: ['allumettes', 'lardons fumés'] },
   { id: 'jambon-blanc', label: 'Jambon blanc', emoji: '🍖', category: 'proteine', protein: 'porc', groups: ['porc-cuisine'], aliases: ['jambon', 'jambon de Paris'] },
-  { id: 'poitrine-fumee', label: 'Poitrine fumée', emoji: '🥓', category: 'proteine', protein: 'porc', groups: ['porc-cuisine', 'lardons-poitrine'], aliases: ['bacon'] },
+  { id: 'poitrine-fumee', label: 'Poitrine fumée', emoji: '🥓', category: 'proteine', protein: 'porc', groups: ['porc-cuisine', 'lardons-poitrine'], aliases: ['bacon', 'ventrèche'] },
   { id: 'jambon-cru', label: 'Jambon cru', emoji: '🍖', category: 'proteine', protein: 'porc', aliases: ['jambon de Bayonne', 'jambon de Parme'] },
   { id: 'cote-de-porc', label: 'Côtes de porc', emoji: '🥩', category: 'proteine', protein: 'porc', groups: ['porc-viande'], aliases: ['côtelettes de porc'] },
   { id: 'filet-mignon-de-porc', label: 'Filet mignon de porc', emoji: '🥩', category: 'proteine', protein: 'porc', groups: ['porc-viande'], aliases: ['filet mignon'] },
@@ -130,7 +131,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'lentille-corail', label: 'Lentilles corail', emoji: '🫘', category: 'feculent', protein: 'legumineuse', groups: ['lentilles'] },
   { id: 'pois-chiche', label: 'Pois chiches', emoji: '🫘', category: 'feculent', protein: 'legumineuse' },
   { id: 'haricot-rouge', label: 'Haricots rouges', emoji: '🫘', category: 'feculent', protein: 'legumineuse' },
-  { id: 'haricot-blanc', label: 'Haricots blancs', emoji: '🫘', category: 'feculent', protein: 'legumineuse', aliases: ['lingots', 'mogettes'] },
+  { id: 'haricot-blanc', label: 'Haricots blancs', emoji: '🫘', category: 'feculent', protein: 'legumineuse', aliases: ['lingots', 'mogettes', 'haricots tarbais'] },
   { id: 'pois-casse', label: 'Pois cassés', emoji: '🫛', category: 'feculent', protein: 'legumineuse' },
   { id: 'flageolet', label: 'Flageolets', emoji: '🫘', category: 'feculent', protein: 'legumineuse' },
 
@@ -200,7 +201,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'echalote', label: 'Échalotes', emoji: '🧅', category: 'legume' },
   { id: 'ail', label: 'Ail', emoji: '🧄', category: 'legume', aliases: ["gousse d'ail"] },
   { id: 'poireau', label: 'Poireaux', emoji: '🥬', category: 'legume' },
-  { id: 'champignon', label: 'Champignons', emoji: '🍄', category: 'legume', aliases: ['champignons de Paris'] },
+  { id: 'champignon', label: 'Champignons', emoji: '🍄', category: 'legume', aliases: ['champignons de Paris', 'cèpes'] },
   { id: 'epinard', label: 'Épinards', emoji: '🥬', category: 'legume', aliases: ["pousses d'épinard"] },
   { id: 'haricot-vert', label: 'Haricots verts', emoji: '🫛', category: 'legume' },
   { id: 'petit-pois', label: 'Petits pois', emoji: '🫛', category: 'legume' },
