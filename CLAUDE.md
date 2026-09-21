@@ -27,6 +27,13 @@ PWA familiale : stock du frigo, idées de recettes, vote du soir en temps réel 
 - `npm run validate:recipes` : validation + stats. Également exécuté par `npm test`. À lancer après chaque lot de recettes.
 - Conventions : 4 personnes, étapes courtes, pas de tiret cadratin. `rapide` (time <= 25) et `vege` (aucune viande ni poisson, optionnels compris) sont vérifiés par le validateur. On ne liste pas sel et poivre ; les autres basiques (huile, beurre, farine…) oui, quand ils comptent dans la recette.
 - Une ref peut viser un groupe (`fromage-rape`, `pates`…) : à préférer quand plusieurs ingrédients conviennent.
+- **Statut d'une ref pour « il manque »** (`refStatus()` dans `src/data/ingredients.ts`) :
+  - **basique** (`BASICS` : sel, poivre, huile, vinaigre, moutarde, beurre, farine, sucre, ail, oignon, bouillon cube, thym, laurier, herbes de Provence, muscade) : toujours considéré en stock ;
+  - **non bloquant** (catégories `epice` et `herbe`) : affiché dans la recette, jamais compté comme manquant ;
+  - **obligatoire** : tout le reste, doit être en stock.
+  - Indépendamment du statut, `optional: true` dans une recette rend l'ingrédient facultatif pour ce plat-là.
+- **Matching stock / recette optimiste** : un aliment du stock qui correspond à un groupe (« Poulet ») satisfait une recette qui demande un membre précis du groupe (blancs de poulet).
+- Pas de desserts. Les fruits restent dans le référentiel pour l'autocomplétion du stock.
 
 ## Points connus
 

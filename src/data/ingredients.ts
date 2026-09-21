@@ -11,8 +11,13 @@
  *   ingrédient précis ("comte"). Les ids de groupe partagent l'espace des ids d'ingrédients.
  */
 
-export const CATEGORIES = ['proteine', 'legume', 'feculent', 'laitier', 'fruit', 'epicerie', 'condiment'] as const
+export const CATEGORIES = [
+  'proteine', 'legume', 'feculent', 'laitier', 'fruit', 'epicerie', 'condiment', 'epice', 'herbe',
+] as const
 export type Category = (typeof CATEGORIES)[number]
+
+/** Épices et herbes : affichées dans la recette, jamais comptées dans « il manque ». */
+export const NON_BLOCKING_CATEGORIES: readonly Category[] = ['epice', 'herbe']
 
 export const PROTEIN_FAMILIES = [
   'volaille', 'boeuf', 'porc', 'veau', 'agneau', 'poisson', 'fruits-de-mer',
@@ -253,7 +258,7 @@ export const INGREDIENTS: Ingredient[] = [
 
   // ---------- Condiments, herbes, épices ----------
   { id: 'sel', label: 'Sel', emoji: '🧂', category: 'condiment' },
-  { id: 'poivre', label: 'Poivre', emoji: '🧂', category: 'condiment' },
+  { id: 'poivre', label: 'Poivre', emoji: '🧂', category: 'epice' },
   { id: 'vinaigre', label: 'Vinaigre', emoji: '🍶', category: 'condiment', aliases: ['vinaigre de vin', 'vinaigre balsamique'] },
   { id: 'moutarde', label: 'Moutarde', emoji: '🫙', category: 'condiment', aliases: ["moutarde à l'ancienne"] },
   { id: 'mayonnaise', label: 'Mayonnaise', emoji: '🫙', category: 'condiment', aliases: ['mayo'] },
@@ -261,24 +266,24 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'pesto', label: 'Pesto', emoji: '🌿', category: 'condiment' },
   { id: 'harissa', label: 'Harissa', emoji: '🌶️', category: 'condiment' },
   { id: 'sauce-soja', label: 'Sauce soja', emoji: '🥢', category: 'condiment' },
-  { id: 'gingembre', label: 'Gingembre', emoji: '🫚', category: 'condiment' },
-  { id: 'curry', label: 'Curry', emoji: '🍛', category: 'condiment', aliases: ['curry en poudre'] },
-  { id: 'paprika', label: 'Paprika', emoji: '🌶️', category: 'condiment' },
-  { id: 'cumin', label: 'Cumin', emoji: '🌶️', category: 'condiment' },
-  { id: 'muscade', label: 'Muscade', emoji: '🌰', category: 'condiment', aliases: ['noix de muscade'] },
-  { id: 'cannelle', label: 'Cannelle', emoji: '🌰', category: 'condiment' },
-  { id: 'epice-a-couscous', label: 'Épices à couscous', emoji: '🌶️', category: 'condiment', aliases: ['ras el hanout'] },
-  { id: 'piment-d-espelette', label: "Piment d'Espelette", emoji: '🌶️', category: 'condiment' },
-  { id: 'herbe-de-provence', label: 'Herbes de Provence', emoji: '🌿', category: 'condiment' },
-  { id: 'thym', label: 'Thym', emoji: '🌿', category: 'condiment' },
-  { id: 'laurier', label: 'Laurier', emoji: '🍃', category: 'condiment' },
-  { id: 'bouquet-garni', label: 'Bouquet garni', emoji: '🌿', category: 'condiment' },
-  { id: 'persil', label: 'Persil', emoji: '🌿', category: 'condiment', groups: ['herbes-fraiches'] },
-  { id: 'ciboulette', label: 'Ciboulette', emoji: '🌿', category: 'condiment', groups: ['herbes-fraiches'] },
-  { id: 'basilic', label: 'Basilic', emoji: '🌿', category: 'condiment', groups: ['herbes-fraiches'] },
-  { id: 'coriandre', label: 'Coriandre', emoji: '🌿', category: 'condiment', groups: ['herbes-fraiches'] },
-  { id: 'aneth', label: 'Aneth', emoji: '🌿', category: 'condiment', groups: ['herbes-fraiches'] },
-  { id: 'menthe', label: 'Menthe', emoji: '🌿', category: 'condiment', groups: ['herbes-fraiches'] },
+  { id: 'gingembre', label: 'Gingembre', emoji: '🫚', category: 'epice' },
+  { id: 'curry', label: 'Curry', emoji: '🍛', category: 'epice', aliases: ['curry en poudre'] },
+  { id: 'paprika', label: 'Paprika', emoji: '🌶️', category: 'epice' },
+  { id: 'cumin', label: 'Cumin', emoji: '🌶️', category: 'epice' },
+  { id: 'muscade', label: 'Muscade', emoji: '🌰', category: 'epice', aliases: ['noix de muscade'] },
+  { id: 'cannelle', label: 'Cannelle', emoji: '🌰', category: 'epice' },
+  { id: 'epice-a-couscous', label: 'Épices à couscous', emoji: '🌶️', category: 'epice', aliases: ['ras el hanout'] },
+  { id: 'piment-d-espelette', label: "Piment d'Espelette", emoji: '🌶️', category: 'epice' },
+  { id: 'herbe-de-provence', label: 'Herbes de Provence', emoji: '🌿', category: 'herbe' },
+  { id: 'thym', label: 'Thym', emoji: '🌿', category: 'herbe' },
+  { id: 'laurier', label: 'Laurier', emoji: '🍃', category: 'herbe' },
+  { id: 'bouquet-garni', label: 'Bouquet garni', emoji: '🌿', category: 'herbe' },
+  { id: 'persil', label: 'Persil', emoji: '🌿', category: 'herbe', groups: ['herbes-fraiches'] },
+  { id: 'ciboulette', label: 'Ciboulette', emoji: '🌿', category: 'herbe', groups: ['herbes-fraiches'] },
+  { id: 'basilic', label: 'Basilic', emoji: '🌿', category: 'herbe', groups: ['herbes-fraiches'] },
+  { id: 'coriandre', label: 'Coriandre', emoji: '🌿', category: 'herbe', groups: ['herbes-fraiches'] },
+  { id: 'aneth', label: 'Aneth', emoji: '🌿', category: 'herbe', groups: ['herbes-fraiches'] },
+  { id: 'menthe', label: 'Menthe', emoji: '🌿', category: 'herbe', groups: ['herbes-fraiches'] },
 ]
 
 /**
@@ -292,3 +297,23 @@ export const BASICS: string[] = [
   'ail', 'oignon',
   'bouillon-cube', 'thym', 'laurier', 'herbe-de-provence', 'muscade',
 ]
+
+/**
+ * Statut d'une ref de recette pour le calcul de « il manque » (voir CLAUDE.md) :
+ * - basique : toujours considéré en stock (BASICS) ;
+ * - non-bloquant : épice ou herbe, affichée mais jamais manquante ;
+ * - obligatoire : doit être en stock (sauf si la recette la marque `optional`).
+ * Un groupe est non bloquant si tous ses membres le sont.
+ */
+export type RefStatus = 'basique' | 'non-bloquant' | 'obligatoire'
+
+const ingredientById = new Map(INGREDIENTS.map((i) => [i.id, i]))
+const isNonBlocking = (i: Ingredient) => NON_BLOCKING_CATEGORIES.includes(i.category)
+
+export function refStatus(ref: string): RefStatus {
+  if (BASICS.includes(ref)) return 'basique'
+  const ingredient = ingredientById.get(ref)
+  if (ingredient) return isNonBlocking(ingredient) ? 'non-bloquant' : 'obligatoire'
+  const members = INGREDIENTS.filter((i) => i.groups?.includes(ref))
+  return members.length && members.every(isNonBlocking) ? 'non-bloquant' : 'obligatoire'
+}
