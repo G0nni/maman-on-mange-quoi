@@ -1,0 +1,179 @@
+[
+  {
+    "id": "blanquette-de-veau",
+    "name": "Blanquette de veau",
+    "emoji": "🍚",
+    "time": 150,
+    "difficulty": 2,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "veau-a-blanquette", "qty": 1.2, "unit": "kg" },
+      { "ref": "carotte", "qty": 3 },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "farine", "qty": 2, "unit": "cas" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "bouquet-garni", "qty": 1 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Mettre la viande dans une cocotte, couvrir d'eau froide avec le bouillon cube et le bouquet garni, porter à ébullition et écumer.",
+      "Ajouter les carottes en rondelles et laisser frémir 1 h 30.",
+      "Faire fondre le beurre, ajouter la farine, puis 50 cl de bouillon de cuisson en fouettant. Ajouter la crème et les champignons, cuire 10 min.",
+      "Remettre la viande et les carottes dans la sauce, ajouter un filet de citron et servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "escalopes-veau-creme-pates",
+    "name": "Escalopes de veau à la crème et tagliatelles",
+    "emoji": "🥩",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "escalope-de-veau", "qty": 4 },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 20, "unit": "g" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "champignon", "qty": 200, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Faire dorer les escalopes 3 min de chaque côté dans le beurre, puis les réserver au chaud.",
+      "Faire revenir les champignons dans la même poêle, verser la crème et laisser épaissir 3 min.",
+      "Napper les escalopes de sauce et servir avec les pâtes."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "paupiettes-veau-carottes",
+    "name": "Paupiettes de veau aux carottes",
+    "emoji": "🥕",
+    "time": 60,
+    "difficulty": 1,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "paupiette-de-veau", "qty": 4 },
+      { "ref": "carotte", "qty": 600, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "vin-blanc", "qty": 15, "unit": "cl", "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer les paupiettes sur toutes les faces dans l'huile dans une cocotte.",
+      "Ajouter les carottes en rondelles, le vin blanc, le bouillon cube et 20 cl d'eau.",
+      "Couvrir et laisser mijoter 30 min, puis ajouter les pommes de terre en morceaux et cuire encore 20 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "saute-veau-marengo",
+    "name": "Sauté de veau Marengo",
+    "emoji": "🍅",
+    "time": 90,
+    "difficulty": 2,
+    "protein": "veau",
+    "ingredients": [
+      { "ref": "veau-a-blanquette", "qty": 1, "unit": "kg" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "vin-blanc", "qty": 15, "unit": "cl" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "pates", "qty": 400, "unit": "g" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux de veau dans l'huile dans une cocotte.",
+      "Verser le vin blanc, ajouter les tomates, couvrir et laisser mijoter 1 h.",
+      "Ajouter les champignons émincés et cuire encore 15 min.",
+      "Servir avec des pâtes."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "gigot-agneau-flageolets",
+    "name": "Gigot d'agneau et flageolets",
+    "emoji": "🍖",
+    "time": 90,
+    "difficulty": 1,
+    "protein": "agneau",
+    "ingredients": [
+      { "ref": "gigot-d-agneau", "qty": 1.5, "unit": "kg" },
+      { "ref": "flageolet", "qty": 2, "unit": "boite" },
+      { "ref": "ail", "qty": 4, "unit": "gousse" },
+      { "ref": "thym", "qty": 3, "unit": "brin" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 210 °C. Piquer le gigot de gousses d'ail, le badigeonner d'huile, saler, poivrer et ajouter le thym.",
+      "Cuire 1 h (rosé) en l'arrosant de temps en temps de son jus.",
+      "Laisser reposer 10 min sous une feuille d'aluminium.",
+      "Réchauffer les flageolets égouttés avec un peu de jus de cuisson et servir avec le gigot tranché."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["printemps"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "cotelettes-agneau-haricots-verts",
+    "name": "Côtelettes d'agneau grillées et haricots verts",
+    "emoji": "🍖",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "agneau",
+    "ingredients": [
+      { "ref": "cotelette-d-agneau", "qty": 8 },
+      { "ref": "haricot-vert", "qty": 500, "unit": "g" },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "thym", "qty": 2, "unit": "brin" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les haricots verts 10 min à l'eau salée.",
+      "Frotter les côtelettes avec l'huile, l'ail et le thym.",
+      "Les griller 3 min de chaque côté à la poêle ou au barbecue. Saler, poivrer et servir."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "navarin-agneau-printanier",
+    "name": "Navarin d'agneau printanier",
+    "emoji": "🥕",
+    "time": 120,
+    "difficulty": 2,
+    "protein": "agneau",
+    "ingredients": [
+      { "ref": "agneau", "qty": 1.2, "unit": "kg" },
+      { "ref": "carotte", "qty": 4 },
+      { "ref": "navet", "qty": 4 },
+      { "ref": "petit-pois", "qty": 300, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 600, "unit": "g" },
+      { "ref": "concentre-de-tomate", "qty": 1, "unit": "cas" },
+      { "ref": "farine", "qty": 1, "unit": "cas" },
+      { "ref": "bouquet-garni", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire dorer les morceaux d'agneau dans l'huile, saupoudrer de farine et ajouter le concentré de tomate.",
+      "Couvrir d'eau, ajouter le bouquet garni, couvrir et laisser mijoter 1 h.",
+      "Ajouter les carottes, les navets et les pommes de terre, cuire 30 min.",
+      "Ajouter les petits pois 10 min avant la fin."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": []
+  }
+]

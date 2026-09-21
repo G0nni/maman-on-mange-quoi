@@ -87,6 +87,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'roti-de-boeuf', label: 'Rôti de bœuf', emoji: '🥩', category: 'proteine', protein: 'boeuf' },
   { id: 'escalope-de-veau', label: 'Escalopes de veau', emoji: '🥩', category: 'proteine', protein: 'veau' },
   { id: 'veau-a-blanquette', label: 'Veau à blanquette', emoji: '🥩', category: 'proteine', protein: 'veau', aliases: ['tendron de veau', 'épaule de veau'] },
+  { id: 'paupiette-de-veau', label: 'Paupiettes de veau', emoji: '🥩', category: 'proteine', protein: 'veau', aliases: ['paupiettes'] },
   { id: 'gigot-d-agneau', label: "Gigot d'agneau", emoji: '🍖', category: 'proteine', protein: 'agneau', groups: ['agneau'] },
   { id: 'cotelette-d-agneau', label: "Côtelettes d'agneau", emoji: '🍖', category: 'proteine', protein: 'agneau', groups: ['agneau'] },
 
@@ -130,6 +131,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'haricot-rouge', label: 'Haricots rouges', emoji: '🫘', category: 'feculent', protein: 'legumineuse' },
   { id: 'haricot-blanc', label: 'Haricots blancs', emoji: '🫘', category: 'feculent', protein: 'legumineuse', aliases: ['lingots', 'mogettes'] },
   { id: 'pois-casse', label: 'Pois cassés', emoji: '🫛', category: 'feculent', protein: 'legumineuse' },
+  { id: 'flageolet', label: 'Flageolets', emoji: '🫘', category: 'feculent', protein: 'legumineuse' },
 
   // ---------- Produits laitiers ----------
   { id: 'lait', label: 'Lait', emoji: '🥛', category: 'laitier' },
