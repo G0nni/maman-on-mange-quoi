@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Config locale du serveur de dev (navigateur intégré de Claude)
+.claude/launch.json
