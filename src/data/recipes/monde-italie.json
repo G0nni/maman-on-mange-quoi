@@ -1,0 +1,360 @@
+[
+  {
+    "id": "pizza-jambon-champignons",
+    "name": "Pizza jambon-champignons",
+    "emoji": "🍕",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pate-a-pizza", "qty": 1 },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "champignon", "qty": 150, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Préchauffer le four à 240 °C et étaler la pâte sur une plaque.",
+      "Étaler la sauce tomate, puis répartir le jambon, les champignons émincés et le fromage.",
+      "Parsemer d'herbes et cuire 12 à 15 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "pizza-margherita",
+    "name": "Pizza margherita",
+    "emoji": "🍕",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "pate-a-pizza", "qty": 1 },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 200, "unit": "g" },
+      { "ref": "basilic", "qty": 6, "unit": "feuille", "optional": true },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Préchauffer le four à 240 °C et étaler la pâte sur une plaque.",
+      "Étaler la sauce tomate, ajouter la mozzarella (ou un autre fromage) et un filet d'huile.",
+      "Cuire 12 min et parsemer de basilic à la sortie du four."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "four", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "gnocchis-tomate-gratines",
+    "name": "Gnocchis à la tomate gratinés",
+    "emoji": "🥔",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "gnocchi", "qty": 800, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 125, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "basilic", "qty": 6, "unit": "feuille", "optional": true },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Préchauffer le four en position gril. Faire revenir l'ail dans l'huile, ajouter les tomates et laisser mijoter 10 min.",
+      "Cuire les gnocchis dans l'eau bouillante jusqu'à ce qu'ils remontent, puis les égoutter.",
+      "Les mélanger à la sauce dans un plat, couvrir de fromage et gratiner 5 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "four", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "pates-pesto-tomates-cerises",
+    "name": "Pâtes au pesto et tomates cerises",
+    "emoji": "🌿",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "pesto", "qty": 5, "unit": "cas" },
+      { "ref": "tomates-fraiches", "qty": 250, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Couper les tomates cerises en deux.",
+      "Mélanger les pâtes égouttées avec le pesto et les tomates, parsemer de parmesan."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "risotto-potiron",
+    "name": "Risotto au potiron",
+    "emoji": "🎃",
+    "time": 40,
+    "difficulty": 2,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "riz-a-risotto", "qty": 300, "unit": "g" },
+      { "ref": "courge", "qty": 600, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 2 },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Préparer 1 l de bouillon chaud avec les cubes. Couper le potiron en petits dés.",
+      "Faire revenir l'oignon et le potiron 5 min dans le beurre, ajouter le riz et le faire nacrer 2 min.",
+      "Ajouter le bouillon louche par louche en remuant, pendant 20 min.",
+      "Hors du feu, ajouter le fromage et poivrer."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne"],
+    "tags": ["vege", "enfants"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "lasagnes-epinards",
+    "name": "Lasagnes aux épinards",
+    "emoji": "🥬",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "feuille-de-lasagne", "qty": 250, "unit": "g" },
+      { "ref": "epinard", "qty": 800, "unit": "g" },
+      { "ref": "lait", "qty": 70, "unit": "cl" },
+      { "ref": "beurre", "qty": 60, "unit": "g" },
+      { "ref": "farine", "qty": 60, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" },
+      { "ref": "muscade", "qty": 1, "unit": "pincee" }
+    ],
+    "steps": [
+      "Préchauffer le four à 180 °C. Faire tomber les épinards 5 min et bien les égoutter.",
+      "Préparer une béchamel avec le beurre, la farine et le lait, puis la muscade.",
+      "Dans un plat, alterner béchamel, feuilles de lasagne, épinards et fromage.",
+      "Finir par la béchamel et le fromage, et cuire 35 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver", "printemps"],
+    "tags": ["four", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "cannellonis-viande",
+    "name": "Cannellonis à la viande",
+    "emoji": "🍝",
+    "time": 70,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "cannelloni", "qty": 250, "unit": "g" },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 600, "unit": "g" },
+      { "ref": "lait", "qty": 40, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "farine", "qty": 30, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir la viande avec l'oignon, ajouter 200 g de tomates et laisser réduire 10 min.",
+      "Farcir les cannellonis crus avec la viande et les ranger dans un plat sur le reste des tomates.",
+      "Préparer une béchamel avec le beurre, la farine et le lait, et en napper les cannellonis.",
+      "Parsemer de fromage et cuire 40 min à 180 °C."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "escalopes-milanaises-spaghetti",
+    "name": "Escalopes milanaises et spaghetti à la tomate",
+    "emoji": "🍝",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 4 },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "chapelure", "qty": 100, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 30, "unit": "g" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Préparer une sauce tomate : faire revenir l'ail dans 1 c. à soupe d'huile, ajouter les tomates et mijoter 15 min.",
+      "Passer les escalopes dans l'œuf battu, puis dans la chapelure mélangée au parmesan.",
+      "Les cuire 4 min de chaque côté dans le reste de l'huile. Cuire les pâtes et servir avec la sauce."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "polenta-cremeuse-champignons",
+    "name": "Polenta crémeuse aux champignons",
+    "emoji": "🍄",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "polenta", "qty": 250, "unit": "g" },
+      { "ref": "champignon", "qty": 400, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "beurre", "qty": 40, "unit": "g" },
+      { "ref": "lait", "qty": 30, "unit": "cl" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Faire revenir les champignons émincés 8 min dans la moitié du beurre avec l'ail.",
+      "Porter le lait et 70 cl d'eau salée à ébullition, verser la polenta en pluie et cuire 5 min en remuant.",
+      "Ajouter le reste du beurre et le fromage, puis servir avec les champignons."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["automne"],
+    "tags": ["rapide", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "aubergines-parmigiana",
+    "name": "Aubergines à la parmigiana",
+    "emoji": "🍆",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "aubergine", "qty": 3 },
+      { "ref": "tomate-conserve", "qty": 600, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 200, "unit": "g" },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "basilic", "qty": 6, "unit": "feuille", "optional": true },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Couper les aubergines en tranches, les badigeonner d'huile et les cuire 20 min au four à 200 °C.",
+      "Faire mijoter les tomates 10 min avec l'ail, saler, poivrer.",
+      "Alterner aubergines, sauce, fromage et basilic dans un plat.",
+      "Cuire 25 min à 180 °C."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["four", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "frittata-courgettes",
+    "name": "Frittata aux courgettes",
+    "emoji": "🥚",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "oeuf", "qty": 8 },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Faire revenir les courgettes en fines rondelles 8 min dans l'huile, dans une poêle allant au four.",
+      "Battre les œufs avec le fromage et les herbes, saler, poivrer, et verser sur les courgettes.",
+      "Cuire 5 min à feu doux, puis finir 5 min sous le gril du four."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide", "enfants", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "minestrone",
+    "name": "Minestrone",
+    "emoji": "🥣",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "haricot-blanc", "qty": 400, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "courgette", "qty": 1 },
+      { "ref": "celeri", "qty": 1 },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "pates", "qty": 100, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, la carotte, la courgette et le céleri en dés dans l'huile.",
+      "Ajouter les tomates et 1,5 l d'eau salée, cuire 25 min.",
+      "Ajouter les haricots égouttés et les petites pâtes, cuire encore 10 min. Servir avec du parmesan."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "vege"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "pizza-thon-olives",
+    "name": "Pizza au thon et aux olives",
+    "emoji": "🍕",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pate-a-pizza", "qty": 1 },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "thon-en-boite", "qty": 1, "unit": "boite" },
+      { "ref": "olive", "qty": 50, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 150, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 240 °C et étaler la pâte sur une plaque.",
+      "Étaler la sauce tomate, puis le thon émietté, l'oignon en fines rondelles, les olives et le fromage.",
+      "Cuire 12 à 15 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "four"],
+    "cuisine": "italienne"
+  },
+  {
+    "id": "pates-courgettes-citron-parmesan",
+    "name": "Pâtes aux courgettes, citron et parmesan",
+    "emoji": "🍋",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "courgette", "qty": 3 },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Râper les courgettes et les faire revenir 5 min dans l'huile avec l'ail.",
+      "Ajouter le zeste et le jus du citron, mélanger avec les pâtes et le parmesan."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["printemps", "ete"],
+    "tags": ["rapide", "vege"],
+    "cuisine": "italienne"
+  }
+]

@@ -163,6 +163,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'macaroni', label: 'Macaronis', emoji: '🍝', category: 'feculent', groups: ['pates'] },
   { id: 'farfalle', label: 'Farfalle', emoji: '🍝', category: 'feculent', groups: ['pates'], aliases: ['papillons'] },
   { id: 'feuille-de-lasagne', label: 'Feuilles de lasagne', emoji: '🍝', category: 'feculent', aliases: ['lasagnes'] },
+  { id: 'cannelloni', label: 'Cannellonis', emoji: '🍝', category: 'feculent' },
   { id: 'ravioli', label: 'Raviolis', emoji: '🥟', category: 'feculent' },
   { id: 'gnocchi', label: 'Gnocchis', emoji: '🥟', category: 'feculent' },
   { id: 'vermicelle', label: 'Vermicelles', emoji: '🍜', category: 'feculent' },
