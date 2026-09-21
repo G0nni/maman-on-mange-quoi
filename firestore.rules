@@ -1,0 +1,84 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function household(hid) {
+      return get(/databases/$(database)/documents/households/$(hid)).data;
+    }
+
+    function isMember(hid) {
+      return signedIn() && request.auth.uid in household(hid).memberUids;
+    }
+
+    // Le membre {memberId} est-il bien la personne connectée ?
+    function isMe(hid, memberId) {
+      return get(/databases/$(database)/documents/households/$(hid)/members/$(memberId)).data.uid == request.auth.uid;
+    }
+
+    // ---------- Codes d'invitation ----------
+    // Lecture doc par doc uniquement : impossible de lister tous les codes.
+    match /joinCodes/{code} {
+      allow get: if signedIn();
+      allow list: if false;
+      // Création seulement (pas d'écrasement), et uniquement pour un foyer dont on est
+      // membre à l'issue du batch (getAfter voit l'état après écriture).
+      allow create: if signedIn()
+        && request.auth.uid in getAfter(/databases/$(database)/documents/households/$(request.resource.data.householdId)).data.memberUids;
+      allow update, delete: if false;
+    }
+
+    // ---------- Foyers ----------
+    match /households/{hid} {
+      // list : requis par la requête where('memberUids', 'array-contains', uid)
+      allow get, list: if signedIn() && request.auth.uid in resource.data.memberUids;
+
+      allow create: if signedIn()
+        && request.resource.data.memberUids == [request.auth.uid]
+        && request.resource.data.keys().hasOnly(['name', 'joinCode', 'memberUids', 'createdAt']);
+
+      // Un membre peut renommer le foyer.
+      // Un non-membre (qui a eu l'id via un code) peut uniquement s'ajouter lui-même.
+      allow update: if isMember(hid)
+        || (signedIn()
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberUids'])
+          && request.resource.data.memberUids.hasAll(resource.data.memberUids)
+          && request.resource.data.memberUids.removeAll(resource.data.memberUids).hasOnly([request.auth.uid]));
+
+      allow delete: if false;
+
+      // ---------- Membres ----------
+      match /members/{memberId} {
+        allow read: if isMember(hid);
+        // On ne crée que soi-même. getAfter pour le batch de création du foyer.
+        allow create: if signedIn()
+          && request.auth.uid in getAfter(/databases/$(database)/documents/households/$(hid)).data.memberUids
+          && request.resource.data.uid == request.auth.uid;
+        // Rattacher sa session à un membre ("c'est moi"), ou modifier son propre profil.
+        allow update: if isMember(hid) && request.resource.data.uid == request.auth.uid;
+        allow delete: if false;
+      }
+
+      // ---------- Stock ----------
+      match /stock/{itemId} {
+        allow read, write: if isMember(hid);
+      }
+
+      // ---------- Votes du soir ----------
+      match /polls/{pollId} {
+        allow read, create, update: if isMember(hid);
+        allow delete: if false;
+
+        // L'id du doc de vote EST le memberId : un vote par personne, garanti par la structure.
+        match /votes/{memberId} {
+          allow read: if isMember(hid);
+          allow write: if isMember(hid) && isMe(hid, memberId);
+        }
+      }
+    }
+  }
+}

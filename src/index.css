@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Tokens repris de la maquette, exposés comme couleurs Tailwind : bg-surface, text-muted, etc. */
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body: Figtree, ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #EEF2EA;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #E3E9DE;
+  --color-ink: #1D2A22;
+  --color-muted: #5E6D63;
+  --color-line: #D3DCCD;
+  --color-herb: #2F6B4F;
+  --color-herb-soft: #D7E8DD;
+  --color-mustard: #F2B705;
+  --color-mustard-ink: #3A2C00;
+  --color-tomato: #D8452B;
+  --color-tomato-soft: #F8DCD5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111713;
+    --color-surface: #1A221D;
+    --color-surface-2: #232D27;
+    --color-ink: #E7EEE8;
+    --color-muted: #9AAAA0;
+    --color-line: #2E3A33;
+    --color-herb: #6FBF95;
+    --color-herb-soft: #1F3429;
+    --color-mustard: #F2C230;
+    --color-mustard-ink: #2A2000;
+    --color-tomato: #F0715A;
+    --color-tomato-soft: #3A1F19;
+  }
+}
+
+:root {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-mustard);
+  outline-offset: 2px;
+}
