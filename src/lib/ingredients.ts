@@ -2,7 +2,7 @@
 // Formes déjà normalisées (minuscules, sans accents : maïs -> mais).
 const INVARIABLES = new Set([
   'ananas', 'anchois', 'brebis', 'cassis', 'coulis', 'couscous', 'frais', 'gras',
-  'hachis', 'jus', 'mais', 'noix', 'panais', 'pois', 'radis', 'salsifis',
+  'hachis', 'jus', 'mais', 'noix', 'panais', 'pois', 'radis', 'salsifis', 'travers',
 ])
 
 function singular(word: string) {

@@ -1,0 +1,241 @@
+[
+  {
+    "id": "cuisses-poulet-moutarde-four",
+    "name": "Poulet à la moutarde au four et pommes de terre",
+    "emoji": "🍗",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 8 },
+      { "ref": "moutarde", "qty": 3, "unit": "cas" },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "thym", "qty": 2, "unit": "brin" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C.",
+      "Badigeonner les morceaux de poulet de moutarde, saler, poivrer.",
+      "Les disposer dans un plat avec les pommes de terre en quartiers, l'huile et le thym.",
+      "Enfourner 40 min en retournant à mi-cuisson."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "tourte-poulet-champignons",
+    "name": "Tourte au poulet et aux champignons",
+    "emoji": "🥧",
+    "time": 55,
+    "difficulty": 2,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 2 },
+      { "ref": "volaille-escalope", "qty": 500, "unit": "g" },
+      { "ref": "champignon", "qty": 250, "unit": "g" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "oeuf", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Faire dorer le poulet en dés et les champignons 8 min à la poêle.",
+      "Ajouter la crème, saler, poivrer et laisser épaissir 3 min.",
+      "Garnir un moule d'une pâte, verser la garniture et couvrir de la seconde pâte en soudant les bords.",
+      "Faire une cheminée, dorer à l'œuf battu et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "parmentier-de-poulet",
+    "name": "Parmentier de poulet aux carottes",
+    "emoji": "🥔",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 500, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "lait", "qty": 20, "unit": "cl" },
+      { "ref": "beurre", "qty": 30, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Cuire les pommes de terre et les carottes 20 min à l'eau salée, puis les écraser avec le lait chaud et le beurre.",
+      "Faire dorer le poulet en petits dés avec l'oignon 8 min. Saler, poivrer.",
+      "Étaler le poulet dans un plat, couvrir de purée et de fromage, et gratiner 20 min à 200 °C."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "quiche-poulet-poireaux",
+    "name": "Quiche au poulet et aux poireaux",
+    "emoji": "🥧",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "volaille-escalope", "qty": 300, "unit": "g" },
+      { "ref": "poireau", "qty": 2 },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Faire fondre les poireaux émincés 10 min, ajouter le poulet en petits dés et cuire 5 min.",
+      "Répartir sur la pâte, battre les œufs avec la crème, saler, poivrer, verser et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["four"]
+  },
+  {
+    "id": "gratin-saumon-pommes-de-terre",
+    "name": "Gratin de saumon et pommes de terre",
+    "emoji": "🐟",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 400, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
+      { "ref": "aneth", "qty": 4, "unit": "brin", "optional": true }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Cuire les pommes de terre en rondelles 10 min à l'eau salée.",
+      "Alterner dans un plat les pommes de terre et le saumon en dés.",
+      "Napper de crème salée et poivrée, parsemer de fromage et cuire 30 min."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "quiche-saumon-epinards",
+    "name": "Quiche au saumon et aux épinards",
+    "emoji": "🥧",
+    "time": 50,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 1 },
+      { "ref": "saumon-fume", "qty": 150, "unit": "g" },
+      { "ref": "epinard", "qty": 300, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "creme", "qty": 20, "unit": "cl" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et garnir un moule avec la pâte.",
+      "Faire tomber les épinards 3 min à la poêle et bien les égoutter.",
+      "Répartir les épinards et le saumon en lanières sur la pâte.",
+      "Battre les œufs avec la crème, poivrer, verser et cuire 30 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["printemps"],
+    "tags": ["four"]
+  },
+  {
+    "id": "gratin-pates-thon",
+    "name": "Gratin de pâtes au thon",
+    "emoji": "🐟",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "creme", "qty": 20, "unit": "cl" },
+      { "ref": "fromage-rape", "qty": 100, "unit": "g" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C et cuire les pâtes 2 min de moins que sur le paquet.",
+      "Mélanger les pâtes, le thon émietté et la crème dans un plat, saler peu et poivrer.",
+      "Couvrir de fromage et gratiner 15 min."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "plaque-poisson-pommes-de-terre-tomates",
+    "name": "Poisson, pommes de terre et tomates cerises au four",
+    "emoji": "🐟",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-filet", "qty": 600, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 700, "unit": "g" },
+      { "ref": "tomates-fraiches", "qty": 300, "unit": "g" },
+      { "ref": "olive", "qty": 50, "unit": "g", "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Couper les pommes de terre en fines rondelles et les enfourner 20 min avec l'huile et les herbes.",
+      "Ajouter les tomates, les olives et le poisson, saler, poivrer.",
+      "Cuire encore 12 à 15 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "tourte-a-la-viande",
+    "name": "Tourte à la viande",
+    "emoji": "🥧",
+    "time": 60,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "pate-a-tarte", "qty": 2 },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
+      { "ref": "oeuf", "qty": 1 },
+      { "ref": "pain-de-mie", "qty": 2, "unit": "tranche" },
+      { "ref": "lait", "qty": 5, "unit": "cl" },
+      { "ref": "salade-verte", "qty": 1, "optional": true },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Préchauffer le four à 200 °C. Faire tremper le pain de mie dans le lait.",
+      "Mélanger la viande, le pain essoré, l'œuf, l'oignon haché, sel et poivre.",
+      "Garnir un moule d'une pâte, étaler la farce et couvrir de la seconde pâte en soudant les bords.",
+      "Faire une cheminée et cuire 40 min. Servir avec la salade."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "travers-porc-caramelises",
+    "name": "Travers de porc caramélisés et pommes de terre",
+    "emoji": "🍖",
+    "time": 90,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "travers-de-porc", "qty": 1.2, "unit": "kg" },
+      { "ref": "miel", "qty": 3, "unit": "cas" },
+      { "ref": "sauce-soja", "qty": 3, "unit": "cas" },
+      { "ref": "ketchup", "qty": 2, "unit": "cas", "optional": true },
+      { "ref": "pomme-de-terre", "qty": 800, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Mélanger le miel, la sauce soja et le ketchup, et en badigeonner les travers.",
+      "Les cuire 1 h au four à 170 °C, couverts d'aluminium.",
+      "Ajouter les pommes de terre en quartiers huilées, retirer l'aluminium et cuire encore 25 min à 200 °C en badigeonnant."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["ete", "automne"],
+    "tags": ["enfants", "four"]
+  }
+]

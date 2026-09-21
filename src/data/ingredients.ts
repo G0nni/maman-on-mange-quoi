@@ -99,6 +99,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'cote-de-porc', label: 'Côtes de porc', emoji: '🥩', category: 'proteine', protein: 'porc', groups: ['porc-viande'], aliases: ['côtelettes de porc'] },
   { id: 'filet-mignon-de-porc', label: 'Filet mignon de porc', emoji: '🥩', category: 'proteine', protein: 'porc', groups: ['porc-viande'], aliases: ['filet mignon'] },
   { id: 'roti-de-porc', label: 'Rôti de porc', emoji: '🥩', category: 'proteine', protein: 'porc', groups: ['porc-viande'] },
+  { id: 'travers-de-porc', label: 'Travers de porc', emoji: '🍖', category: 'proteine', protein: 'porc', aliases: ['ribs'] },
   { id: 'chair-a-saucisse', label: 'Chair à saucisse', emoji: '🥩', category: 'proteine', protein: 'porc', groups: ['viande-hachee'] },
   { id: 'saucisse-de-toulouse', label: 'Saucisses de Toulouse', emoji: '🌭', category: 'proteine', protein: 'porc', groups: ['saucisses'] },
   { id: 'saucisse-de-strasbourg', label: 'Saucisses de Strasbourg', emoji: '🌭', category: 'proteine', protein: 'porc', groups: ['saucisses'], aliases: ['knacki', 'knack'] },
