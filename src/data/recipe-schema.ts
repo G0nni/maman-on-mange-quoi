@@ -22,6 +22,8 @@ export const UNITS = [
 export const BALANCE = ['P', 'L', 'F'] as const // protéines, légumes, féculents
 export const SAISONS = ['printemps', 'ete', 'automne', 'hiver', 'toute-annee'] as const
 export const TAGS = ['vege', 'rapide', 'enfants', 'four'] as const
+// Plats du monde « du quotidien » : ce qu'on trouve en supermarché, pas plus exotique.
+export const CUISINES = ['francaise', 'italienne', 'asiatique', 'mexicaine', 'maghrebine', 'autre'] as const
 export const RAPIDE_MAX_MINUTES = 25
 
 const RecipeIngredientSchema = z
@@ -50,6 +52,7 @@ export const RecipeSchema = z
     balance: z.array(z.enum(BALANCE)).min(1),
     saisons: z.array(z.enum(SAISONS)).min(1),
     tags: z.array(z.enum(TAGS)).default([]),
+    cuisine: z.enum(CUISINES).default('francaise'),
   })
   .superRefine((r, ctx) => {
     const issue = (message: string) => ctx.addIssue({ code: 'custom', message })

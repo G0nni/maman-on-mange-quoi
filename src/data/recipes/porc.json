@@ -36,9 +36,9 @@
     "ingredients": [
       { "ref": "pomme-de-terre", "qty": 1.2, "unit": "kg" },
       { "ref": "reblochon", "qty": 1 },
-      { "ref": "lardon", "qty": 200, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 200, "unit": "g" },
       { "ref": "oignon", "qty": 2 },
-      { "ref": "creme-fraiche", "qty": 10, "unit": "cl", "optional": true },
+      { "ref": "creme", "qty": 10, "unit": "cl", "optional": true },
       { "ref": "vin-blanc", "qty": 5, "unit": "cl", "optional": true }
     ],
     "steps": [
@@ -86,7 +86,7 @@
     "protein": "porc",
     "ingredients": [
       { "ref": "pate-a-tarte", "qty": 1 },
-      { "ref": "lardon", "qty": 200, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 200, "unit": "g" },
       { "ref": "oeuf", "qty": 3 },
       { "ref": "creme", "qty": 20, "unit": "cl" },
       { "ref": "lait", "qty": 10, "unit": "cl" },

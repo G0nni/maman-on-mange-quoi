@@ -51,7 +51,8 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["automne", "hiver"],
-    "tags": ["vege"]
+    "tags": ["vege"],
+    "cuisine": "asiatique"
   },
   {
     "id": "tarte-tomate-moutarde",
@@ -62,7 +63,7 @@
     "protein": "fromage",
     "ingredients": [
       { "ref": "pate-a-tarte", "qty": 1 },
-      { "ref": "tomate", "qty": 5 },
+      { "ref": "tomates-fraiches", "qty": 5 },
       { "ref": "moutarde", "qty": 3, "unit": "cas" },
       { "ref": "fromage-rape", "qty": 100, "unit": "g" },
       { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
@@ -114,7 +115,7 @@
       { "ref": "champignon", "qty": 400, "unit": "g" },
       { "ref": "oignon", "qty": 1 },
       { "ref": "bouillon-cube", "qty": 2 },
-      { "ref": "parmesan", "qty": 60, "unit": "g" },
+      { "ref": "fromage-rape", "qty": 60, "unit": "g" },
       { "ref": "beurre", "qty": 30, "unit": "g" },
       { "ref": "vin-blanc", "qty": 10, "unit": "cl", "optional": true }
     ],
@@ -126,7 +127,8 @@
     ],
     "balance": ["L", "F"],
     "saisons": ["automne"],
-    "tags": ["vege"]
+    "tags": ["vege"],
+    "cuisine": "italienne"
   },
   {
     "id": "couscous-legumes-pois-chiches",
@@ -156,7 +158,8 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["automne", "hiver"],
-    "tags": ["vege"]
+    "tags": ["vege"],
+    "cuisine": "maghrebine"
   },
   {
     "id": "quiche-poireaux",

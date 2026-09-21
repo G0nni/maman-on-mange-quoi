@@ -34,7 +34,7 @@
     "difficulty": 1,
     "protein": "boeuf",
     "ingredients": [
-      { "ref": "boeuf-hache", "qty": 500, "unit": "g" },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
       { "ref": "haricot-rouge", "qty": 2, "unit": "boite" },
       { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
       { "ref": "oignon", "qty": 1 },
@@ -54,23 +54,24 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["automne", "hiver"],
-    "tags": []
+    "tags": [],
+    "cuisine": "mexicaine"
   },
   {
     "id": "boulettes-boeuf-sauce-tomate",
-    "name": "Boulettes de bœuf à la sauce tomate",
+    "name": "Boulettes de viande à la sauce tomate",
     "emoji": "🍝",
     "time": 40,
     "difficulty": 2,
     "protein": "boeuf",
     "ingredients": [
-      { "ref": "boeuf-hache", "qty": 500, "unit": "g" },
+      { "ref": "viande-hachee", "qty": 500, "unit": "g" },
       { "ref": "oeuf", "qty": 1 },
       { "ref": "chapelure", "qty": 50, "unit": "g" },
       { "ref": "tomate-conserve", "qty": 700, "unit": "g" },
       { "ref": "oignon", "qty": 1 },
       { "ref": "ail", "qty": 1, "unit": "gousse" },
-      { "ref": "persil", "qty": 0.5, "unit": "botte", "optional": true },
+      { "ref": "herbes-fraiches", "qty": 0.5, "unit": "botte", "optional": true },
       { "ref": "huile", "qty": 2, "unit": "cas" },
       { "ref": "pates", "qty": 400, "unit": "g" }
     ],
@@ -95,7 +96,7 @@
     "ingredients": [
       { "ref": "pain-a-burger", "qty": 4 },
       { "ref": "boeuf-hache", "qty": 500, "unit": "g" },
-      { "ref": "cheddar", "qty": 4, "unit": "tranche" },
+      { "ref": "fromage-rape", "qty": 4, "unit": "tranche" },
       { "ref": "tomate", "qty": 2 },
       { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
       { "ref": "oignon-rouge", "qty": 1 },

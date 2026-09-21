@@ -51,6 +51,14 @@ describe('validate', () => {
     expect(run({ ...base, steps: [`Battre les œufs ${String.fromCharCode(0x2014)} bien.`, 'Cuire.'] }).join()).toMatch(/tiret cadratin/)
   })
 
+  it('signale les quasi-doublons de même protéine, sans compter basiques ni épices', () => {
+    const a = { ...base, ingredients: [{ ref: 'oeuf', qty: 6 }, { ref: 'fromage-rape' }, { ref: 'pomme-de-terre' }] }
+    // Mêmes ingrédients décisifs ; l'oignon (basique) et le persil (herbe) ne changent rien.
+    const b = { ...a, id: 'autre', name: 'Autre omelette', ingredients: [...a.ingredients, { ref: 'oignon' }, { ref: 'persil' }] }
+    const { warnings } = validate([{ file: 'test.json', data: [a, b] }])
+    expect(warnings.join()).toMatch(/quasi-doublon \(100 %\) : Omelette test/)
+  })
+
   it('vérifie le tag rapide', () => {
     expect(run({ ...base, time: 40 }).join()).toMatch(/tag rapide incohérent/)
   })

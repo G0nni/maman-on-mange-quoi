@@ -7,7 +7,7 @@
     "difficulty": 2,
     "protein": "volaille",
     "ingredients": [
-      { "ref": "cuisse-de-poulet", "qty": 8 },
+      { "ref": "poulet", "qty": 8 },
       { "ref": "poivron", "qty": 3 },
       { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
       { "ref": "oignon", "qty": 2 },
@@ -53,24 +53,25 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["toute-annee"],
-    "tags": ["enfants"]
+    "tags": ["enfants"],
+    "cuisine": "asiatique"
   },
   {
     "id": "escalopes-dinde-panees-haricots-verts",
-    "name": "Escalopes de dinde panées et haricots verts",
+    "name": "Escalopes panées et haricots verts",
     "emoji": "🦃",
     "time": 30,
     "difficulty": 1,
     "protein": "volaille",
     "ingredients": [
-      { "ref": "escalope-de-dinde", "qty": 4 },
+      { "ref": "volaille-escalope", "qty": 4 },
       { "ref": "oeuf", "qty": 1 },
       { "ref": "farine", "qty": 3, "unit": "cas" },
       { "ref": "chapelure", "qty": 100, "unit": "g" },
       { "ref": "haricot-vert", "qty": 600, "unit": "g" },
       { "ref": "beurre", "qty": 20, "unit": "g" },
       { "ref": "huile", "qty": 3, "unit": "cas" },
-      { "ref": "citron", "qty": 1, "optional": true }
+      { "ref": "citrons", "qty": 1, "optional": true }
     ],
     "steps": [
       "Cuire les haricots verts 12 min à l'eau bouillante salée.",
@@ -117,7 +118,7 @@
     "difficulty": 1,
     "protein": "volaille",
     "ingredients": [
-      { "ref": "blanc-de-poulet", "qty": 500, "unit": "g" },
+      { "ref": "volaille-escalope", "qty": 500, "unit": "g" },
       { "ref": "nouille-chinoise", "qty": 250, "unit": "g" },
       { "ref": "carotte", "qty": 2 },
       { "ref": "poivron", "qty": 1 },
@@ -135,6 +136,7 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["toute-annee"],
-    "tags": ["rapide", "enfants"]
+    "tags": ["rapide", "enfants"],
+    "cuisine": "asiatique"
   }
 ]

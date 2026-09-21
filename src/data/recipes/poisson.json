@@ -9,7 +9,7 @@
     "ingredients": [
       { "ref": "pave-de-saumon", "qty": 4 },
       { "ref": "courgette", "qty": 2 },
-      { "ref": "citron", "qty": 1 },
+      { "ref": "citrons", "qty": 1 },
       { "ref": "riz", "qty": 300, "unit": "g" },
       { "ref": "huile", "qty": 2, "unit": "cas" },
       { "ref": "herbes-fraiches", "qty": 4, "unit": "brin", "optional": true }
@@ -84,7 +84,7 @@
     "ingredients": [
       { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
       { "ref": "oeuf", "qty": 4 },
-      { "ref": "tomate", "qty": 4 },
+      { "ref": "tomates-fraiches", "qty": 4 },
       { "ref": "haricot-vert", "qty": 300, "unit": "g" },
       { "ref": "pomme-de-terre", "qty": 500, "unit": "g" },
       { "ref": "salade-verte", "qty": 1 },
@@ -126,6 +126,7 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["toute-annee"],
-    "tags": ["rapide", "enfants"]
+    "tags": ["rapide", "enfants"],
+    "cuisine": "asiatique"
   }
 ]

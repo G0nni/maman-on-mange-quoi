@@ -1,18 +1,24 @@
 /**
  * Valide le référentiel d'ingrédients et les recettes de src/data/recipes/*.json.
  * Lancé par `npm run validate:recipes` (stats) et par `npm test` (validate-recipes.test.ts).
+ *
+ * Erreurs : bloquantes (npm test échoue). Alertes : à arbitrer à la main, non bloquantes.
  */
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
-import { BASICS, GROUPS, INGREDIENTS, MEAT_FISH, type Ingredient, type IngredientGroup } from '../src/data/ingredients'
-import { RecipeSchema, type Recipe } from '../src/data/recipe-schema'
+import { BASICS, GROUPS, INGREDIENTS, MEAT_FISH, NON_BLOCKING_CATEGORIES, type Ingredient, type IngredientGroup } from '../src/data/ingredients'
+import { RAPIDE_MAX_MINUTES, RecipeSchema, type Recipe } from '../src/data/recipe-schema'
 import { norm, stockId } from '../src/lib/ingredients'
 
 export const RECIPES_DIR = fileURLToPath(new URL('../src/data/recipes/', import.meta.url))
 
+/** Au-delà, deux recettes de même protéine sont signalées comme quasi-doublons. */
+export const NEAR_DUPLICATE_THRESHOLD = 0.8
+
 export type RecipeFile = { file: string; data: unknown }
 export type Referential = { ingredients: Ingredient[]; groups: IngredientGroup[]; basics: string[] }
+type ValidRecipe = Recipe & { file: string }
 
 const EM_DASH = String.fromCharCode(0x2014) // tiret cadratin, interdit dans les textes (voir CLAUDE.md)
 
@@ -63,18 +69,31 @@ function checkReferential({ ingredients, groups, basics }: Referential, errors: 
 
 export function validate(files: RecipeFile[], ref: Referential = { ingredients: INGREDIENTS, groups: GROUPS, basics: BASICS }) {
   const errors: string[] = []
+  const warnings: string[] = []
   checkReferential(ref, errors)
 
   const ingredientById = new Map(ref.ingredients.map((i) => [i.id, i]))
   const groupIds = new Set(ref.groups.map((g) => g.id))
+  const membersOf = (groupId: string) => ref.ingredients.filter((i) => i.groups?.includes(groupId))
   // Familles de protéine qu'une ref peut apporter (un groupe : l'union de ses membres).
   const familiesOf = (refId: string): string[] => {
     const ing = ingredientById.get(refId)
     if (ing) return ing.protein ? [ing.protein] : []
-    return ref.ingredients.filter((i) => i.groups?.includes(refId) && i.protein).map((i) => i.protein!)
+    return membersOf(refId).filter((i) => i.protein).map((i) => i.protein!)
   }
+  // Même règle que refStatus(), mais sur le référentiel passé en paramètre (tests).
+  const isNonBlocking = (i: Ingredient) => NON_BLOCKING_CATEGORIES.includes(i.category)
+  const blocks = (refId: string) => {
+    if (ref.basics.includes(refId)) return false
+    const ing = ingredientById.get(refId)
+    if (ing) return !isNonBlocking(ing)
+    const members = membersOf(refId)
+    return !(members.length && members.every(isNonBlocking))
+  }
+  /** Ingrédients qui décident si le plat est faisable : obligatoires, hors basiques, épices et herbes. */
+  const significant = (r: Recipe) => r.ingredients.filter((i) => !i.optional && blocks(i.ref)).map((i) => i.ref)
 
-  const recipes: (Recipe & { file: string })[] = []
+  const recipes: ValidRecipe[] = []
   const seenIds = new Map<string, string>()
   const seenNames = new Map<string, string>()
 
@@ -113,13 +132,34 @@ export function validate(files: RecipeFile[], ref: Referential = { ingredients: 
         if (recipe.tags.includes('vege') && meat.length)
           errors.push(`${where} : tag vege mais contient ${meat.map((i) => i.ref).join(', ')}`)
         if (!recipe.tags.includes('vege') && !meat.length) errors.push(`${where} : sans viande ni poisson, il manque le tag vege`)
+        if (significant(recipe).length < 2)
+          warnings.push(`${where} : moins de 2 ingrédients décisifs, la recette serait presque toujours « faisable »`)
       }
 
       recipes.push({ ...recipe, file })
     })
   }
 
-  return { errors, recipes, stats: computeStats(recipes, ref) }
+  const nearDuplicates = findNearDuplicates(recipes, significant)
+  for (const d of nearDuplicates)
+    warnings.push(`quasi-doublon (${Math.round(d.score * 100)} %) : ${d.a.name} [${d.a.file}] / ${d.b.name} [${d.b.file}]`)
+
+  return { errors, warnings, recipes, nearDuplicates, stats: computeStats(recipes, ref) }
+}
+
+/** Paires de même protéine dont les ingrédients décisifs se recouvrent à plus du seuil (Jaccard). */
+function findNearDuplicates(recipes: ValidRecipe[], significant: (r: Recipe) => string[]) {
+  const sets = recipes.map((r) => new Set(significant(r)))
+  const pairs: { a: ValidRecipe; b: ValidRecipe; score: number }[] = []
+  for (let i = 0; i < recipes.length; i++)
+    for (let j = i + 1; j < recipes.length; j++) {
+      if (recipes[i].protein !== recipes[j].protein) continue
+      const inter = [...sets[i]].filter((x) => sets[j].has(x)).length
+      const union = new Set([...sets[i], ...sets[j]]).size
+      const score = union ? inter / union : 0
+      if (score > NEAR_DUPLICATE_THRESHOLD) pairs.push({ a: recipes[i], b: recipes[j], score })
+    }
+  return pairs.sort((x, y) => y.score - x.score)
 }
 
 function countBy<T>(items: T[], key: (item: T) => string | string[]) {
@@ -128,44 +168,64 @@ function countBy<T>(items: T[], key: (item: T) => string | string[]) {
   return Object.fromEntries(Object.entries(counts).sort((a, b) => b[1] - a[1]))
 }
 
+const pct = (n: number, total: number) => (total ? Math.round((n / total) * 100) : 0)
+
 function computeStats(recipes: Recipe[], ref: Referential) {
+  const n = recipes.length
   const usedRefs = new Set(recipes.flatMap((r) => r.ingredients.map((i) => i.ref)))
   // Un ingrédient est "utilisé" s'il est demandé directement ou via un de ses groupes.
   // Les basiques sont exclus : les recettes ne listent pas forcément sel et poivre.
   const unusedIngredients = ref.ingredients
     .filter((i) => !ref.basics.includes(i.id) && !usedRefs.has(i.id) && !(i.groups ?? []).some((g) => usedRefs.has(g)))
     .map((i) => i.id)
+  // Règle de matching : un groupe par défaut. On liste les ingrédients précis qui ont un groupe.
+  const precise = countBy(
+    recipes.flatMap((r) => r.ingredients.filter((i) => ref.ingredients.find((x) => x.id === i.ref)?.groups?.length)),
+    (i) => i.ref,
+  )
+  const count = (pred: (r: Recipe) => boolean) => recipes.filter(pred).length
   return {
-    recipes: recipes.length,
+    recipes: n,
     ingredients: ref.ingredients.length,
     groups: ref.groups.length,
+    rapide: pct(count((r) => r.tags.includes('rapide')), n),
+    enfants: pct(count((r) => r.tags.includes('enfants')), n),
+    monde: pct(count((r) => r.cuisine !== 'francaise'), n),
     byProtein: countBy(recipes, (r) => r.protein),
+    byCuisine: countBy(recipes, (r) => r.cuisine),
     byBalance: countBy(recipes, (r) => r.balance.join('')),
     byTag: countBy(recipes, (r) => r.tags),
     bySaison: countBy(recipes, (r) => r.saisons),
     byDifficulty: countBy(recipes, (r) => String(r.difficulty)),
-    over45min: recipes.filter((r) => r.time > 45).map((r) => `${r.name} (${r.time} min)`),
+    byTime: countBy(recipes, (r) =>
+      r.time <= RAPIDE_MAX_MINUTES ? `<= ${RAPIDE_MAX_MINUTES} min` : r.time <= 45 ? '26-45 min' : '> 45 min',
+    ),
+    preciseRefsWithGroup: precise,
     unusedIngredients,
     unusedGroups: ref.groups.filter((g) => !usedRefs.has(g.id)).map((g) => g.id),
   }
 }
 
 function main() {
-  const { errors, stats } = validate(loadRecipeFiles())
+  const { errors, warnings, stats } = validate(loadRecipeFiles())
   if (errors.length) {
     console.error(`✗ ${errors.length} erreur(s) :\n` + errors.map((e) => `  - ${e}`).join('\n'))
     process.exit(1)
   }
   const line = (o: Record<string, number>) => Object.entries(o).map(([k, v]) => `${k} ${v}`).join(', ')
   console.log(`✓ ${stats.recipes} recettes valides, ${stats.ingredients} ingrédients, ${stats.groups} groupes`)
-  console.log(`\nProtéine principale : ${line(stats.byProtein)}`)
+  console.log(`\nRapides : ${stats.rapide} %   Enfants : ${stats.enfants} %   Monde : ${stats.monde} %`)
+  console.log(`Protéine principale : ${line(stats.byProtein)}`)
+  console.log(`Cuisine            : ${line(stats.byCuisine)}`)
   console.log(`Équilibre          : ${line(stats.byBalance)}`)
   console.log(`Tags               : ${line(stats.byTag)}`)
   console.log(`Saisons            : ${line(stats.bySaison)}`)
+  console.log(`Temps              : ${line(stats.byTime)}`)
   console.log(`Difficulté         : ${line(stats.byDifficulty)}`)
-  console.log(`Plus de 45 min     : ${stats.over45min.join(', ') || 'aucune'}`)
-  console.log(`\nGroupes jamais utilisés (${stats.unusedGroups.length}) : ${stats.unusedGroups.join(', ')}`)
+  console.log(`\nIngrédients précis alors qu'ils ont un groupe : ${line(stats.preciseRefsWithGroup) || 'aucun'}`)
+  console.log(`Groupes jamais utilisés (${stats.unusedGroups.length}) : ${stats.unusedGroups.join(', ') || 'aucun'}`)
   console.log(`Ingrédients jamais utilisés (${stats.unusedIngredients.length}) :\n  ${stats.unusedIngredients.join(', ')}`)
+  if (warnings.length) console.log(`\n⚠ ${warnings.length} alerte(s) :\n` + warnings.map((w) => `  - ${w}`).join('\n'))
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main()

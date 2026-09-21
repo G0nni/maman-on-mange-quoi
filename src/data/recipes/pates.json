@@ -15,7 +15,7 @@
       { "ref": "ail", "qty": 1, "unit": "gousse" },
       { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
       { "ref": "huile", "qty": 1, "unit": "cas" },
-      { "ref": "parmesan", "qty": 40, "unit": "g", "optional": true }
+      { "ref": "fromage-rape", "qty": 40, "unit": "g", "optional": true }
     ],
     "steps": [
       "Faire revenir l'oignon, la carotte râpée et l'ail dans l'huile 5 min.",
@@ -25,7 +25,8 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["toute-annee"],
-    "tags": ["enfants"]
+    "tags": ["enfants"],
+    "cuisine": "italienne"
   },
   {
     "id": "pates-carbonara-familiale",
@@ -36,10 +37,10 @@
     "protein": "porc",
     "ingredients": [
       { "ref": "pates", "qty": 400, "unit": "g" },
-      { "ref": "lardon", "qty": 200, "unit": "g" },
+      { "ref": "lardons-poitrine", "qty": 200, "unit": "g" },
       { "ref": "oeuf", "qty": 2 },
       { "ref": "creme", "qty": 20, "unit": "cl" },
-      { "ref": "parmesan", "qty": 50, "unit": "g" }
+      { "ref": "fromage-rape", "qty": 50, "unit": "g" }
     ],
     "steps": [
       "Cuire les pâtes dans une grande casserole d'eau salée.",
@@ -49,7 +50,8 @@
     ],
     "balance": ["P", "F"],
     "saisons": ["toute-annee"],
-    "tags": ["rapide", "enfants"]
+    "tags": ["rapide", "enfants"],
+    "cuisine": "italienne"
   },
   {
     "id": "coquillettes-jambon-fromage",
@@ -59,15 +61,15 @@
     "difficulty": 1,
     "protein": "porc",
     "ingredients": [
-      { "ref": "coquillette", "qty": 400, "unit": "g" },
-      { "ref": "jambon-blanc", "qty": 4, "unit": "tranche" },
+      { "ref": "pates", "qty": 400, "unit": "g" },
+      { "ref": "porc-cuisine", "qty": 4, "unit": "tranche" },
       { "ref": "fromage-rape", "qty": 100, "unit": "g" },
       { "ref": "beurre", "qty": 20, "unit": "g" },
       { "ref": "creme", "qty": 10, "unit": "cl", "optional": true }
     ],
     "steps": [
-      "Cuire les coquillettes dans l'eau bouillante salée selon le paquet.",
-      "Couper le jambon en petits morceaux.",
+      "Cuire les coquillettes (ou d'autres petites pâtes) dans l'eau bouillante salée.",
+      "Couper le jambon en petits morceaux, ou faire dorer les lardons.",
       "Égoutter les pâtes, ajouter le beurre, la crème, le jambon et le fromage, et mélanger jusqu'à ce que le fromage fonde."
     ],
     "balance": ["P", "F"],
@@ -88,7 +90,7 @@
       { "ref": "oignon", "qty": 1 },
       { "ref": "huile", "qty": 1, "unit": "cas" },
       { "ref": "olive", "qty": 50, "unit": "g", "optional": true },
-      { "ref": "basilic", "qty": 6, "unit": "feuille", "optional": true }
+      { "ref": "herbes-fraiches", "qty": 6, "unit": "feuille", "optional": true }
     ],
     "steps": [
       "Cuire les pâtes dans l'eau bouillante salée.",
@@ -127,6 +129,7 @@
     ],
     "balance": ["P", "L", "F"],
     "saisons": ["toute-annee"],
-    "tags": ["enfants", "four"]
+    "tags": ["enfants", "four"],
+    "cuisine": "italienne"
   }
 ]
