@@ -17,6 +17,13 @@
   --color-mustard-ink: #3A2C00;
   --color-tomato: #D8452B;
   --color-tomato-soft: #F8DCD5;
+
+  /* Apparition d'un élément (classe animate-pop, à préfixer par motion-safe:) */
+  --animate-pop: pop 0.28s ease-out both;
+  @keyframes pop {
+    0% { transform: scale(0.94); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

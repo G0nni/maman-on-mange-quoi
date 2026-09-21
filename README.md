@@ -9,6 +9,7 @@ Stack : React 19, Vite, TypeScript, Tailwind v4, Firebase (Auth anonyme + Firest
     cp .env.example .env.local   # puis coller la firebaseConfig
     npm install
     npm run dev
+    npm test                     # tests unitaires (Vitest)
 
 ## Security Rules
 
@@ -24,6 +25,7 @@ Coller `firestore.rules` dans la console (Firestore > Règles > Publier), ou :
     joinCodes/{code}                         { householdId }
     households/{hid}                         { name, joinCode, memberUids[], createdAt }
     households/{hid}/members/{memberId}      { name, emoji, color, uid }
-    households/{hid}/stock/{itemId}          (à venir)
+    households/{hid}/stock/{itemId}          { name, zone: 'frigo'|'placard'|'congel', emoji, addedBy: memberId, createdAt }
+                                             itemId = nom normalisé (stockId), ex. "pomme-de-terre"
     households/{hid}/polls/{pollId}          (à venir)
     households/{hid}/polls/{pollId}/votes/{memberId}

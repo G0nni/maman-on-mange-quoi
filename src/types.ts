@@ -25,3 +25,16 @@ export type Member = {
 export type JoinCode = {
   householdId: string
 }
+
+export type Zone = 'frigo' | 'placard' | 'congel'
+
+// households/{householdId}/stock/{itemId}
+// itemId = stockId(name) : deux variantes d'un même aliment tombent sur le même document.
+export type StockItem = {
+  id: string
+  name: string
+  zone: Zone
+  emoji: string
+  addedBy: string // memberId
+  createdAt: Timestamp
+}

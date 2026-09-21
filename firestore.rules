@@ -68,8 +68,38 @@ service cloud.firestore {
       }
 
       // ---------- Stock ----------
+      // L'id est le nom normalisé côté client (stockId) : minuscules, chiffres, tirets.
+      // name, addedBy et createdAt sont figés à la création : un setDoc sur un aliment
+      // déjà présent est refusé au lieu d'écraser l'existant.
       match /stock/{itemId} {
-        allow read, write: if isMember(hid);
+        function validZone(data) {
+          return data.zone in ['frigo', 'placard', 'congel'];
+        }
+        function validEmoji(data) {
+          return data.emoji is string && data.emoji.size() > 0 && data.emoji.size() <= 16;
+        }
+
+        allow read, delete: if isMember(hid);
+
+        allow create: if isMember(hid)
+          && itemId.matches('^[a-z0-9]+(-[a-z0-9]+)*$')
+          && itemId.size() <= 100
+          && request.resource.data.keys().hasOnly(['name', 'zone', 'emoji', 'addedBy', 'createdAt'])
+          && request.resource.data.keys().hasAll(['name', 'zone', 'emoji', 'addedBy', 'createdAt'])
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0
+          && request.resource.data.name.size() <= 60
+          && validZone(request.resource.data)
+          && validEmoji(request.resource.data)
+          && request.resource.data.addedBy is string
+          && isMe(hid, request.resource.data.addedBy)
+          && request.resource.data.createdAt == request.time;
+
+        // Changer de zone (ou d'emoji) plus tard, rien d'autre.
+        allow update: if isMember(hid)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['zone', 'emoji'])
+          && validZone(request.resource.data)
+          && validEmoji(request.resource.data);
       }
 
       // ---------- Votes du soir ----------

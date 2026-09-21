@@ -1,8 +1,15 @@
 import { useState } from 'react'
 import { TabBar, type Tab } from '../components/TabBar'
 import type { Household, Member } from '../types'
+import { StockScreen } from './StockScreen'
 
 type Props = { household: Household; members: Member[]; me: Member }
+
+const TITLES: Record<Tab, { title: string; sub: string }> = {
+  stock: { title: 'Ce qu’on a', sub: 'Frigo, placard et congélo' },
+  ideas: { title: 'Idées de recettes', sub: 'Des repas équilibrés avec le stock' },
+  vote: { title: 'Le vote du soir', sub: 'Chacun choisit, la majorité gagne' },
+}
 
 export function AppShell({ household, me }: Props) {
   const [tab, setTab] = useState<Tab>('stock')
@@ -39,9 +46,17 @@ export function AppShell({ household, me }: Props) {
           </button>
         </header>
 
+        <div className="mb-5">
+          <h2 className="font-display font-bold text-xl">{TITLES[tab].title}</h2>
+          <p className="text-sm text-muted">{TITLES[tab].sub}</p>
+        </div>
+
         <main>
-          {/* Les trois écrans arrivent à l'étape suivante */}
-          <p className="text-muted py-10 text-center">Écran « {tab} » à venir.</p>
+          {tab === 'stock' ? (
+            <StockScreen householdId={household.id} me={me} />
+          ) : (
+            <p className="text-muted py-10 text-center">Écran à venir.</p>
+          )}
         </main>
       </div>
 

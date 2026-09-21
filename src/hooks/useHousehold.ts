@@ -19,6 +19,11 @@ export function useHousehold(uid: string | undefined): HouseholdState {
     const q = query(collection(db, 'households'), where('memberUids', 'array-contains', uid), limit(1))
     return onSnapshot(q, (snap) => {
       const d = snap.docs[0]
+      // Foyer tout juste créé sur cet appareil, pas encore confirmé par le serveur
+      // (createdAt = serverTimestamp, donc null en local jusqu'à l'accusé). On attend :
+      // sinon les listeners des sous-collections (membres, stock...) partent trop tôt,
+      // isMember() les refuse côté serveur, et un onSnapshot refusé ne reprend jamais.
+      if (d && d.get('createdAt') === null) return
       setHousehold(d ? ({ id: d.id, ...d.data() } as Household) : null)
     })
   }, [uid])
