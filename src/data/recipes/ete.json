@@ -1,0 +1,292 @@
+[
+  {
+    "id": "brochettes-agneau-courgettes-semoule",
+    "name": "Brochettes d'agneau aux herbes et semoule",
+    "emoji": "🍢",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "agneau",
+    "ingredients": [
+      { "ref": "agneau", "qty": 800, "unit": "g" },
+      { "ref": "courgette", "qty": 2 },
+      { "ref": "cereales", "qty": 250, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Couper l'agneau et les courgettes en cubes, les mélanger avec l'huile, les herbes et le jus de citron.",
+      "Monter les brochettes et les griller 8 à 10 min en les retournant.",
+      "Préparer la semoule selon le paquet et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": []
+  },
+  {
+    "id": "salade-pates-jambon",
+    "name": "Salade de pâtes au jambon",
+    "emoji": "🥗",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "pates", "qty": 300, "unit": "g" },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "mayonnaise", "qty": 3, "unit": "cas", "optional": true },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les pâtes, les rincer à l'eau froide et les égoutter.",
+      "Couper le jambon, les tomates et le fromage en dés, égoutter le maïs.",
+      "Mélanger le tout avec l'huile ou la mayonnaise."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "melon-jambon-tomates-mozzarella",
+    "name": "Melon, jambon cru et tomates-mozzarella",
+    "emoji": "🍈",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "melon", "qty": 1 },
+      { "ref": "jambon-cru", "qty": 8, "unit": "tranche" },
+      { "ref": "tomates-fraiches", "qty": 4 },
+      { "ref": "mozzarella", "qty": 250, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "basilic", "qty": 6, "unit": "feuille", "optional": true },
+      { "ref": "pain", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Couper le melon en tranches et le servir avec le jambon cru.",
+      "Couper les tomates et la mozzarella en rondelles, les alterner sur un plat.",
+      "Arroser d'huile, parsemer de basilic, saler, poivrer. Servir avec du pain."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "gaspacho-tartines",
+    "name": "Gaspacho et tartines grillées",
+    "emoji": "🍅",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "tomates-fraiches", "qty": 1, "unit": "kg" },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" },
+      { "ref": "ail", "qty": 1, "unit": "gousse" }
+    ],
+    "steps": [
+      "Couper les tomates, le concombre et le poivron en morceaux.",
+      "Mixer avec l'ail, l'huile, le vinaigre, sel et poivre jusqu'à obtenir une soupe lisse. Mettre au frais.",
+      "Servir bien frais avec des tartines de pain grillé."
+    ],
+    "balance": ["L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "salade-riz-poulet",
+    "name": "Salade de riz au poulet",
+    "emoji": "🍚",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "riz", "qty": 250, "unit": "g" },
+      { "ref": "volaille-escalope", "qty": 400, "unit": "g" },
+      { "ref": "mais", "qty": 1, "unit": "boite" },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz, le rincer à l'eau froide et l'égoutter.",
+      "Cuire le poulet 10 min à la poêle et le couper en dés.",
+      "Couper le poivron et les tomates en dés, égoutter le maïs et mélanger le tout avec une vinaigrette."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "pan-bagnat",
+    "name": "Pan bagnat",
+    "emoji": "🥪",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pain", "qty": 4 },
+      { "ref": "thon-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 2 },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "salade-verte", "qty": 4, "unit": "feuille" },
+      { "ref": "olive", "qty": 40, "unit": "g", "optional": true },
+      { "ref": "huile", "qty": 3, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les œufs 10 min (durs), puis les écaler et les couper en rondelles.",
+      "Ouvrir les petits pains et les arroser d'huile.",
+      "Garnir de salade, de tomates en rondelles, de thon émietté, d'œuf et d'olives, puis refermer en pressant."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants"]
+  },
+  {
+    "id": "tartines-sardines-tomates",
+    "name": "Tartines de sardines à la tomate et salade",
+    "emoji": "🐟",
+    "time": 15,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pain", "qty": 8, "unit": "tranche" },
+      { "ref": "sardine-en-boite", "qty": 2, "unit": "boite" },
+      { "ref": "tomates-fraiches", "qty": 3 },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "citrons", "qty": 1, "optional": true }
+    ],
+    "steps": [
+      "Faire griller le pain.",
+      "Écraser les sardines égouttées avec un filet de citron et un peu de poivre.",
+      "Tartiner, ajouter des rondelles de tomate et servir avec la salade."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide"]
+  },
+  {
+    "id": "courgettes-grillees-feta-semoule",
+    "name": "Courgettes grillées, feta et semoule",
+    "emoji": "🥒",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "courgette", "qty": 3 },
+      { "ref": "feta", "qty": 200, "unit": "g" },
+      { "ref": "cereales", "qty": 250, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "menthe", "qty": 4, "unit": "brin", "optional": true }
+    ],
+    "steps": [
+      "Couper les courgettes en tranches dans la longueur, les huiler et les griller 3 min de chaque côté.",
+      "Préparer la semoule selon le paquet et l'assaisonner d'huile et de jus de citron.",
+      "Servir les courgettes sur la semoule avec la feta émiettée et la menthe."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "vege"]
+  },
+  {
+    "id": "poulet-yaourt-citron-concombre",
+    "name": "Poulet mariné au yaourt et citron, salade de concombre",
+    "emoji": "🍋",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "yaourt-fromage-blanc", "qty": 250, "unit": "g" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Mélanger le poulet en morceaux avec la moitié du yaourt, le jus de citron, sel et poivre, laisser mariner 10 min.",
+      "Cuire le riz. Griller le poulet 10 min à la poêle ou à la plancha.",
+      "Couper le concombre en rondelles et le mélanger avec le reste du yaourt."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants"]
+  },
+  {
+    "id": "steak-tomates-provencales-frites",
+    "name": "Steak, tomates provençales et frites au four",
+    "emoji": "🍅",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 4 },
+      { "ref": "tomate", "qty": 6 },
+      { "ref": "chapelure", "qty": 30, "unit": "g" },
+      { "ref": "pomme-de-terre", "qty": 1, "unit": "kg" },
+      { "ref": "huile", "qty": 4, "unit": "cas" },
+      { "ref": "herbe-de-provence", "qty": 1, "unit": "cac" },
+      { "ref": "ail", "qty": 2, "unit": "gousse" }
+    ],
+    "steps": [
+      "Préchauffer le four à 220 °C. Couper les pommes de terre en frites, les mélanger avec 3 c. à soupe d'huile et les enfourner 35 min.",
+      "Couper les tomates en deux, les couvrir d'ail haché, de chapelure et d'herbes, arroser d'huile et les enfourner 25 min.",
+      "Cuire les steaks 2 à 3 min de chaque côté et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "four"]
+  },
+  {
+    "id": "galettes-courgettes-fromage",
+    "name": "Galettes de courgettes au fromage",
+    "emoji": "🥒",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "fromage",
+    "ingredients": [
+      { "ref": "courgette", "qty": 3 },
+      { "ref": "oeuf", "qty": 2 },
+      { "ref": "farine", "qty": 4, "unit": "cas" },
+      { "ref": "fromage-rape", "qty": 80, "unit": "g" },
+      { "ref": "huile", "qty": 3, "unit": "cas" },
+      { "ref": "yaourt-fromage-blanc", "qty": 150, "unit": "g", "optional": true }
+    ],
+    "steps": [
+      "Râper les courgettes, les saler et les presser dans un torchon pour enlever l'eau.",
+      "Mélanger avec les œufs, la farine et le fromage, poivrer.",
+      "Cuire des petites galettes 3 min de chaque côté dans l'huile. Servir avec le yaourt."
+    ],
+    "balance": ["P", "L"],
+    "saisons": ["ete"],
+    "tags": ["enfants", "vege"]
+  },
+  {
+    "id": "veloute-courgettes-fromage-frais",
+    "name": "Velouté de courgettes au fromage frais",
+    "emoji": "🥒",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "aucune",
+    "ingredients": [
+      { "ref": "courgette", "qty": 1, "unit": "kg" },
+      { "ref": "fromage-frais", "qty": 100, "unit": "g" },
+      { "ref": "bouillon-cube", "qty": 1 },
+      { "ref": "pain", "qty": 4, "unit": "tranche", "optional": true }
+    ],
+    "steps": [
+      "Couper les courgettes en morceaux et les cuire 15 min dans 50 cl d'eau avec le bouillon cube.",
+      "Mixer avec le fromage frais, saler, poivrer. Servir chaud ou froid, avec du pain."
+    ],
+    "balance": ["L"],
+    "saisons": ["ete"],
+    "tags": ["rapide", "enfants", "vege"]
+  }
+]
