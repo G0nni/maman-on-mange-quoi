@@ -116,18 +116,22 @@ export function StockScreen({ householdId, me }: Props) {
               {z.label}
               <span className="text-muted font-body font-medium text-sm">{inZone.length}</span>
             </h3>
-            <ul className="grid grid-cols-2 gap-2">
+            {/* Une colonne sur téléphone : les noms composés restent lisibles en entier */}
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {inZone.map((s) => (
                 <li
                   key={s.id}
                   className="motion-safe:animate-pop flex items-center gap-2 bg-surface border border-line rounded-2xl pl-3 pr-1 py-1.5"
                 >
                   <span className="text-xl" aria-hidden="true">{s.emoji}</span>
-                  <span className="flex-1 min-w-0 truncate font-medium">{s.name}</span>
+                  {/* 2 lignes max pour les noms très longs, césure française (lang="fr" dans index.html) */}
+                  <span className="flex-1 min-w-0 line-clamp-2 break-words hyphens-auto leading-snug font-medium">
+                    {s.name}
+                  </span>
                   <button
                     onClick={() => remove(s.id)}
                     aria-label={`Retirer ${s.name}`}
-                    className="w-9 h-9 grid place-items-center rounded-xl text-muted hover:bg-tomato-soft hover:text-tomato transition"
+                    className="shrink-0 w-9 h-9 grid place-items-center rounded-xl text-muted hover:bg-tomato-soft hover:text-tomato transition"
                   >
                     ✕
                   </button>
