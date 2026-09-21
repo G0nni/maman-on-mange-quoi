@@ -166,7 +166,7 @@ export const INGREDIENTS: Ingredient[] = [
   { id: 'cannelloni', label: 'Cannellonis', emoji: '🍝', category: 'feculent' },
   { id: 'ravioli', label: 'Raviolis', emoji: '🥟', category: 'feculent' },
   { id: 'gnocchi', label: 'Gnocchis', emoji: '🥟', category: 'feculent' },
-  { id: 'vermicelle', label: 'Vermicelles', emoji: '🍜', category: 'feculent' },
+  { id: 'vermicelle', label: 'Vermicelles', emoji: '🍜', category: 'feculent', aliases: ['vermicelles de riz'] },
   { id: 'nouille-chinoise', label: 'Nouilles chinoises', emoji: '🍜', category: 'feculent', aliases: ['nouilles'] },
   { id: 'riz', label: 'Riz', emoji: '🍚', category: 'feculent', aliases: ['riz basmati', 'riz thaï', 'riz long'] },
   { id: 'riz-a-risotto', label: 'Riz à risotto', emoji: '🍚', category: 'feculent', aliases: ['arborio'] },

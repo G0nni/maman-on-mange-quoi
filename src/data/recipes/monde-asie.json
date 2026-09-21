@@ -1,0 +1,429 @@
+[
+  {
+    "id": "poulet-au-caramel",
+    "name": "Poulet au caramel et riz",
+    "emoji": "🍗",
+    "time": 35,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "poulet", "qty": 800, "unit": "g" },
+      { "ref": "sucre", "qty": 60, "unit": "g" },
+      { "ref": "sauce-soja", "qty": 4, "unit": "cas" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "gingembre", "qty": 1, "unit": "cac", "optional": true }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire fondre le sucre avec 2 c. à soupe d'eau jusqu'à obtenir un caramel blond.",
+      "Ajouter la sauce soja, 10 cl d'eau, les oignons émincés et le gingembre, puis le poulet en morceaux.",
+      "Couvrir et laisser mijoter 25 min, en retournant le poulet pour bien l'enrober."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "poulet-tikka-masala",
+    "name": "Poulet tikka masala",
+    "emoji": "🍛",
+    "time": 40,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "yaourt-fromage-blanc", "qty": 150, "unit": "g" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "creme", "qty": 15, "unit": "cl" },
+      { "ref": "curry", "qty": 2, "unit": "cac" },
+      { "ref": "gingembre", "qty": 1, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Mélanger le poulet en morceaux avec le yaourt et la moitié du curry, laisser mariner 10 min.",
+      "Faire revenir l'oignon, l'ail, le gingembre et le reste du curry dans l'huile, puis ajouter le poulet.",
+      "Ajouter les tomates, laisser mijoter 15 min, puis la crème.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "poulet-miel-sesame-brocolis",
+    "name": "Poulet au miel et sésame, riz et brocolis",
+    "emoji": "🍯",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "miel", "qty": 3, "unit": "cas" },
+      { "ref": "sauce-soja", "qty": 3, "unit": "cas" },
+      { "ref": "graine-de-sesame", "qty": 1, "unit": "cas" },
+      { "ref": "brocoli", "qty": 400, "unit": "g" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz et les brocolis en bouquets 8 min à la vapeur.",
+      "Faire dorer le poulet en dés 6 min dans l'huile.",
+      "Ajouter le miel et la sauce soja, laisser caraméliser 2 min et parsemer de sésame."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "poulet-aigre-doux-ananas",
+    "name": "Poulet aigre-doux à l'ananas",
+    "emoji": "🍍",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "volaille",
+    "ingredients": [
+      { "ref": "volaille-escalope", "qty": 600, "unit": "g" },
+      { "ref": "ananas", "qty": 300, "unit": "g" },
+      { "ref": "poivron", "qty": 2 },
+      { "ref": "sauce-soja", "qty": 3, "unit": "cas" },
+      { "ref": "vinaigre", "qty": 3, "unit": "cas" },
+      { "ref": "sucre", "qty": 2, "unit": "cas" },
+      { "ref": "maizena", "qty": 1, "unit": "cas", "optional": true },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire dorer le poulet en dés dans l'huile, ajouter les poivrons en morceaux et cuire 5 min.",
+      "Mélanger la sauce soja, le vinaigre, le sucre, la maïzena et 10 cl d'eau, verser dans la poêle.",
+      "Ajouter l'ananas en morceaux et laisser épaissir 3 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "boeuf-saute-oignons",
+    "name": "Bœuf sauté aux oignons",
+    "emoji": "🥩",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 500, "unit": "g" },
+      { "ref": "oignon", "qty": 3 },
+      { "ref": "sauce-soja", "qty": 4, "unit": "cas" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "maizena", "qty": 1, "unit": "cac", "optional": true }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Couper la viande en fines lanières et la mélanger avec la maïzena et 1 c. à soupe de sauce soja.",
+      "Saisir la viande 2 min à feu vif dans l'huile, puis la réserver.",
+      "Faire sauter les oignons émincés 5 min, remettre la viande avec le reste de sauce soja et servir."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "boeuf-brocolis",
+    "name": "Bœuf aux brocolis",
+    "emoji": "🥦",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 500, "unit": "g" },
+      { "ref": "brocoli", "qty": 500, "unit": "g" },
+      { "ref": "sauce-soja", "qty": 4, "unit": "cas" },
+      { "ref": "gingembre", "qty": 1, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" },
+      { "ref": "maizena", "qty": 1, "unit": "cac", "optional": true }
+    ],
+    "steps": [
+      "Cuire le riz et les brocolis en bouquets 5 min à l'eau bouillante.",
+      "Saisir la viande en lanières 2 min à feu vif dans l'huile.",
+      "Ajouter les brocolis, le gingembre, la sauce soja et la maïzena délayée dans un peu d'eau, faire sauter 2 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "bo-bun-boeuf",
+    "name": "Bo bun au bœuf",
+    "emoji": "🥗",
+    "time": 35,
+    "difficulty": 2,
+    "protein": "boeuf",
+    "ingredients": [
+      { "ref": "steak", "qty": 400, "unit": "g" },
+      { "ref": "vermicelle", "qty": 200, "unit": "g" },
+      { "ref": "salade-verte", "qty": 1 },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "concombre", "qty": 1 },
+      { "ref": "sauce-soja", "qty": 3, "unit": "cas" },
+      { "ref": "citrons", "qty": 1 },
+      { "ref": "sucre", "qty": 1, "unit": "cas" },
+      { "ref": "herbes-fraiches", "qty": 1, "unit": "botte" }
+    ],
+    "steps": [
+      "Cuire les vermicelles de riz selon le paquet, les rincer à l'eau froide.",
+      "Râper les carottes, couper le concombre en bâtonnets et la salade en lanières.",
+      "Saisir le bœuf en fines lanières 2 min avec 1 c. à soupe de sauce soja.",
+      "Préparer la sauce avec le reste de sauce soja, le jus de citron, le sucre et 5 cl d'eau, et servir en bols."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["ete"],
+    "tags": [],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "porc-au-caramel",
+    "name": "Porc au caramel",
+    "emoji": "🍖",
+    "time": 45,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "porc-viande", "qty": 700, "unit": "g" },
+      { "ref": "sucre", "qty": 60, "unit": "g" },
+      { "ref": "sauce-soja", "qty": 4, "unit": "cas" },
+      { "ref": "oignon", "qty": 2 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "riz", "qty": 300, "unit": "g" }
+    ],
+    "steps": [
+      "Faire fondre le sucre avec 2 c. à soupe d'eau jusqu'à obtenir un caramel ambré.",
+      "Ajouter la viande en cubes, les oignons, l'ail, la sauce soja et 15 cl d'eau.",
+      "Couvrir et laisser mijoter 35 min, puis découvrir pour faire réduire la sauce.",
+      "Servir avec le riz."
+    ],
+    "balance": ["P", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "riz-cantonais",
+    "name": "Riz cantonais",
+    "emoji": "🍚",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "porc",
+    "ingredients": [
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "porc-cuisine", "qty": 150, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "petit-pois", "qty": 200, "unit": "g" },
+      { "ref": "sauce-soja", "qty": 2, "unit": "cas" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz (du riz de la veille est idéal).",
+      "Faire une omelette fine avec les œufs battus, puis la couper en lanières.",
+      "Faire sauter le jambon en dés et les petits pois 3 min dans l'huile, ajouter le riz et la sauce soja.",
+      "Ajouter l'omelette et faire sauter encore 2 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "curry-crevettes-coco",
+    "name": "Curry de crevettes au lait de coco",
+    "emoji": "🦐",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "fruits-de-mer",
+    "ingredients": [
+      { "ref": "crevette", "qty": 400, "unit": "g" },
+      { "ref": "lait-de-coco", "qty": 400, "unit": "ml" },
+      { "ref": "tomate-conserve", "qty": 200, "unit": "g" },
+      { "ref": "curry", "qty": 2, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "huile", "qty": 1, "unit": "cas" },
+      { "ref": "coriandre", "qty": 0.5, "unit": "botte", "optional": true }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir l'oignon avec le curry dans l'huile, ajouter les tomates et le lait de coco.",
+      "Laisser mijoter 10 min, ajouter les crevettes et cuire 3 min. Parsemer de coriandre."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "saumon-teriyaki",
+    "name": "Saumon teriyaki, riz et haricots verts",
+    "emoji": "🐟",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "pave-de-saumon", "qty": 4 },
+      { "ref": "sauce-soja", "qty": 4, "unit": "cas" },
+      { "ref": "miel", "qty": 2, "unit": "cas" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "haricot-vert", "qty": 400, "unit": "g" },
+      { "ref": "graine-de-sesame", "qty": 1, "unit": "cac", "optional": true }
+    ],
+    "steps": [
+      "Cuire le riz et les haricots verts.",
+      "Cuire le saumon 4 min côté peau à la poêle, puis le retourner.",
+      "Ajouter la sauce soja et le miel, laisser réduire 2 min en arrosant le saumon. Parsemer de sésame."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "poisson-coco-curry-epinards",
+    "name": "Poisson blanc au lait de coco, curry et épinards",
+    "emoji": "🐟",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "poisson",
+    "ingredients": [
+      { "ref": "poisson-blanc", "qty": 600, "unit": "g" },
+      { "ref": "lait-de-coco", "qty": 400, "unit": "ml" },
+      { "ref": "curry", "qty": 2, "unit": "cac" },
+      { "ref": "epinard", "qty": 300, "unit": "g" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 1 }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir l'oignon avec le curry, verser le lait de coco et porter à frémissement.",
+      "Ajouter les épinards et le poisson en gros morceaux, couvrir et cuire 8 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "curry-pois-chiches-epinards",
+    "name": "Curry de pois chiches et épinards",
+    "emoji": "🫘",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "legumineuse",
+    "ingredients": [
+      { "ref": "pois-chiche", "qty": 800, "unit": "g" },
+      { "ref": "epinard", "qty": 300, "unit": "g" },
+      { "ref": "lait-de-coco", "qty": 400, "unit": "ml" },
+      { "ref": "tomate-conserve", "qty": 400, "unit": "g" },
+      { "ref": "curry", "qty": 2, "unit": "cac" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "oignon", "qty": 1 },
+      { "ref": "ail", "qty": 2, "unit": "gousse" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Faire revenir l'oignon, l'ail et le curry dans l'huile.",
+      "Ajouter les tomates, le lait de coco et les pois chiches égouttés, laisser mijoter 15 min.",
+      "Ajouter les épinards et cuire 3 min. Servir avec le riz."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "tofu-saute-legumes-riz",
+    "name": "Tofu sauté aux légumes et riz",
+    "emoji": "🥢",
+    "time": 25,
+    "difficulty": 1,
+    "protein": "vegetal",
+    "ingredients": [
+      { "ref": "tofu", "qty": 400, "unit": "g" },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "brocoli", "qty": 300, "unit": "g" },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "sauce-soja", "qty": 4, "unit": "cas" },
+      { "ref": "riz", "qty": 300, "unit": "g" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz. Couper le tofu en cubes et les légumes en petits morceaux.",
+      "Faire dorer le tofu 8 min dans l'huile, puis le réserver.",
+      "Faire sauter les légumes 6 min, remettre le tofu, ajouter la sauce soja et servir."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "vege"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "nouilles-sautees-legumes-oeuf",
+    "name": "Nouilles sautées aux légumes et à l'œuf",
+    "emoji": "🍜",
+    "time": 20,
+    "difficulty": 1,
+    "protein": "oeuf",
+    "ingredients": [
+      { "ref": "nouille-chinoise", "qty": 250, "unit": "g" },
+      { "ref": "oeuf", "qty": 3 },
+      { "ref": "carotte", "qty": 2 },
+      { "ref": "chou-vert", "qty": 200, "unit": "g" },
+      { "ref": "poivron", "qty": 1 },
+      { "ref": "sauce-soja", "qty": 3, "unit": "cas" },
+      { "ref": "huile", "qty": 2, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire les nouilles selon le paquet et les égoutter.",
+      "Faire sauter les légumes en fines lanières 5 min dans l'huile.",
+      "Pousser les légumes sur le côté, brouiller les œufs, puis ajouter les nouilles et la sauce soja et mélanger 2 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["toute-annee"],
+    "tags": ["rapide", "enfants", "vege"],
+    "cuisine": "asiatique"
+  },
+  {
+    "id": "curry-legumes-tofu-coco",
+    "name": "Curry de légumes et tofu au lait de coco",
+    "emoji": "🍛",
+    "time": 30,
+    "difficulty": 1,
+    "protein": "vegetal",
+    "ingredients": [
+      { "ref": "tofu", "qty": 300, "unit": "g" },
+      { "ref": "lait-de-coco", "qty": 400, "unit": "ml" },
+      { "ref": "patate-douce", "qty": 400, "unit": "g" },
+      { "ref": "courgette", "qty": 1 },
+      { "ref": "curry", "qty": 2, "unit": "cac" },
+      { "ref": "riz", "qty": 250, "unit": "g" },
+      { "ref": "huile", "qty": 1, "unit": "cas" }
+    ],
+    "steps": [
+      "Cuire le riz. Couper la patate douce, la courgette et le tofu en cubes.",
+      "Faire revenir la patate douce avec le curry dans l'huile, puis verser le lait de coco.",
+      "Cuire 12 min, ajouter la courgette et le tofu et cuire encore 6 min."
+    ],
+    "balance": ["P", "L", "F"],
+    "saisons": ["automne", "hiver"],
+    "tags": ["vege"],
+    "cuisine": "asiatique"
+  }
+]
